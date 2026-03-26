@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (don't commit databases or trained models)
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.joblib
+*.json.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Models (trained artifacts are large)
+grandpa_joe/models/*.json
+grandpa_joe/models/*.xgb

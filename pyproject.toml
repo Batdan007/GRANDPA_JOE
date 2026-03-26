@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grandpa-joe"
+version = "0.1.0"
+description = "Grandpa Joe - Horse Racing Handicapping Assistant"
+readme = "README.md"
+license = {text = "Proprietary"}
+authors = [{name = "Daniel J Rita", email = "danieljrita@hotmail.com"}]
+requires-python = ">=3.11,<3.13"
+
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "pandas>=2.1.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "xgboost>=2.0.0",
+]
+api = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "httpx>=0.25.0",
+]
+full = [
+    "grandpa-joe[ml,api]",
+]
+
+[project.scripts]
+grandpa-joe = "grandpa_joe.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["grandpa_joe*"]
