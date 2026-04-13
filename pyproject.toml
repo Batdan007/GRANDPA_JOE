@@ -9,7 +9,7 @@ description = "Grandpa Joe - Horse Racing Handicapping Assistant"
 readme = "README.md"
 license = {text = "Proprietary"}
 authors = [{name = "Daniel J Rita", email = "danieljrita@hotmail.com"}]
-requires-python = ">=3.11,<3.13"
+requires-python = ">=3.11"
 
 dependencies = [
     "requests>=2.31.0",

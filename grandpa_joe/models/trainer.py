@@ -43,11 +43,23 @@ def train_model(brain, model_config=None) -> Dict:
 
     logger.info("Starting model training...")
 
-    # Collect training data: all races with results
+    # Collect training data: sample of races with results
+    # With 130K+ races, processing all would take days.
+    # 5000 races (~50K entries) gives excellent model quality in minutes.
+    MAX_RACES = 1000
+
     conn = brain._connect()
     try:
-        # Get all races that have results
-        races = conn.execute("""
+        # Count total races with results
+        total_races = conn.execute("""
+            SELECT COUNT(DISTINCT ra.id)
+            FROM races ra
+            JOIN entries e ON e.race_id = ra.id
+            JOIN results r ON r.entry_id = e.id
+        """).fetchone()[0]
+
+        # Sample randomly for training speed
+        races = conn.execute(f"""
             SELECT DISTINCT ra.id, ra.surface, ra.distance_furlongs,
                    ra.track_condition, ra.class_level,
                    t.code as track_code
@@ -55,25 +67,33 @@ def train_model(brain, model_config=None) -> Dict:
             JOIN tracks t ON ra.track_id = t.id
             JOIN entries e ON e.race_id = ra.id
             JOIN results r ON r.entry_id = e.id
-            ORDER BY ra.race_date DESC
+            ORDER BY RANDOM()
+            LIMIT {MAX_RACES}
         """).fetchall()
 
         if len(races) < 10:
             return {"error": "Not enough data", "races_found": len(races),
                     "minimum_required": 10}
 
-        logger.info(f"Found {len(races)} races with results")
+        logger.info(f"Sampled {len(races)} of {total_races} races for training")
 
         # Build feature/target pairs
         all_features = []
         all_targets = []
         processed_races = set()
 
-        for race_row in races:
+        import time as _time
+        _t0 = _time.time()
+        for ri, race_row in enumerate(races):
             race_id = race_row["id"]
             if race_id in processed_races:
                 continue
             processed_races.add(race_id)
+
+            if ri % 50 == 0:
+                elapsed = _time.time() - _t0
+                print(f"  Processing race {ri+1}/{len(races)} "
+                      f"({len(all_features)} samples, {elapsed:.0f}s)", flush=True)
 
             race_dict = dict(race_row)
 

@@ -234,23 +234,47 @@ if FASTAPI_AVAILABLE:
 
     @router.post("/ingest")
     async def ingest_csv(file: UploadFile = File(...), request: Request = None):
-        """Upload and ingest a CSV file."""
+        """Upload and ingest a CSV or XML file."""
         import tempfile
-        from grandpa_joe.brain.ingestion import ingest_csv as do_ingest
 
-        # Save uploaded file to temp location
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".csv",
+        filename = file.filename or "upload.csv"
+        suffix = ".xml" if filename.lower().endswith(".xml") else ".csv"
+
+        with tempfile.NamedTemporaryFile(delete=False, suffix=suffix,
                                           mode="wb") as tmp:
             content = await file.read()
             tmp.write(content)
             tmp_path = tmp.name
 
         try:
-            result = do_ingest(request.app.state.brain, tmp_path)
+            if suffix == ".xml":
+                from grandpa_joe.brain.equibase_xml import ingest_xml
+                result = ingest_xml(request.app.state.brain, tmp_path)
+            else:
+                from grandpa_joe.brain.ingestion import ingest_csv as do_ingest
+                result = do_ingest(request.app.state.brain, tmp_path)
+
+            # Auto-backfill days_since_prev_race
+            from grandpa_joe.brain.equibase_fetch import compute_days_since_previous
+            backfilled = compute_days_since_previous(request.app.state.brain)
+            result["days_since_backfilled"] = backfilled
+
             return {"status": "ok", "counts": result}
         finally:
             import os
             os.unlink(tmp_path)
+
+    @router.get("/data/status")
+    async def data_status(request: Request):
+        """Get data ingestion status and available files."""
+        from grandpa_joe.brain.equibase_fetch import EquibaseFetcher
+        fetcher = EquibaseFetcher(
+            api_key=request.app.state.config.api_keys.equibase_api_key
+        )
+        return {
+            "fetcher": fetcher.get_status(),
+            "brain": request.app.state.brain.get_memory_stats(),
+        }
 
 else:
     router = None

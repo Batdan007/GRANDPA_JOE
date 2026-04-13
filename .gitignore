@@ -39,3 +39,10 @@ logs/
 # Models (trained artifacts are large)
 grandpa_joe/models/*.json
 grandpa_joe/models/*.xgb
+
+# Data files (large, not for git)
+DATA SETS/
+*.xml
+*.zip
+*.pdf
+.env.example.txt

@@ -6,6 +6,12 @@ Usage:
     python -m grandpa_joe stats              # Show brain stats
     python -m grandpa_joe handicap SAR 5     # Handicap race 5 at Saratoga
     python -m grandpa_joe ingest data.csv    # Ingest CSV data
+    python -m grandpa_joe ingest-xml chart.xml  # Ingest Equibase XML chart
+    python -m grandpa_joe ingest-dir ./data  # Ingest all CSV/XML/ZIP in directory
+    python -m grandpa_joe fetch-data research   # Free Equibase 2023 dataset info
+    python -m grandpa_joe fetch-data chart SAR 2024-08-01  # Download chart
+    python -m grandpa_joe fetch-data list     # List downloaded files
+    python -m grandpa_joe backfill           # Backfill computed fields
     python -m grandpa_joe train              # Train/retrain model
     python -m grandpa_joe --server           # Start API server
     python -m grandpa_joe chat               # Chat with Grandpa Joe
@@ -97,6 +103,116 @@ def run_handicap(brain, track_code: str, race_number: int):
         console.print("Install with: pip install xgboost pandas")
 
 
+def run_ingest_xml(brain, filepath: str):
+    """Ingest XML chart file(s)."""
+    from rich.console import Console
+    console = Console()
+    from pathlib import Path
+
+    path = Path(filepath)
+    if path.is_dir():
+        from grandpa_joe.brain.equibase_xml import ingest_xml_directory
+        result = ingest_xml_directory(brain, filepath)
+        console.print(f"[green]Ingested XML directory:[/green]")
+    else:
+        from grandpa_joe.brain.equibase_xml import ingest_xml
+        result = ingest_xml(brain, filepath)
+        console.print(f"[green]Ingested XML file:[/green]")
+
+    for k, v in result.items():
+        console.print(f"  {k}: {v}")
+
+
+def run_ingest_dir(brain, directory: str):
+    """Ingest all CSV/XML/ZIP files from a directory."""
+    from rich.console import Console
+    console = Console()
+    from grandpa_joe.brain.equibase_fetch import ingest_directory
+
+    console.print(f"[cyan]Scanning {directory} for CSV, XML, and ZIP files...[/cyan]")
+    result = ingest_directory(brain, directory)
+    console.print(f"[green]Directory ingestion complete:[/green]")
+    for k, v in result.items():
+        console.print(f"  {k}: {v}")
+
+    # Auto-backfill days_since_prev_race
+    from grandpa_joe.brain.equibase_fetch import compute_days_since_previous
+    updated = compute_days_since_previous(brain)
+    if updated:
+        console.print(f"  [dim]Backfilled days_since_prev_race: {updated} records[/dim]")
+
+
+def run_fetch_data(brain, args: list):
+    """Download data from Equibase."""
+    from rich.console import Console
+    console = Console()
+    from grandpa_joe.brain.equibase_fetch import EquibaseFetcher
+    from grandpa_joe.config import get_config
+
+    config = get_config()
+    fetcher = EquibaseFetcher(api_key=config.api_keys.equibase_api_key)
+
+    if not args or args[0] == "research":
+        # Download/show instructions for free research dataset
+        fetcher.download_research_dataset()
+    elif args[0] == "chart" and len(args) >= 3:
+        # Download a specific chart: fetch-data chart SAR 2024-08-01 [csv|xml]
+        track = args[1]
+        date = args[2]
+        fmt = args[3] if len(args) > 3 else "csv"
+        path = fetcher.download_chart(track, date, fmt)
+        if path:
+            console.print(f"[green]Downloaded: {path}[/green]")
+
+            # Auto-ingest
+            console.print("[cyan]Auto-ingesting...[/cyan]")
+            if fmt == "xml":
+                from grandpa_joe.brain.equibase_xml import ingest_xml
+                result = ingest_xml(brain, path)
+            else:
+                from grandpa_joe.brain.ingestion import ingest_csv
+                result = ingest_csv(brain, path)
+            for k, v in result.items():
+                console.print(f"  {k}: {v}")
+        else:
+            console.print("[red]Download failed. Check your EQUIBASE_API_KEY.[/red]")
+    elif args[0] == "status":
+        status = fetcher.get_status()
+        for k, v in status.items():
+            console.print(f"  {k}: {v}")
+    elif args[0] == "list":
+        files = fetcher.list_local_files()
+        if files:
+            from rich.table import Table
+            table = Table(title="Local Data Files")
+            table.add_column("File", style="cyan")
+            table.add_column("Format")
+            table.add_column("Size (MB)", justify="right")
+            for f in files:
+                table.add_row(f["name"], f["format"], str(f["size_mb"]))
+            console.print(table)
+        else:
+            console.print("[yellow]No data files found.[/yellow]")
+    else:
+        console.print("""[bold]Usage:[/bold]
+  grandpa_joe fetch-data research              # Free 2023 research dataset instructions
+  grandpa_joe fetch-data chart SAR 2024-08-01  # Download chart (needs API key)
+  grandpa_joe fetch-data chart SAR 2024-08-01 xml  # Download XML format
+  grandpa_joe fetch-data status                # Show fetcher status
+  grandpa_joe fetch-data list                  # List downloaded files""")
+
+
+def run_backfill(brain):
+    """Backfill computed fields."""
+    from rich.console import Console
+    console = Console()
+    from grandpa_joe.brain.equibase_fetch import compute_days_since_previous
+
+    console.print("[cyan]Backfilling days_since_prev_race...[/cyan]")
+    updated = compute_days_since_previous(brain)
+    console.print(f"[green]Updated {updated} records[/green]")
+
+
 def run_train(brain):
     """Train the handicapping model."""
     from rich.console import Console
@@ -174,7 +290,8 @@ def main():
     )
     parser.add_argument("command", nargs="?", default="interactive",
                         choices=["interactive", "stats", "handicap", "ingest",
-                                 "train", "chat"],
+                                 "ingest-xml", "ingest-dir", "fetch-data",
+                                 "backfill", "train", "chat"],
                         help="Command to run")
     parser.add_argument("args", nargs="*", help="Command arguments")
     parser.add_argument("--server", action="store_true", help="Start API server")
@@ -210,6 +327,20 @@ def main():
             print("Usage: grandpa_joe ingest <CSV_FILE>")
             sys.exit(1)
         run_ingest(brain, args.args[0])
+    elif args.command == "ingest-xml":
+        if not args.args:
+            print("Usage: grandpa_joe ingest-xml <XML_FILE_OR_DIR>")
+            sys.exit(1)
+        run_ingest_xml(brain, args.args[0])
+    elif args.command == "ingest-dir":
+        if not args.args:
+            print("Usage: grandpa_joe ingest-dir <DIRECTORY>")
+            sys.exit(1)
+        run_ingest_dir(brain, args.args[0])
+    elif args.command == "fetch-data":
+        run_fetch_data(brain, args.args)
+    elif args.command == "backfill":
+        run_backfill(brain)
     elif args.command == "train":
         run_train(brain)
     elif args.command in ("interactive", "chat"):
