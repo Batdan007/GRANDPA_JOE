@@ -62,7 +62,14 @@ class GrandpaJoeHandicapper:
             logger.info("XGBoost not installed — using morning line fallback")
             return
 
+        # Check local data dir first, then fall back to repo-bundled model
         model_path = PathManager.MODELS_DIR / "handicapper.json"
+        if not model_path.exists():
+            # Fall back to repo-bundled model (from git pull)
+            repo_model = Path(__file__).resolve().parent.parent.parent / "trained_models" / "handicapper.json"
+            if repo_model.exists():
+                model_path = repo_model
+
         if model_path.exists():
             try:
                 self.model = xgb.XGBRegressor()
