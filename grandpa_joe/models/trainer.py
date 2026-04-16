@@ -49,10 +49,12 @@ def train_model(brain, model_config=None, before_date: Optional[str] = None) -> 
 
     logger.info("Starting model training...")
 
-    # Collect training data: sample of races with results
-    # With 130K+ races, processing all would take days.
-    # 5000 races (~50K entries) gives excellent model quality in minutes.
-    MAX_RACES = 1000
+    # Collect training data: sample of races with results.
+    # With 130K+ races, processing all would take hours. 5000-10000 races
+    # (~50-100K entries) gives strong model quality in minutes.
+    # Override via GRANDPA_JOE_TRAIN_MAX_RACES env var.
+    import os as _os
+    MAX_RACES = int(_os.environ.get("GRANDPA_JOE_TRAIN_MAX_RACES", "5000"))
 
     conn = brain._connect()
     try:
@@ -64,7 +66,7 @@ def train_model(brain, model_config=None, before_date: Optional[str] = None) -> 
             FROM races ra
             JOIN entries e ON e.race_id = ra.id
             JOIN results r ON r.entry_id = e.id
-            WHERE 1=1 {date_filter}
+            WHERE ra.purse IS NOT NULL {date_filter}
         """, params).fetchone()[0]
 
         races = conn.execute(f"""
@@ -75,7 +77,7 @@ def train_model(brain, model_config=None, before_date: Optional[str] = None) -> 
             JOIN tracks t ON ra.track_id = t.id
             JOIN entries e ON e.race_id = ra.id
             JOIN results r ON r.entry_id = e.id
-            WHERE 1=1 {date_filter}
+            WHERE ra.purse IS NOT NULL {date_filter}
             ORDER BY RANDOM()
             LIMIT {MAX_RACES}
         """, params).fetchall()
