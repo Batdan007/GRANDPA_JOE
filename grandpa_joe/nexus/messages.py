@@ -23,12 +23,12 @@ class MessageType(str, Enum):
 
 
 class IntentType(str, Enum):
-    """NEXUS intent types."""
-    INFORMATION_REQUEST = "information_request"
-    TASK_EXECUTION = "task_execution"
-    COLLABORATION = "collaboration"
-    STATUS_CHECK = "status_check"
-    RESOURCE_REQUEST = "resource_request"
+    """NEXUS intent types. Wire values match ALFRED core/nexus.py enum."""
+    INFORMATION_REQUEST = "info_request"
+    TASK_EXECUTION = "task_execute"
+    COLLABORATION = "collaborate"
+    STATUS_CHECK = "status"
+    RESOURCE_REQUEST = "resource"
 
 
 def build_message(

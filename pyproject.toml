@@ -30,8 +30,17 @@ api = [
     "uvicorn>=0.24.0",
     "httpx>=0.25.0",
 ]
+crawl = [
+    "httpx>=0.25.0",
+    "selectolax>=0.3.21",
+    "apscheduler>=3.10.0",
+]
+crawl-dynamic = [
+    "grandpa-joe[crawl]",
+    "crawl4ai>=0.4.0",
+]
 full = [
-    "grandpa-joe[ml,api]",
+    "grandpa-joe[ml,api,crawl]",
 ]
 
 [project.scripts]

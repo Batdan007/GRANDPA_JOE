@@ -28,9 +28,15 @@ except ImportError:
     XGBOOST_AVAILABLE = False
 
 
-def train_model(brain, model_config=None) -> Dict:
+def train_model(brain, model_config=None, before_date: Optional[str] = None) -> Dict:
     """
     Train the handicapping model on historical data.
+
+    Args:
+        brain: RacingBrain instance
+        model_config: model settings
+        before_date: optional YYYY-MM-DD cutoff — only train on races strictly
+            before this date. Required for honest backtest/holdout validation.
 
     Returns dict of metrics.
     """
@@ -50,15 +56,17 @@ def train_model(brain, model_config=None) -> Dict:
 
     conn = brain._connect()
     try:
-        # Count total races with results
-        total_races = conn.execute("""
+        date_filter = "AND ra.race_date < ?" if before_date else ""
+        params = (before_date,) if before_date else ()
+
+        total_races = conn.execute(f"""
             SELECT COUNT(DISTINCT ra.id)
             FROM races ra
             JOIN entries e ON e.race_id = ra.id
             JOIN results r ON r.entry_id = e.id
-        """).fetchone()[0]
+            WHERE 1=1 {date_filter}
+        """, params).fetchone()[0]
 
-        # Sample randomly for training speed
         races = conn.execute(f"""
             SELECT DISTINCT ra.id, ra.surface, ra.distance_furlongs,
                    ra.track_condition, ra.class_level,
@@ -67,9 +75,10 @@ def train_model(brain, model_config=None) -> Dict:
             JOIN tracks t ON ra.track_id = t.id
             JOIN entries e ON e.race_id = ra.id
             JOIN results r ON r.entry_id = e.id
+            WHERE 1=1 {date_filter}
             ORDER BY RANDOM()
             LIMIT {MAX_RACES}
-        """).fetchall()
+        """, params).fetchall()
 
         if len(races) < 10:
             return {"error": "Not enough data", "races_found": len(races),

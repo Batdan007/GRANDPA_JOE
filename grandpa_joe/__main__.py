@@ -8,6 +8,9 @@ Usage:
     python -m grandpa_joe ingest data.csv    # Ingest CSV data
     python -m grandpa_joe ingest-xml chart.xml  # Ingest Equibase XML chart
     python -m grandpa_joe ingest-dir ./data  # Ingest all CSV/XML/ZIP in directory
+    python -m grandpa_joe crawl              # Crawl all sites for today
+    python -m grandpa_joe crawl --site twinspires --date 2026-05-02  # Derby day
+    python -m grandpa_joe crawl --tracks CD,KEE --date 2026-04-16    # Specific tracks
     python -m grandpa_joe fetch-data research   # Free Equibase 2023 dataset info
     python -m grandpa_joe fetch-data chart SAR 2024-08-01  # Download chart
     python -m grandpa_joe fetch-data list     # List downloaded files
@@ -19,6 +22,7 @@ Usage:
 
 import argparse
 import sys
+from typing import Optional
 
 
 def show_stats(brain):
@@ -213,19 +217,61 @@ def run_backfill(brain):
     console.print(f"[green]Updated {updated} records[/green]")
 
 
-def run_train(brain):
+def run_train(brain, before_date: Optional[str] = None):
     """Train the handicapping model."""
     from rich.console import Console
     console = Console()
     try:
         from grandpa_joe.models.trainer import train_model
         from grandpa_joe.config import get_config
-        metrics = train_model(brain, get_config().model)
+        metrics = train_model(brain, get_config().model, before_date=before_date)
         console.print(f"[green]Model trained![/green]")
         for k, v in metrics.items():
             console.print(f"  {k}: {v}")
     except ImportError as e:
         console.print(f"[yellow]ML dependencies not installed: {e}[/yellow]")
+
+
+def run_crawl_cmd(brain, args):
+    """Run the web crawler and ingest results."""
+    from rich.console import Console
+    from datetime import date as Date
+    console = Console()
+
+    try:
+        from grandpa_joe.crawlers.runner import run_crawl
+    except ImportError as e:
+        console.print(f"[yellow]Crawler deps not installed: {e}[/yellow]")
+        console.print("Install with: pip install 'grandpa-joe[crawl]'")
+        return
+
+    site_names = None
+    if args.site and args.site.lower() != "all":
+        site_names = [s.strip() for s in args.site.split(",") if s.strip()]
+    track_codes = None
+    if args.tracks:
+        track_codes = [t.strip().upper() for t in args.tracks.split(",") if t.strip()]
+    target_date = args.date
+    if target_date in (None, "today"):
+        target_date = str(Date.today())
+
+    console.print(f"[cyan]Crawling {site_names or 'all sites'} for {target_date}...[/cyan]")
+    summary = run_crawl(
+        brain,
+        site_names=site_names,
+        track_codes=track_codes,
+        target_date=target_date,
+        use_nexus=args.nexus,
+    )
+
+    console.print(f"[green]Crawl complete:[/green] "
+                  f"{summary.races_crawled} races, "
+                  f"{summary.entries_crawled} entries, "
+                  f"{summary.results_ingested} results ingested")
+    if summary.errors:
+        console.print(f"[yellow]{len(summary.errors)} errors:[/yellow]")
+        for err in summary.errors[:10]:
+            console.print(f"  - {err}")
 
 
 def run_server():
@@ -291,11 +337,21 @@ def main():
     parser.add_argument("command", nargs="?", default="interactive",
                         choices=["interactive", "stats", "handicap", "ingest",
                                  "ingest-xml", "ingest-dir", "fetch-data",
-                                 "backfill", "train", "chat"],
+                                 "backfill", "train", "chat", "crawl"],
                         help="Command to run")
     parser.add_argument("args", nargs="*", help="Command arguments")
     parser.add_argument("--server", action="store_true", help="Start API server")
     parser.add_argument("--version", action="store_true", help="Show version")
+    parser.add_argument("--site", default=None,
+                        help="Crawler site filter: all|twinspires|equibase|drf (comma-separated)")
+    parser.add_argument("--tracks", default=None,
+                        help="Track codes for crawl (comma-separated, e.g. CD,KEE,GP)")
+    parser.add_argument("--date", default=None,
+                        help="Target date YYYY-MM-DD (default: today). 'today' is allowed.")
+    parser.add_argument("--before-date", default=None,
+                        help="For 'train': cutoff YYYY-MM-DD; only train on races before this.")
+    parser.add_argument("--nexus", action="store_true",
+                        help="Forward crawled data to ALFRED/CORTEX via NEXUS (off by default)")
 
     args = parser.parse_args()
 
@@ -342,7 +398,9 @@ def main():
     elif args.command == "backfill":
         run_backfill(brain)
     elif args.command == "train":
-        run_train(brain)
+        run_train(brain, before_date=args.before_date)
+    elif args.command == "crawl":
+        run_crawl_cmd(brain, args)
     elif args.command in ("interactive", "chat"):
         interactive_mode(brain)
 

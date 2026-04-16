@@ -177,6 +177,36 @@ class NexusClient:
             return response["payload"].get("value")
         return None
 
+    def cortex_capture(self, content: str, importance: float = 5.0,
+                        topic: str = "", metadata: Optional[Dict] = None) -> bool:
+        """
+        Ask ALFRED's CORTEX to capture an item into its memory tiers.
+
+        Mirrors ALFRED's cortex.capture(content, importance, topic, metadata).
+        CORTEX auto-assigns a layer (FLASH / WORKING / SHORT_TERM / LONG_TERM /
+        ARCHIVE) based on importance and access patterns — we only hint.
+
+        Returns True if ALFRED acknowledged. False on any failure (fire-and-forget
+        safe — caller doesn't need to handle offline ALFRED).
+        """
+        message = build_message(
+            message_type=MessageType.COMMAND,
+            intent=IntentType.TASK_EXECUTION,
+            sender_id=self.AGENT_ID,
+            receiver_id="ALFRED",
+            payload={
+                "action": "cortex_store",
+                "content": content,
+                "importance": importance,
+                "topic": topic,
+                "metadata": metadata or {},
+            },
+        )
+        response = self._send_message(message)
+        if not response:
+            return False
+        return response.get("message_type") in ("acknowledge", "response")
+
     def ping(self) -> bool:
         """Simple ping to check ALFRED is reachable."""
         # Force a fresh check

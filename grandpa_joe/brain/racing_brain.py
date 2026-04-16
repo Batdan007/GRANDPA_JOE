@@ -12,6 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+from grandpa_joe.brain.migrations import run_migrations
 from grandpa_joe.brain.schema import SCHEMA_SQL
 from grandpa_joe.path_manager import PathManager
 
@@ -55,11 +56,12 @@ class RacingBrain:
         return conn
 
     def _init_database(self):
-        """Create all tables from schema."""
+        """Create all tables from schema, then run pending migrations."""
         conn = self._connect()
         try:
             conn.executescript(SCHEMA_SQL)
             conn.commit()
+            run_migrations(conn)
         finally:
             conn.close()
 
@@ -253,8 +255,8 @@ class RacingBrain:
 
         conn = self._connect()
         try:
-            conn.execute(
-                "INSERT INTO entries "
+            cur = conn.execute(
+                "INSERT OR IGNORE INTO entries "
                 "(race_id, horse_id, jockey_id, trainer_id, post_position, "
                 "morning_line_odds, weight_lbs, medication, equipment_changes) "
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -263,8 +265,16 @@ class RacingBrain:
                  kwargs.get("weight_lbs"), kwargs.get("medication"),
                  kwargs.get("equipment_changes"))
             )
+            if cur.rowcount > 0:
+                entry_id = cur.lastrowid
+            else:
+                row = conn.execute(
+                    "SELECT id FROM entries WHERE race_id = ? AND horse_id = ?",
+                    (race_id, horse_id)
+                ).fetchone()
+                entry_id = row["id"] if row else None
             conn.commit()
-            return conn.execute("SELECT last_insert_rowid()").fetchone()[0]
+            return entry_id
         finally:
             conn.close()
 
@@ -277,7 +287,7 @@ class RacingBrain:
         conn = self._connect()
         try:
             conn.execute(
-                "INSERT INTO results "
+                "INSERT OR IGNORE INTO results "
                 "(entry_id, finish_position, beaten_lengths, final_odds, speed_figure, "
                 "final_time_seconds, fractional_times, running_position, comment, "
                 "payout_win, payout_place, payout_show) "
@@ -306,7 +316,7 @@ class RacingBrain:
         conn = self._connect()
         try:
             conn.execute(
-                "INSERT INTO past_performances "
+                "INSERT OR IGNORE INTO past_performances "
                 "(horse_id, race_date, track_code, surface, distance_furlongs, "
                 "track_condition, class_level, finish_position, field_size, "
                 "speed_figure, beaten_lengths, final_time_seconds, weight_lbs, "

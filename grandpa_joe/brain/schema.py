@@ -118,7 +118,8 @@ CREATE TABLE IF NOT EXISTS entries (
     FOREIGN KEY (race_id) REFERENCES races(id),
     FOREIGN KEY (horse_id) REFERENCES horses(id),
     FOREIGN KEY (jockey_id) REFERENCES jockeys(id),
-    FOREIGN KEY (trainer_id) REFERENCES trainers(id)
+    FOREIGN KEY (trainer_id) REFERENCES trainers(id),
+    UNIQUE(race_id, horse_id)
 );
 CREATE INDEX IF NOT EXISTS idx_entries_race ON entries(race_id);
 CREATE INDEX IF NOT EXISTS idx_entries_horse ON entries(horse_id);
@@ -141,7 +142,8 @@ CREATE TABLE IF NOT EXISTS results (
     payout_place REAL,
     payout_show REAL,
     created_at TEXT NOT NULL DEFAULT (datetime('now')),
-    FOREIGN KEY (entry_id) REFERENCES entries(id)
+    FOREIGN KEY (entry_id) REFERENCES entries(id),
+    UNIQUE(entry_id)
 );
 CREATE INDEX IF NOT EXISTS idx_results_entry ON results(entry_id);
 
@@ -167,7 +169,8 @@ CREATE TABLE IF NOT EXISTS past_performances (
     trainer_name TEXT,
     days_since_prev_race INTEGER,
     comment TEXT,
-    FOREIGN KEY (horse_id) REFERENCES horses(id)
+    FOREIGN KEY (horse_id) REFERENCES horses(id),
+    UNIQUE(horse_id, race_date, track_code, distance_furlongs, surface)
 );
 CREATE INDEX IF NOT EXISTS idx_pp_horse_date ON past_performances(horse_id, race_date DESC);
 CREATE INDEX IF NOT EXISTS idx_pp_track ON past_performances(track_code);
