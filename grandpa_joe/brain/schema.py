@@ -252,4 +252,27 @@ CREATE TABLE IF NOT EXISTS gambling_session_log (
     notes TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_sessions_user ON gambling_session_log(user_id);
+
+-- ============================================================================
+-- PACE HISTORY (per-horse per-call splits from past performances)
+-- ============================================================================
+CREATE TABLE IF NOT EXISTS horse_pace_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    horse_id INTEGER NOT NULL,
+    race_date TEXT NOT NULL,
+    track_code TEXT NOT NULL,
+    distance_furlongs REAL,
+    surface TEXT,
+    call_id TEXT NOT NULL,
+    call_order INTEGER NOT NULL,
+    position INTEGER,
+    lengths_behind REAL,
+    leader_time_sec REAL,
+    horse_time_sec REAL,
+    speed_figure INTEGER,
+    FOREIGN KEY (horse_id) REFERENCES horses(id),
+    UNIQUE(horse_id, race_date, track_code, call_id)
+);
+CREATE INDEX IF NOT EXISTS idx_pace_horse_date ON horse_pace_history(horse_id, race_date);
+CREATE INDEX IF NOT EXISTS idx_pace_call ON horse_pace_history(call_id);
 """
