@@ -137,6 +137,64 @@ def render_race_animation(race: dict, n_frames=120) -> str:
         u = max(0.0, t_lead - long_offset)
         return oval_position(u, lane_offset=e["lane"]), rank, lb
 
+    # Pre-compute final order of finish (using last-frame rank)
+    finish_order = sorted(entries, key=lambda x: x["traj"][-1][1])
+    finish_lines = []
+    for pos, e in enumerate(finish_order[:8], 1):
+        star = " ★" if e["power_pick"] else ""
+        ml = f" {e['ml']}" if e['ml'] else ""
+        finish_lines.append(f"{pos}. PP{e['post']:>2} {e['name']}{star}{ml}")
+    finish_panel_text = "ORDER OF FINISH<br>" + "<br>".join(finish_lines)
+
+    # Static call-point annotations (Start, 1/4, Stretch, Wire, etc.)
+    call_annotations = []
+    for c, frac in CALL_FRAC.items():
+        x, y = oval_position(frac, lane_offset=1.4)
+        call_annotations.append(dict(
+            x=x, y=y, text=CALL_PRETTY[c], showarrow=False,
+            font=dict(color="#ffd700", size=10),
+            bgcolor="rgba(0,0,0,0.55)", borderpad=2,
+        ))
+
+    def frame_annotations(k):
+        """Build full annotation set for frame k: call points + running/finish order."""
+        snapshot = []
+        for e in entries:
+            _, rank, _ = e["traj"][k]
+            snapshot.append((rank, e))
+        snapshot.sort(key=lambda r: r[0])
+
+        # Show ORDER OF FINISH on last 15% of frames (the wire shot)
+        wire_zone = k >= n_frames - max(8, n_frames // 7)
+
+        if wire_zone:
+            order_panel = dict(
+                text=finish_panel_text,
+                xref="paper", yref="paper",
+                x=0.99, y=0.98, xanchor="right", yanchor="top",
+                showarrow=False,
+                font=dict(family="Courier New", size=12, color="#ffd700"),
+                bgcolor="rgba(0,0,0,0.92)", bordercolor="#ffd700",
+                borderwidth=2, borderpad=8,
+                align="left",
+            )
+        else:
+            lines = []
+            for pos, (_, e) in enumerate(snapshot[:6], 1):
+                lines.append(f"{pos}. PP{e['post']} {e['name']}")
+            order_panel = dict(
+                text="RUNNING ORDER<br>" + "<br>".join(lines),
+                xref="paper", yref="paper",
+                x=0.01, y=0.98, xanchor="left", yanchor="top",
+                showarrow=False,
+                font=dict(family="Courier New", size=10, color="#ffd700"),
+                bgcolor="rgba(0,0,0,0.6)",
+                bordercolor="#444", borderwidth=1, borderpad=5,
+                align="left",
+            )
+
+        return call_annotations + [order_panel]
+
     frames = []
     for k in range(n_frames):
         xs, ys, colors_, texts = [], [], [], []
@@ -165,6 +223,7 @@ def render_race_animation(race: dict, n_frames=120) -> str:
                 name="horses",
             )],
             name=str(k),
+            layout=dict(annotations=frame_annotations(k)),
         ))
 
     init_xs, init_ys, init_colors, init_texts = [], [], [], []
@@ -226,6 +285,7 @@ def render_race_animation(race: dict, n_frames=120) -> str:
         plot_bgcolor="#0a4d0a", paper_bgcolor="#0a0a0a",
         font=dict(color="#f0f0f0"),
         height=620, margin=dict(l=20, r=20, t=80, b=70),
+        annotations=frame_annotations(0),  # initial state matches frame 0
         updatemenus=[dict(
             type="buttons", showactive=False,
             x=0.5, xanchor="center", y=-0.04, yanchor="top",
@@ -249,11 +309,7 @@ def render_race_animation(race: dict, n_frames=120) -> str:
                               font=dict(color="#ffd700", size=12)),
         )],
     )
-    for c, frac in CALL_FRAC.items():
-        x, y = oval_position(frac, lane_offset=1.4)
-        fig.add_annotation(x=x, y=y, text=CALL_PRETTY[c], showarrow=False,
-                           font=dict(color="#ffd700", size=10),
-                           bgcolor="rgba(0,0,0,0.55)", borderpad=2)
+    # Call points already included in frame_annotations(); no separate add needed
 
     out = OUT_DIR / f"R{race['race']}_full_card_animated.html"
     fig.write_html(str(out), include_plotlyjs="cdn", auto_play=False)

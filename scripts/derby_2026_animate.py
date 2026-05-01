@@ -172,6 +172,15 @@ def build_derby_animation(n_frames=140):
         u = max(0.0, t_lead - long_offset)
         return oval_position(u, lane_offset=e["lane"]), rank, lb
 
+    # Pre-compute final order of finish for the wire-zone panel
+    finish_order = sorted(entries, key=lambda x: x["traj"][-1][1])
+    finish_lines = []
+    for pos, e in enumerate(finish_order[:8], 1):
+        ml = f" {e['ml']}" if e['ml'] else ""
+        finish_lines.append(f"{pos}. PP{e['post']:>2} {e['name']}{ml}")
+    finish_panel_text = "ORDER OF FINISH<br>" + "<br>".join(finish_lines)
+    wire_zone_start = n_frames - max(10, n_frames // 7)
+
     # Build animation frames
     frames = []
     for k in range(n_frames):
@@ -201,6 +210,41 @@ def build_derby_animation(n_frames=140):
                 f"{tfus_str}  •  Beyer {e['beyer']}<br>"
                 f"ML: {e['ml']}  •  {e['jockey']}"
             )
+        # Build per-frame annotation: running order while racing,
+        # ORDER OF FINISH panel as we approach the wire
+        if k >= wire_zone_start:
+            order_panel = dict(
+                text=finish_panel_text,
+                xref="paper", yref="paper",
+                x=0.99, y=0.98, xanchor="right", yanchor="top",
+                showarrow=False,
+                font=dict(family="Courier New", size=12, color="#ffd700"),
+                bgcolor="rgba(0,0,0,0.92)", bordercolor="#ffd700",
+                borderwidth=2, borderpad=8,
+                align="left",
+            )
+        else:
+            order_panel = dict(
+                text="RUNNING ORDER<br>" + "<br>".join(order_strs),
+                xref="paper", yref="paper",
+                x=0.01, y=0.98, xanchor="left", yanchor="top",
+                showarrow=False,
+                font=dict(family="Courier New", size=11, color="#ffd700"),
+                bgcolor="rgba(0,0,0,0.6)",
+                bordercolor="#444", borderwidth=1, borderpad=6,
+                align="left",
+            )
+
+        # Include call-point labels in every frame (else they'd disappear during play)
+        call_anns = []
+        for c, frac in CALL_FRAC.items():
+            cx, cy = oval_position(frac, lane_offset=1.4)
+            call_anns.append(dict(
+                x=cx, y=cy, text=CALL_PRETTY[c], showarrow=False,
+                font=dict(color="#ffd700", size=11),
+                bgcolor="rgba(0,0,0,0.55)", borderpad=2,
+            ))
+
         frames.append(go.Frame(
             data=[go.Scatter(
                 x=xs, y=ys, mode="markers+text",
@@ -213,17 +257,7 @@ def build_derby_animation(n_frames=140):
                 name="horses",
             )],
             name=str(k),
-            layout=dict(
-                annotations=[dict(
-                    text="<br>".join(order_strs),
-                    xref="paper", yref="paper",
-                    x=0.01, y=0.98, xanchor="left", yanchor="top",
-                    showarrow=False,
-                    font=dict(family="Courier New", size=11, color="#ffd700"),
-                    bgcolor="rgba(0,0,0,0.6)",
-                    bordercolor="#444", borderwidth=1, borderpad=6,
-                )]
-            ),
+            layout=dict(annotations=call_anns + [order_panel]),
         ))
 
     # Initial frame state
@@ -341,15 +375,25 @@ def build_derby_animation(n_frames=140):
         )],
     )
 
-    # Call-point annotations (Start, 1/4, 1/2, 3/4, Stretch, Wire)
+    # Initial-state annotations (call points + running order panel for frame 0)
+    init_anns = []
     for c, frac in CALL_FRAC.items():
         x, y = oval_position(frac, lane_offset=1.4)
-        fig.add_annotation(
-            x=x, y=y, text=CALL_PRETTY[c],
-            showarrow=False,
+        init_anns.append(dict(
+            x=x, y=y, text=CALL_PRETTY[c], showarrow=False,
             font=dict(color="#ffd700", size=11),
             bgcolor="rgba(0,0,0,0.55)", borderpad=2,
-        )
+        ))
+    init_anns.append(dict(
+        text="RUNNING ORDER<br>(press Play to start)",
+        xref="paper", yref="paper",
+        x=0.01, y=0.98, xanchor="left", yanchor="top",
+        showarrow=False,
+        font=dict(family="Courier New", size=11, color="#ffd700"),
+        bgcolor="rgba(0,0,0,0.6)",
+        bordercolor="#444", borderwidth=1, borderpad=6,
+    ))
+    fig.update_layout(annotations=init_anns)
 
     return fig, entries
 
