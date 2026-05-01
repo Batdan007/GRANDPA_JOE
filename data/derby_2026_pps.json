@@ -178,6 +178,9 @@
       "style": "closer",
       "tfus_early": 70,
       "tfus_late": 108,
+      "scratched": true,
+      "scratched_date": "2026-05-01",
+      "scratched_reason": "vet scratch — right front lameness (McPeek)",
       "pts": 65,
       "record": "4: 1-1-2-0",
       "earnings": 230200,
@@ -185,7 +188,7 @@
       "post_position": 5,
       "morning_line": "30-1",
       "ml_decimal": 30.0,
-      "drew_in": true,
+      "drew_in": false,
       "ae": false
     },
     {
@@ -944,6 +947,30 @@
       "concerns": "never won past 1 1/16M; turfway/synth specialist tried dirt and tired in Blue Grass; trainer Ennis 0-for-1 in Derby (Epic Ride 13th 2024)"
     },
     {
+      "name": "Robusta",
+      "sire": "Accelerate",
+      "dam": "Urbane Legend",
+      "trainer": "Bob Baffert",
+      "jockey": "Emisael Jaramillo",
+      "beyer": null,
+      "style": "presser",
+      "tfus_early": 103,
+      "tfus_late": 79,
+      "pts": 30,
+      "record": "?: ?-?-?-?",
+      "earnings": null,
+      "pps": [],
+      "post_position": 23,
+      "morning_line": "50-1",
+      "ml_decimal": 50.0,
+      "drew_in": true,
+      "ae": true,
+      "ae_filled": true,
+      "ae_fill_date": "2026-05-01",
+      "auxiliary_gate": true,
+      "concerns": "third AE drew in after Right to Party scratch; high TFUS-Early 103 adds to pace meltdown"
+    },
+    {
       "name": "Ocelli",
       "sire": "Connect",
       "dam": "Unknown",
@@ -980,8 +1007,9 @@
   "draw_source": "NBC Sports + Covers cross-check",
   "field_updates": [
     {"date": "2026-04-29", "event": "Silent Tactic (PP13) scratched — Casse, bruised foot. Great White drew in at PP21 (auxiliary)."},
-    {"date": "2026-04-30", "event": "Fulleffort (PP20) scratched — Cox, bone chip left hind ankle. Ocelli drew in at PP22 (auxiliary)."}
+    {"date": "2026-04-30", "event": "Fulleffort (PP20) scratched — Cox, bone chip left hind ankle. Ocelli drew in at PP22 (auxiliary)."},
+    {"date": "2026-05-01", "event": "Right to Party (PP5) scratched — McPeek, vet scratch right front lameness. Robusta drew in at PP23 (auxiliary)."}
   ],
   "final_field_size": 20,
-  "post_layout": "PP1-12 + PP14-19 in main gate (gaps at 13 and 20); PP21-22 in auxiliary gate"
+  "post_layout": "PP1-4, 6-12, 14-19 in main gate (gaps at 5, 13, 20); PP21-22-23 in auxiliary gate"
 }

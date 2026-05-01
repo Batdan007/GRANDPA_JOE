@@ -265,8 +265,8 @@ def build_ticket_strategy(races: list) -> dict:
     p4_legs = [9, 10, 11, 12]
     if all(n in by_num for n in p4_legs):
         legs = [(n, horses_for_leg(by_num[n])) for n in p4_legs]
-        # Force Derby leg to match our pace-adjusted top
-        legs[-1] = (12, ["Commandment", "Renegade", "The Puma", "Right to Party"])
+        # Force Derby leg to match our pace-adjusted top (post-RtP scratch)
+        legs[-1] = (12, ["Commandment", "Renegade", "The Puma", "Golden Tempo"])
         combos = 1
         for _, hs in legs:
             combos *= len(hs)
@@ -282,7 +282,7 @@ def build_ticket_strategy(races: list) -> dict:
     p5_legs = [8, 9, 10, 11, 12]
     if all(n in by_num for n in p5_legs):
         legs = [(n, horses_for_leg(by_num[n])) for n in p5_legs]
-        legs[-1] = (12, ["Commandment", "Renegade", "The Puma", "Right to Party"])
+        legs[-1] = (12, ["Commandment", "Renegade", "The Puma", "Golden Tempo"])
         combos = 1
         for _, hs in legs:
             combos *= len(hs)

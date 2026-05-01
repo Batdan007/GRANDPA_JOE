@@ -214,6 +214,7 @@ def main():
 
     # Bet definitions ($300 bankroll). TICKET line = exactly what you punch
     # or say to the teller (post numbers, race numbers, base amount).
+    # *** v2 — Right to Party (#5) scratched 5/1; replaced w/ Golden Tempo (#19) ***
     bets = [
         {
             "n": "1",
@@ -230,46 +231,47 @@ def main():
             "n": "2",
             "name": "DERBY TRIFECTA",
             "race": "R12 Kentucky Derby",
-            "ticket": "$2 TRIFECTA   6  /  1, 9  /  1, 9, 5   (race 12)",
-            "say":    '"$2 trifecta, KEY 6, second 1 and 9, third 1, 9 and 5, race twelve"',
-            "horses": "6 Commandment (KEY)  -  1 Renegade  -  9 The Puma  -  5 Right to Party",
-            "rationale": "Commandment KEY (pace-adj #1, +5.7pp edge) over the top 3 "
-                          "with Right to Party 30-1 in 3rd as the price cover.",
+            "ticket": "$2 TRIFECTA   6  /  1, 9, 19  /  1, 9, 19   (race 12)",
+            "say":    '"$2 trifecta, KEY 6, second 1, 9 and 19, third 1, 9 and 19, race twelve"',
+            "horses": "6 Commandment (KEY)  -  1 Renegade  -  9 The Puma  -  19 Golden Tempo",
+            "rationale": "RIGHT TO PARTY OUT (vet scratch 5/1). Replaced 3rd-slot 5 with 19 Golden Tempo "
+                          "(TFUS-L 113, the next-best deep closer in the melt).",
             "cost": 12.00,
         },
         {
             "n": "3",
             "name": "DERBY SUPERFECTA",
             "race": "R12 Kentucky Derby",
-            "ticket": "$1 SUPERFECTA   6  /  1, 9, 5  /  1, 9, 5, 8  /  1, 9, 5, 8, 18   (race 12)",
-            "say":    '"$1 superfecta, 6 with 1 9 5 with 1 9 5 8 with 1 9 5 8 18, race twelve"',
-            "horses": "6 Commandment - 1 Renegade - 9 The Puma - 5 Right to Party - 8 So Happy - 18 Further Ado",
-            "rationale": "60 combos cascading under Commandment — covers the model's "
-                          "top 5 plus Further Ado in 4th. Big payoff if Right to Party hits the slip.",
+            "ticket": "$1 SUPERFECTA   6  /  1, 9, 19  /  1, 9, 19, 8, 18  /  1, 9, 19, 8, 18, 10, 12   (race 12)",
+            "say":    '"$1 superfecta, 6 with 1 9 19 with 1 9 19 8 18 with 1 9 19 8 18 10 12, race twelve"',
+            "horses": "6 Commandment - 1 Renegade - 9 The Puma - 19 Golden Tempo - 8 So Happy - "
+                      "18 Further Ado - 10 Wonder Dean - 12 Chief Wallabee",
+            "rationale": "60 combos. RTP slot replaced by Golden Tempo (TFUS-L 113); "
+                          "deeper 4th-slot wheel adds Wonder Dean and Chief Wallabee for the bomb.",
             "cost": 60.00,
         },
         {
             "n": "4",
             "name": "PICK 4  (R9-R12)",
             "race": "Races 9 - 10 - 11 - 12   (4:06 - 6:57 ET)",
-            "ticket": "$2 PICK 4   R9: 2, 12   R10: 9 (SINGLE)   R11: 4, 5, 9   R12: 1, 6, 9, 5",
+            "ticket": "$2 PICK 4   R9: 2, 12   R10: 9 (SINGLE)   R11: 4, 5, 9   R12: 1, 6, 9, 19",
             "say":    '"$2 pick 4: race 9 numbers 2 and 12; race 10 number 9 single; '
-                      'race 11 numbers 4, 5, 9; race 12 numbers 1, 6, 9, 5"',
+                      'race 11 numbers 4, 5, 9; race 12 numbers 1, 6, 9, 19"',
             "horses": "R9: Let's Be Frank / Remember Mamba | R10: CRAZY MASON SINGLE | "
-                      "R11: Program Trading / Mercante / Test Score | R12: Renegade / Commandment / Puma / RTP",
-            "rationale": "Singling 9 in R10 (gap 20.8) collapses combos. Pace-shape supports "
-                          "Crazy Mason; everywhere else use the model's top.",
+                      "R11: Program Trading / Mercante / Test Score | R12: Renegade / Cmdmt / Puma / Golden Tempo",
+            "rationale": "Singling 9 in R10 (gap 20.8) collapses combos. R12 leg now uses "
+                          "19 Golden Tempo in place of scratched 5 Right to Party.",
             "cost": 48.00,
         },
         {
             "n": "5",
             "name": "PICK 5  (R8-R12)",
             "race": "Races 8 - 12   (3:23 - 6:57 ET)",
-            "ticket": "$1 PICK 5   R8: 1, 6, 7   R9: 2, 12   R10: 9 (SINGLE)   R11: 4, 5, 9   R12: 1, 6, 9, 5",
+            "ticket": "$1 PICK 5   R8: 1, 6, 7   R9: 2, 12   R10: 9 (SINGLE)   R11: 4, 5, 9   R12: 1, 6, 9, 19",
             "say":    '"$1 pick 5: race 8 numbers 1, 6, 7; race 9 numbers 2 and 12; '
-                      'race 10 single 9; race 11 numbers 4, 5, 9; race 12 numbers 1, 6, 9, 5"',
+                      'race 10 single 9; race 11 numbers 4, 5, 9; race 12 numbers 1, 6, 9, 19"',
             "horses": "R8: Englishman / Crude Velocity / Crown the Buckeye | "
-                      "R9-R12 same as Pick 4 above",
+                      "R9-R12 same as Pick 4 above (R12 now uses 19, not 5)",
             "rationale": "Adds the Pat Day Mile. Englishman is the chalk; Crude Velocity + Buckeye "
                           "are the overlays. R10 single still holds the leverage.",
             "cost": 72.00,
@@ -284,9 +286,9 @@ def main():
                       'race 9 numbers 2 and 12; race 10 single 9; race 11 numbers 4, 5, 9; '
                       'race 12 numbers 1, 6, 9"',
             "horses": "R7: Temptable / Vina Arana / Pin Up Betty | R8-R11 same as Pick 5 | "
-                      "R12 trimmed: Renegade / Commandment / Puma (no RTP)",
-            "rationale": "Highest payout. Crazy Mason single is the value engine. R12 trimmed "
-                          "to 3 to keep cost manageable; if RTP wins anyway, we still cash the SUPER.",
+                      "R12 trimmed: Renegade / Commandment / Puma (no Golden Tempo at this base)",
+            "rationale": "Highest payout. Crazy Mason single is the value engine. "
+                          "R12 stays tight at 3 horses to keep $0.50 base affordable.",
             "cost": 81.00,
         },
     ]

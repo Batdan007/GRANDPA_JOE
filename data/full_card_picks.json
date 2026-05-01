@@ -2091,6 +2091,20 @@
           "power_pick": false
         },
         {
+          "post": 23,
+          "name": "Robusta",
+          "ml": "50-1",
+          "tfus_early": null,
+          "tfus_late": null,
+          "style": "stalker",
+          "trainer": null,
+          "jockey": "E. Jaramillo",
+          "top_fig": 110,
+          "pace_factor": 1.0,
+          "score": 101.5,
+          "power_pick": false
+        },
+        {
           "post": 19,
           "name": "Golden Tempo",
           "ml": "30-1",
@@ -2102,20 +2116,6 @@
           "top_fig": 109,
           "pace_factor": 1.0,
           "score": 101.0,
-          "power_pick": false
-        },
-        {
-          "post": 5,
-          "name": "Right to Party",
-          "ml": "30-1",
-          "tfus_early": null,
-          "tfus_late": null,
-          "style": "stalker",
-          "trainer": "K. McPeek",
-          "jockey": "C. Elliott",
-          "top_fig": 104,
-          "pace_factor": 1.0,
-          "score": 98.5,
           "power_pick": false
         },
         {
