@@ -1,0 +1,1556 @@
+{
+  "races": [
+    {
+      "race": 1,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 2,
+          "name": "Decadent",
+          "ml": "8-1",
+          "tfus_early": 88,
+          "tfus_late": 90,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 92.1
+        },
+        {
+          "post": 7,
+          "name": "Episist",
+          "ml": "4-1",
+          "tfus_early": 80,
+          "tfus_late": 81,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 85.5
+        },
+        {
+          "post": 6,
+          "name": "Soaring High",
+          "ml": "7-2",
+          "tfus_early": 75,
+          "tfus_late": 58,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 64.0
+        },
+        {
+          "post": 5,
+          "name": "Mass",
+          "ml": "8-1",
+          "tfus_early": 95,
+          "tfus_late": 63,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 53.55
+        },
+        {
+          "post": 3,
+          "name": "Chopsticks",
+          "ml": "9-2",
+          "tfus_early": 101,
+          "tfus_late": 63,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 53.55
+        },
+        {
+          "post": 1,
+          "name": "Amalfi Drive",
+          "ml": "6-1",
+          "tfus_early": 110,
+          "tfus_late": 66,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 36.300000000000004
+        },
+        {
+          "post": 4,
+          "name": "White Rocks",
+          "ml": "10-1",
+          "tfus_early": 114,
+          "tfus_late": 55,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 30.250000000000004
+        }
+      ],
+      "gap_1_2": 6.599999999999994,
+      "single_confidence": "WIDE",
+      "n_pacesetters": 5,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 2,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 2,
+          "name": "Measure",
+          "ml": "6-1",
+          "tfus_early": 58,
+          "tfus_late": 99,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 110.1
+        },
+        {
+          "post": 9,
+          "name": "Five a Side",
+          "ml": "3-1",
+          "tfus_early": 86,
+          "tfus_late": 99,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 101.7
+        },
+        {
+          "post": 4,
+          "name": "Miss Call",
+          "ml": "10-1",
+          "tfus_early": 83,
+          "tfus_late": 84,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 87.6
+        },
+        {
+          "post": 3,
+          "name": "Krissys Star",
+          "ml": "15-1",
+          "tfus_early": 90,
+          "tfus_late": 78,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 79.5
+        },
+        {
+          "post": 1,
+          "name": "Making Daisys",
+          "ml": "15-1",
+          "tfus_early": 91,
+          "tfus_late": 67,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 68.2
+        },
+        {
+          "post": 8,
+          "name": "Carmel Rose",
+          "ml": "30-1",
+          "tfus_early": 100,
+          "tfus_late": 60,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 51.0
+        },
+        {
+          "post": 7,
+          "name": "Sudden Switch",
+          "ml": "7-2",
+          "tfus_early": 107,
+          "tfus_late": 63,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.650000000000006
+        },
+        {
+          "post": 5,
+          "name": "Quantum Burst",
+          "ml": "6-1",
+          "tfus_early": 109,
+          "tfus_late": 61,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 33.550000000000004
+        },
+        {
+          "post": 6,
+          "name": "Anna's Promise",
+          "ml": "8-1",
+          "tfus_early": 112,
+          "tfus_late": 60,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 33.0
+        },
+        {
+          "post": 5,
+          "name": "Joyful Justice",
+          "ml": "6-1",
+          "tfus_early": 105,
+          "tfus_late": 56,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 30.800000000000004
+        }
+      ],
+      "gap_1_2": 8.399999999999991,
+      "single_confidence": "MEDIUM",
+      "n_pacesetters": 7,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 3,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 10,
+          "name": "Star Actress",
+          "ml": "4-1",
+          "tfus_early": 57,
+          "tfus_late": 125,
+          "style": "deep_closer",
+          "pace_factor": 1.5,
+          "score": 204.60000000000002
+        },
+        {
+          "post": 1,
+          "name": "Hedge Book",
+          "ml": "7-2",
+          "tfus_early": 43,
+          "tfus_late": 89,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 104.6
+        },
+        {
+          "post": 8,
+          "name": "Ur Desire",
+          "ml": "20-1",
+          "tfus_early": 72,
+          "tfus_late": 86,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 92.9
+        },
+        {
+          "post": 7,
+          "name": "Bella Ella",
+          "ml": "15-1",
+          "tfus_early": 69,
+          "tfus_late": 84,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 91.8
+        },
+        {
+          "post": 11,
+          "name": "Feisty Red Head",
+          "ml": "20-1",
+          "tfus_early": 68,
+          "tfus_late": 75,
+          "style": "closer",
+          "pace_factor": 1.0,
+          "score": 83.1
+        },
+        {
+          "post": 7,
+          "name": "Betty's Pearl",
+          "ml": "9-2",
+          "tfus_early": 95,
+          "tfus_late": 82,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 69.7
+        },
+        {
+          "post": 9,
+          "name": "Leinani",
+          "ml": "5-1",
+          "tfus_early": 98,
+          "tfus_late": 72,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 61.199999999999996
+        },
+        {
+          "post": 5,
+          "name": "Gerber Daisy",
+          "ml": "15-1",
+          "tfus_early": 95,
+          "tfus_late": 57,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 48.449999999999996
+        },
+        {
+          "post": 6,
+          "name": "Maximum Offer",
+          "ml": "6-1",
+          "tfus_early": 106,
+          "tfus_late": 62,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.1
+        }
+      ],
+      "gap_1_2": 100.00000000000003,
+      "single_confidence": "STRONG",
+      "n_pacesetters": 4,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 4,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 6,
+          "name": "Executive",
+          "ml": "4-1",
+          "tfus_early": 74,
+          "tfus_late": 87,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 93.3
+        },
+        {
+          "post": 2,
+          "name": "Clark's Corner",
+          "ml": "12-1",
+          "tfus_early": 55,
+          "tfus_late": 81,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 93.0
+        },
+        {
+          "post": 9,
+          "name": "Lexi V.",
+          "ml": "15-1",
+          "tfus_early": 86,
+          "tfus_late": 69,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 71.7
+        },
+        {
+          "post": 5,
+          "name": "Flick",
+          "ml": "10-1",
+          "tfus_early": 87,
+          "tfus_late": 69,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 71.4
+        },
+        {
+          "post": 4,
+          "name": "Powell River",
+          "ml": "8-1",
+          "tfus_early": 66,
+          "tfus_late": 54,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 62.7
+        },
+        {
+          "post": 12,
+          "name": "Zengraya",
+          "ml": "15-1",
+          "tfus_early": 92,
+          "tfus_late": 59,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 59.9
+        },
+        {
+          "post": 1,
+          "name": "Bridgesong",
+          "ml": "8-1",
+          "tfus_early": 104,
+          "tfus_late": 69,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 58.65
+        },
+        {
+          "post": 13,
+          "name": "Tramuntana",
+          "ml": "8-1",
+          "tfus_early": 95,
+          "tfus_late": 52,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 44.199999999999996
+        },
+        {
+          "post": 10,
+          "name": "Rose of San Antone",
+          "ml": "20-1",
+          "tfus_early": 97,
+          "tfus_late": 51,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 43.35
+        },
+        {
+          "post": 8,
+          "name": "Serena's Surprise",
+          "ml": "12-1",
+          "tfus_early": 111,
+          "tfus_late": 50,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 27.500000000000004
+        },
+        {
+          "post": 3,
+          "name": "Grande Sorpreso",
+          "ml": "30-1",
+          "tfus_early": 118,
+          "tfus_late": 48,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 26.400000000000002
+        }
+      ],
+      "gap_1_2": 0.29999999999999716,
+      "single_confidence": "WIDE",
+      "n_pacesetters": 9,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 5,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 11,
+          "name": "Royal Guard",
+          "ml": "5-1",
+          "tfus_early": 40,
+          "tfus_late": 101,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 117.5
+        },
+        {
+          "post": 10,
+          "name": "Prepped",
+          "ml": "3-1",
+          "tfus_early": 57,
+          "tfus_late": 94,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 105.4
+        },
+        {
+          "post": 16,
+          "name": "Wembley Avenue",
+          "ml": "15-1",
+          "tfus_early": 51,
+          "tfus_late": 83,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 96.2
+        },
+        {
+          "post": 14,
+          "name": "Drop Shot",
+          "ml": "20-1",
+          "tfus_early": 68,
+          "tfus_late": 86,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 94.1
+        },
+        {
+          "post": 2,
+          "name": "Camila Catalina",
+          "ml": "20-1",
+          "tfus_early": 62,
+          "tfus_late": 80,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 89.9
+        },
+        {
+          "post": 13,
+          "name": "Timayyyy",
+          "ml": "8-1",
+          "tfus_early": 85,
+          "tfus_late": 86,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 89.0
+        },
+        {
+          "post": 3,
+          "name": "Nimah",
+          "ml": "8-1",
+          "tfus_early": 89,
+          "tfus_late": 83,
+          "style": "presser",
+          "pace_factor": 1.0,
+          "score": 84.8
+        },
+        {
+          "post": 15,
+          "name": "Apollo's Glory",
+          "ml": "30-1",
+          "tfus_early": 79,
+          "tfus_late": 71,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 75.8
+        },
+        {
+          "post": 12,
+          "name": "Hill Country",
+          "ml": "50-1",
+          "tfus_early": 67,
+          "tfus_late": 65,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 73.4
+        },
+        {
+          "post": 8,
+          "name": "War and Majesty",
+          "ml": "8-1",
+          "tfus_early": 100,
+          "tfus_late": 75,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 63.75
+        },
+        {
+          "post": 7,
+          "name": "Culture War",
+          "ml": "20-1",
+          "tfus_early": 87,
+          "tfus_late": 60,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 62.4
+        },
+        {
+          "post": 5,
+          "name": "Paige Turner",
+          "ml": "4-1",
+          "tfus_early": 95,
+          "tfus_late": 64,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 54.4
+        },
+        {
+          "post": 6,
+          "name": "Carmel Coast",
+          "ml": "3-1",
+          "tfus_early": 117,
+          "tfus_late": 66,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 36.300000000000004
+        },
+        {
+          "post": 4,
+          "name": "Color Comin' In",
+          "ml": "30-1",
+          "tfus_early": 94,
+          "tfus_late": 35,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 35.3
+        },
+        {
+          "post": 9,
+          "name": "Cash Bonus",
+          "ml": "15-1",
+          "tfus_early": 116,
+          "tfus_late": 62,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.1
+        },
+        {
+          "post": 1,
+          "name": "Where Luck Lives",
+          "ml": "6-1",
+          "tfus_early": 111,
+          "tfus_late": 46,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 25.3
+        }
+      ],
+      "gap_1_2": 12.099999999999994,
+      "single_confidence": "MEDIUM",
+      "n_pacesetters": 8,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 6,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 2,
+          "name": "Buttercream Babe",
+          "ml": "15-1",
+          "tfus_early": 78,
+          "tfus_late": 101,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 106.1
+        },
+        {
+          "post": 3,
+          "name": "Time to Dazzle",
+          "ml": "15-1",
+          "tfus_early": 77,
+          "tfus_late": 99,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 104.4
+        },
+        {
+          "post": 11,
+          "name": "Our Two Girls",
+          "ml": "20-1",
+          "tfus_early": 90,
+          "tfus_late": 76,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 77.5
+        },
+        {
+          "post": 14,
+          "name": "Heaven's Bolt",
+          "ml": "30-1",
+          "tfus_early": 86,
+          "tfus_late": 72,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 74.7
+        },
+        {
+          "post": 13,
+          "name": "Blue Flame Six",
+          "ml": "20-1",
+          "tfus_early": 94,
+          "tfus_late": 68,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 68.3
+        },
+        {
+          "post": 15,
+          "name": "Don't Do It Lucy",
+          "ml": "30-1",
+          "tfus_early": 86,
+          "tfus_late": 60,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 62.7
+        },
+        {
+          "post": 10,
+          "name": "Getting Closer",
+          "ml": "30-1",
+          "tfus_early": 98,
+          "tfus_late": 72,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 61.199999999999996
+        },
+        {
+          "post": 1,
+          "name": "Mae Town",
+          "ml": "20-1",
+          "tfus_early": 101,
+          "tfus_late": 68,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 57.8
+        },
+        {
+          "post": 12,
+          "name": "French Blue",
+          "ml": "9-2",
+          "tfus_early": 102,
+          "tfus_late": 66,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 56.1
+        },
+        {
+          "post": 7,
+          "name": "Kayla's Komet",
+          "ml": "50-1",
+          "tfus_early": 104,
+          "tfus_late": 51,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 43.35
+        },
+        {
+          "post": 9,
+          "name": "Steer Clear",
+          "ml": "10-1",
+          "tfus_early": 110,
+          "tfus_late": 63,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.650000000000006
+        },
+        {
+          "post": 8,
+          "name": "Essential Coffee",
+          "ml": "20-1",
+          "tfus_early": 99,
+          "tfus_late": 36,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 30.599999999999998
+        }
+      ],
+      "gap_1_2": 1.6999999999999886,
+      "single_confidence": "WIDE",
+      "n_pacesetters": 10,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 7,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 9,
+          "name": "Shoot It True",
+          "ml": "6-1",
+          "tfus_early": 75,
+          "tfus_late": 95,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 101.0
+        },
+        {
+          "post": 5,
+          "name": "Queen Maxima",
+          "ml": "7-2",
+          "tfus_early": 85,
+          "tfus_late": 89,
+          "style": "closer",
+          "pace_factor": 1.0,
+          "score": 92.0
+        },
+        {
+          "post": 4,
+          "name": "Paradise",
+          "ml": "15-1",
+          "tfus_early": 86,
+          "tfus_late": 85,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 87.7
+        },
+        {
+          "post": 1,
+          "name": "Front Runnin",
+          "ml": "50-1",
+          "tfus_early": 89,
+          "tfus_late": 61,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 62.8
+        },
+        {
+          "post": 4,
+          "name": "Creed's Gold",
+          "ml": "20-1",
+          "tfus_early": 107,
+          "tfus_late": 73,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 40.150000000000006
+        },
+        {
+          "post": 3,
+          "name": "River Wind",
+          "ml": "4-1",
+          "tfus_early": 113,
+          "tfus_late": 66,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 36.300000000000004
+        },
+        {
+          "post": 6,
+          "name": "Shisospicy",
+          "ml": "9-5",
+          "tfus_early": 122,
+          "tfus_late": 62,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.1
+        },
+        {
+          "post": 7,
+          "name": "Haulin Ice",
+          "ml": "6-1",
+          "tfus_early": 117,
+          "tfus_late": 62,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.1
+        },
+        {
+          "post": 2,
+          "name": "French Friction",
+          "ml": "6-1",
+          "tfus_early": 118,
+          "tfus_late": 62,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.1
+        },
+        {
+          "post": 8,
+          "name": "Moon Spun",
+          "ml": "4-1",
+          "tfus_early": 115,
+          "tfus_late": 54,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 29.700000000000003
+        }
+      ],
+      "gap_1_2": 9.0,
+      "single_confidence": "MEDIUM",
+      "n_pacesetters": 7,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 8,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 2,
+          "name": "Baeza",
+          "ml": "5-2",
+          "tfus_early": 82,
+          "tfus_late": 120,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 161.07000000000002
+        },
+        {
+          "post": 7,
+          "name": "Luv Your Neighbor",
+          "ml": "6-1",
+          "tfus_early": 79,
+          "tfus_late": 96,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 100.8
+        },
+        {
+          "post": 4,
+          "name": "Tappan Street",
+          "ml": "4-1",
+          "tfus_early": 93,
+          "tfus_late": 98,
+          "style": "closer",
+          "pace_factor": 1.0,
+          "score": 98.6
+        },
+        {
+          "post": 1,
+          "name": "Navajo Warrior",
+          "ml": "20-1",
+          "tfus_early": 102,
+          "tfus_late": 98,
+          "style": "presser",
+          "pace_factor": 0.85,
+          "score": 83.3
+        },
+        {
+          "post": 9,
+          "name": "On Time Girl",
+          "ml": "5-2",
+          "tfus_early": 104,
+          "tfus_late": 75,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 63.75
+        },
+        {
+          "post": 5,
+          "name": "Solemn Vow",
+          "ml": "20-1",
+          "tfus_early": 97,
+          "tfus_late": 67,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 56.949999999999996
+        },
+        {
+          "post": 3,
+          "name": "Grande",
+          "ml": "8-1",
+          "tfus_early": 112,
+          "tfus_late": 86,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 47.300000000000004
+        },
+        {
+          "post": 6,
+          "name": "Sippin Pretty",
+          "ml": "8-1",
+          "tfus_early": 115,
+          "tfus_late": 58,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 31.900000000000002
+        },
+        {
+          "post": 8,
+          "name": "Goodall",
+          "ml": "3-1",
+          "tfus_early": 125,
+          "tfus_late": 51,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 28.05
+        }
+      ],
+      "gap_1_2": 60.270000000000024,
+      "single_confidence": "STRONG",
+      "n_pacesetters": 6,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 9,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 1,
+          "name": "Ramsey Pond",
+          "ml": "30-1",
+          "tfus_early": 51,
+          "tfus_late": 109,
+          "style": "deep_closer",
+          "pace_factor": 1.5,
+          "score": 183.3
+        },
+        {
+          "post": 3,
+          "name": "Whiskey Decision",
+          "ml": "4-1",
+          "tfus_early": 76,
+          "tfus_late": 114,
+          "style": "deep_closer",
+          "pace_factor": 1.5,
+          "score": 179.55
+        },
+        {
+          "post": 2,
+          "name": "Proctor Street",
+          "ml": "6-1",
+          "tfus_early": 75,
+          "tfus_late": 105,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 144.3
+        },
+        {
+          "post": 8,
+          "name": "Corporate Power",
+          "ml": "10-1",
+          "tfus_early": 91,
+          "tfus_late": 104,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 136.76000000000002
+        },
+        {
+          "post": 7,
+          "name": "Skippylongstocking",
+          "ml": "7-2",
+          "tfus_early": 115,
+          "tfus_late": 99,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 54.45
+        },
+        {
+          "post": 9,
+          "name": "Disruptor",
+          "ml": "6-1",
+          "tfus_early": 108,
+          "tfus_late": 93,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 51.150000000000006
+        },
+        {
+          "post": 5,
+          "name": "East Avenue",
+          "ml": "12-1",
+          "tfus_early": 113,
+          "tfus_late": 86,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 47.300000000000004
+        },
+        {
+          "post": 6,
+          "name": "Nu What's New",
+          "ml": "8-1",
+          "tfus_early": 125,
+          "tfus_late": 75,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 41.25
+        }
+      ],
+      "gap_1_2": 3.75,
+      "single_confidence": "WIDE",
+      "n_pacesetters": 4,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 10,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 9,
+          "name": "Adrasteia",
+          "ml": "30-1",
+          "tfus_early": 57,
+          "tfus_late": 110,
+          "style": "deep_closer",
+          "pace_factor": 1.1,
+          "score": 133.54000000000002
+        },
+        {
+          "post": 6,
+          "name": "Gezora (Fr)",
+          "ml": "4-5",
+          "tfus_early": 58,
+          "tfus_late": 107,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 118.1
+        },
+        {
+          "post": 2,
+          "name": "Scalable",
+          "ml": "8-1",
+          "tfus_early": 74,
+          "tfus_late": 107,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 113.3
+        },
+        {
+          "post": 7,
+          "name": "Dona Clota (Chi)",
+          "ml": "20-1",
+          "tfus_early": 61,
+          "tfus_late": 101,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 111.2
+        },
+        {
+          "post": 5,
+          "name": "Kathynmarissa",
+          "ml": "8-1",
+          "tfus_early": 73,
+          "tfus_late": 104,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 110.6
+        },
+        {
+          "post": 8,
+          "name": "Pin Up Betty",
+          "ml": "10-1",
+          "tfus_early": 83,
+          "tfus_late": 102,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 105.6
+        },
+        {
+          "post": 1,
+          "name": "Bless the Broken",
+          "ml": "9-2",
+          "tfus_early": 92,
+          "tfus_late": 100,
+          "style": "closer",
+          "pace_factor": 1.0,
+          "score": 100.9
+        },
+        {
+          "post": 10,
+          "name": "Queens Command (Ire)",
+          "ml": "50-1",
+          "tfus_early": 73,
+          "tfus_late": 93,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 99.6
+        },
+        {
+          "post": 3,
+          "name": "Nerazurri",
+          "ml": "20-1",
+          "tfus_early": 96,
+          "tfus_late": 87,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 87.0
+        },
+        {
+          "post": 4,
+          "name": "Stylish Sue",
+          "ml": "20-1",
+          "tfus_early": 113,
+          "tfus_late": 71,
+          "style": "pacesetter",
+          "pace_factor": 0.95,
+          "score": 67.45
+        }
+      ],
+      "gap_1_2": 15.440000000000026,
+      "single_confidence": "STRONG",
+      "n_pacesetters": 2,
+      "pace_shape": "MOD"
+    },
+    {
+      "race": 11,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 11,
+          "name": "Drexel Hill",
+          "ml": "15-1",
+          "tfus_early": 64,
+          "tfus_late": 117,
+          "style": "deep_closer",
+          "pace_factor": 1.5,
+          "score": 189.45
+        },
+        {
+          "post": 6,
+          "name": "Take Charge Omaha",
+          "ml": "30-1",
+          "tfus_early": 76,
+          "tfus_late": 108,
+          "style": "deep_closer",
+          "pace_factor": 1.5,
+          "score": 170.55
+        },
+        {
+          "post": 1,
+          "name": "Storm's Wake",
+          "ml": "6-1",
+          "tfus_early": 53,
+          "tfus_late": 107,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 155.48
+        },
+        {
+          "post": 7,
+          "name": "Chasten",
+          "ml": "6-1",
+          "tfus_early": 89,
+          "tfus_late": 99,
+          "style": "closer",
+          "pace_factor": 1.0,
+          "score": 100.8
+        },
+        {
+          "post": 3,
+          "name": "Imaginationthelady",
+          "ml": "4-1",
+          "tfus_early": 81,
+          "tfus_late": 96,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 100.2
+        },
+        {
+          "post": 2,
+          "name": "Connect the Stars",
+          "ml": "30-1",
+          "tfus_early": 61,
+          "tfus_late": 84,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 94.2
+        },
+        {
+          "post": 9,
+          "name": "Fully Subscribed",
+          "ml": "7-2",
+          "tfus_early": 90,
+          "tfus_late": 92,
+          "style": "stalker",
+          "pace_factor": 1.0,
+          "score": 93.5
+        },
+        {
+          "post": 4,
+          "name": "Miss Justify",
+          "ml": "15-1",
+          "tfus_early": 98,
+          "tfus_late": 80,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 68.0
+        },
+        {
+          "post": 10,
+          "name": "Snowyte",
+          "ml": "10-1",
+          "tfus_early": 104,
+          "tfus_late": 79,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 67.14999999999999
+        },
+        {
+          "post": 5,
+          "name": "Just Aloof",
+          "ml": "8-1",
+          "tfus_early": 102,
+          "tfus_late": 79,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 67.14999999999999
+        },
+        {
+          "post": 4,
+          "name": "Lorelei Lee",
+          "ml": "15-1",
+          "tfus_early": 96,
+          "tfus_late": 64,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 54.4
+        },
+        {
+          "post": 8,
+          "name": "Dry Powder",
+          "ml": "12-1",
+          "tfus_early": 106,
+          "tfus_late": 93,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 51.150000000000006
+        },
+        {
+          "post": 5,
+          "name": "Shred the Gnar",
+          "ml": "3-1",
+          "tfus_early": 114,
+          "tfus_late": 73,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 40.150000000000006
+        }
+      ],
+      "gap_1_2": 18.899999999999977,
+      "single_confidence": "STRONG",
+      "n_pacesetters": 6,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 12,
+      "name": null,
+      "post_time": null,
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 10,
+          "name": "Bohemian",
+          "ml": "20-1",
+          "tfus_early": 55,
+          "tfus_late": 104,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 150.8
+        },
+        {
+          "post": 11,
+          "name": "Time to Dream",
+          "ml": "5-1",
+          "tfus_early": 67,
+          "tfus_late": 104,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 146.12
+        },
+        {
+          "post": 9,
+          "name": "Dandona",
+          "ml": "6-1",
+          "tfus_early": 56,
+          "tfus_late": 102,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 113.7
+        },
+        {
+          "post": 13,
+          "name": "Indigo Woods (Ire)",
+          "ml": "15-1",
+          "tfus_early": 65,
+          "tfus_late": 100,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 109.0
+        },
+        {
+          "post": 7,
+          "name": "Lovely Grey",
+          "ml": "15-1",
+          "tfus_early": 61,
+          "tfus_late": 91,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 101.2
+        },
+        {
+          "post": 8,
+          "name": "Lion Lake (Ire)",
+          "ml": "8-1",
+          "tfus_early": 73,
+          "tfus_late": 90,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 96.6
+        },
+        {
+          "post": 3,
+          "name": "Search Party",
+          "ml": "30-1",
+          "tfus_early": 93,
+          "tfus_late": 87,
+          "style": "presser",
+          "pace_factor": 1.0,
+          "score": 87.6
+        },
+        {
+          "post": 4,
+          "name": "Counting Stars",
+          "ml": "8-1",
+          "tfus_early": 93,
+          "tfus_late": 86,
+          "style": "presser",
+          "pace_factor": 1.0,
+          "score": 86.6
+        },
+        {
+          "post": 12,
+          "name": "Taken by the Wind",
+          "ml": "30-1",
+          "tfus_early": 90,
+          "tfus_late": 83,
+          "style": "presser",
+          "pace_factor": 1.0,
+          "score": 84.5
+        },
+        {
+          "post": 14,
+          "name": "To a Flame",
+          "ml": "20-1",
+          "tfus_early": 88,
+          "tfus_late": 77,
+          "style": "pacesetter",
+          "pace_factor": 1.0,
+          "score": 79.1
+        },
+        {
+          "post": 6,
+          "name": "Tam Tam",
+          "ml": "15-1",
+          "tfus_early": 103,
+          "tfus_late": 54,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 45.9
+        },
+        {
+          "post": 1,
+          "name": "Explora",
+          "ml": "6-1",
+          "tfus_early": 115,
+          "tfus_late": 78,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 42.900000000000006
+        }
+      ],
+      "gap_1_2": 4.680000000000007,
+      "single_confidence": "WIDE",
+      "n_pacesetters": 3,
+      "pace_shape": "FAST"
+    },
+    {
+      "race": 13,
+      "name": "KENTUCKY OAKS (G1)",
+      "post_time": "5:51 PM ET",
+      "distance": null,
+      "surface": "dirt",
+      "purse": null,
+      "horses": [
+        {
+          "post": 9,
+          "name": "Always a Runner",
+          "ml": "10-1",
+          "tfus_early": 71,
+          "tfus_late": 110,
+          "style": "deep_closer",
+          "pace_factor": 1.5,
+          "score": 175.8
+        },
+        {
+          "post": 15,
+          "name": "Lovely Grey",
+          "ml": "30-1",
+          "tfus_early": 61,
+          "tfus_late": 91,
+          "style": "deep_closer",
+          "pace_factor": 1.0,
+          "score": 101.2
+        },
+        {
+          "post": 2,
+          "name": "Zany",
+          "ml": "4-1",
+          "tfus_early": 94,
+          "tfus_late": 90,
+          "style": "presser",
+          "pace_factor": 1.0,
+          "score": 90.3
+        },
+        {
+          "post": 17,
+          "name": "Resist",
+          "ml": "30-1",
+          "tfus_early": 71,
+          "tfus_late": 78,
+          "style": "closer",
+          "pace_factor": 1.0,
+          "score": 85.2
+        },
+        {
+          "post": 10,
+          "name": "Prom Queen",
+          "ml": "8-1",
+          "tfus_early": 101,
+          "tfus_late": 96,
+          "style": "presser",
+          "pace_factor": 0.85,
+          "score": 81.6
+        },
+        {
+          "post": 11,
+          "name": "Percy's Bar",
+          "ml": "6-1",
+          "tfus_early": 95,
+          "tfus_late": 89,
+          "style": "presser",
+          "pace_factor": 0.85,
+          "score": 75.64999999999999
+        },
+        {
+          "post": 5,
+          "name": "Meaning",
+          "ml": "5-1",
+          "tfus_early": 102,
+          "tfus_late": 83,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 70.55
+        },
+        {
+          "post": 13,
+          "name": "Pashmina",
+          "ml": "30-1",
+          "tfus_early": 98,
+          "tfus_late": 81,
+          "style": "pacesetter",
+          "pace_factor": 0.85,
+          "score": 68.85
+        },
+        {
+          "post": 14,
+          "name": "Brooklyn Blonde",
+          "ml": "30-1",
+          "tfus_early": 105,
+          "tfus_late": 68,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 37.400000000000006
+        },
+        {
+          "post": 7,
+          "name": "Dazzling Dame",
+          "ml": "30-1",
+          "tfus_early": 114,
+          "tfus_late": 62,
+          "style": "pacesetter",
+          "pace_factor": 0.55,
+          "score": 34.1
+        }
+      ],
+      "gap_1_2": 74.60000000000001,
+      "single_confidence": "STRONG",
+      "n_pacesetters": 5,
+      "pace_shape": "FAST"
+    }
+  ]
+}
