@@ -31,6 +31,9 @@ if _pp_path.exists():
         _data = _json.load(_f)
     ENTRIES = []
     for e in _data["entries"]:
+        # Active starters only: drew in and not scratched
+        if not e.get("drew_in") or e.get("scratched"):
+            continue
         # Use best recent SF from PPs if available, else fall back to Beyer from cheat sheet
         best_sf = None
         if e.get("pps"):
@@ -43,6 +46,7 @@ if _pp_path.exists():
             "style": e["style"], "pts": e.get("pts", 0),
             "record": e.get("record", ""),
             "n_starts": len(e.get("pps", [])),
+            "post_position": e.get("post_position"),
         })
 else:
     # Fallback hardcoded entries

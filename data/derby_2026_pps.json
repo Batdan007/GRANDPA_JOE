@@ -9,192 +9,979 @@
   "note": "Speed figures are Equibase/HRN format (NOT Beyer). Beyer figures from ABR cheat sheet listed separately.",
   "entries": [
     {
-      "name": "Commandment", "sire": "Into Mischief", "dam": "Sippican Harbor",
-      "trainer": "Brad Cox", "jockey": "Luis Saez", "beyer": 99, "style": "stalker", "pts": 150,
-      "record": "5: 4-0-0-1", "earnings": 1017339,
+      "name": "Renegade",
+      "sire": "Into Mischief",
+      "dam": "Spice Is Nice",
+      "trainer": "Todd Pletcher",
+      "jockey": "Irad Ortiz Jr.",
+      "beyer": 98,
+      "style": "closer",
+      "tfus_early": 73,
+      "tfus_late": 116,
+      "pts": 125,
+      "record": "5: 2-2-1-0",
+      "earnings": 1031500,
       "pps": [
-        {"date": "2025-10-04", "track": "KEE", "dist": "6F", "surf": "dirt", "finish": 4, "sf": 107, "race": "MSW"},
-        {"date": "2025-11-01", "track": "CD",  "dist": "7F", "surf": "dirt", "finish": 1, "sf": 104, "race": "MSW"},
-        {"date": "2026-01-03", "track": "GP",  "dist": "1M", "surf": "dirt", "finish": 1, "sf": 114, "race": "Mucho Macho Man (LS)"},
-        {"date": "2026-02-28", "track": "GP",  "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 123, "race": "Fountain of Youth (G2)"},
-        {"date": "2026-03-28", "track": "GP",  "dist": "1 1/8M", "surf": "dirt", "finish": 1, "sf": 122, "race": "Florida Derby (G1)"}
-      ]
+        {
+          "date": "2025-08-16",
+          "track": "SAR",
+          "dist": "6.5F",
+          "surf": "dirt",
+          "finish": 3,
+          "sf": 96,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-10-17",
+          "track": "AQU",
+          "dist": "1M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 112,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-12-06",
+          "track": "AQU",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 106,
+          "race": "Remsen (G2)"
+        },
+        {
+          "date": "2026-02-07",
+          "track": "TAM",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 118,
+          "race": "Sam F. Davis (LS)"
+        },
+        {
+          "date": "2026-03-28",
+          "track": "OP",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 121,
+          "race": "Arkansas Derby (G1)"
+        }
+      ],
+      "post_position": 1,
+      "morning_line": "4-1",
+      "ml_decimal": 4.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Further Ado", "sire": "Gun Runner", "dam": "Sky Dreamer",
-      "trainer": "Brad Cox", "jockey": "John Velazquez", "beyer": 107, "style": "stalker", "pts": 135,
-      "record": "6: 3-1-1-1", "earnings": 1146328,
+      "name": "Albus",
+      "sire": "Yaupon",
+      "dam": "Adream",
+      "trainer": "Riley Mott",
+      "jockey": "Manny Franco",
+      "beyer": 89,
+      "style": "stalker",
+      "pts": 100,
+      "record": "4: 2-0-1-1",
+      "earnings": 436288,
       "pps": [
-        {"date": "2025-07-26", "track": "SAR", "dist": "6F", "surf": "dirt", "finish": 5, "sf": 93, "race": "MSW"},
-        {"date": "2025-08-30", "track": "SAR", "dist": "7F", "surf": "dirt", "finish": 3, "sf": 104, "race": "MSW"},
-        {"date": "2025-10-10", "track": "KEE", "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 119, "race": "MSW"},
-        {"date": "2025-11-29", "track": "CD",  "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 104, "race": "KY Jockey Club (G2)"},
-        {"date": "2026-03-07", "track": "TAM", "dist": "1 1/16M", "surf": "dirt", "finish": 2, "sf": 109, "race": "Tampa Bay Derby (G3)"},
-        {"date": "2026-04-04", "track": "KEE", "dist": "1 1/8M", "surf": "dirt", "finish": 1, "sf": 127, "race": "Blue Grass (G1)"}
-      ]
+        {
+          "date": "2025-10-16",
+          "track": "KEE",
+          "dist": "7F",
+          "surf": "dirt",
+          "finish": 4,
+          "sf": 106,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-11-29",
+          "track": "CD",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 3,
+          "sf": 96,
+          "race": "MSW"
+        },
+        {
+          "date": "2026-02-27",
+          "track": "TAM",
+          "dist": "1M 40y",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 103,
+          "race": "MSW"
+        },
+        {
+          "date": "2026-04-04",
+          "track": "AQU",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 100,
+          "race": "Wood Memorial (G2)"
+        }
+      ],
+      "post_position": 2,
+      "morning_line": "30-1",
+      "ml_decimal": 30.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Renegade", "sire": "Into Mischief", "dam": "Spice Is Nice",
-      "trainer": "Todd Pletcher", "jockey": "Irad Ortiz Jr.", "beyer": 107, "style": "closer", "pts": 125,
-      "record": "5: 2-2-1-0", "earnings": 1031500,
+      "name": "Intrepido",
+      "sire": "Maximus Mischief",
+      "dam": "Overly Indulgent",
+      "trainer": "Jeff Mullins",
+      "jockey": "Hector Berrios",
+      "beyer": 99,
+      "style": "stalker",
+      "pts": 0,
+      "record": "6: 2-1-0-0",
+      "earnings": 342800,
+      "pps": [],
+      "post_position": 3,
+      "morning_line": "50-1",
+      "ml_decimal": 50.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Litmus Test",
+      "sire": "Nyquist",
+      "dam": "Study Hard",
+      "trainer": "Bob Baffert",
+      "jockey": "Martin Garcia",
+      "beyer": 96,
+      "style": "pacesetter",
+      "tfus_early": 111,
+      "tfus_late": 92,
+      "blinkers": "ON",
+      "pts": 60,
+      "record": "unknown",
+      "earnings": 0,
+      "pps": [],
+      "post_position": 4,
+      "morning_line": "30-1",
+      "ml_decimal": 30.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Right to Party",
+      "sire": "Constitution",
+      "dam": "Havin' a Party",
+      "trainer": "Ken McPeek",
+      "jockey": "Chris Elliott",
+      "beyer": 81,
+      "style": "closer",
+      "tfus_early": 70,
+      "tfus_late": 108,
+      "pts": 65,
+      "record": "4: 1-1-2-0",
+      "earnings": 230200,
+      "pps": [],
+      "post_position": 5,
+      "morning_line": "30-1",
+      "ml_decimal": 30.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Commandment",
+      "sire": "Into Mischief",
+      "dam": "Sippican Harbor",
+      "trainer": "Brad Cox",
+      "jockey": "Luis Saez",
+      "beyer": 101,
+      "style": "stalker",
+      "tfus_early": 92,
+      "tfus_late": 105,
+      "pts": 150,
+      "record": "5: 4-0-0-1",
+      "earnings": 1017339,
       "pps": [
-        {"date": "2025-08-16", "track": "SAR", "dist": "6.5F", "surf": "dirt", "finish": 3, "sf": 96, "race": "MSW"},
-        {"date": "2025-10-17", "track": "AQU", "dist": "1M", "surf": "dirt", "finish": 2, "sf": 112, "race": "MSW"},
-        {"date": "2025-12-06", "track": "AQU", "dist": "1 1/8M", "surf": "dirt", "finish": 2, "sf": 106, "race": "Remsen (G2)"},
-        {"date": "2026-02-07", "track": "TAM", "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 118, "race": "Sam F. Davis (LS)"},
-        {"date": "2026-03-28", "track": "OP",  "dist": "1 1/8M", "surf": "dirt", "finish": 1, "sf": 121, "race": "Arkansas Derby (G1)"}
-      ]
+        {
+          "date": "2025-10-04",
+          "track": "KEE",
+          "dist": "6F",
+          "surf": "dirt",
+          "finish": 4,
+          "sf": 107,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-11-01",
+          "track": "CD",
+          "dist": "7F",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 104,
+          "race": "MSW"
+        },
+        {
+          "date": "2026-01-03",
+          "track": "GP",
+          "dist": "1M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 114,
+          "race": "Mucho Macho Man (LS)"
+        },
+        {
+          "date": "2026-02-28",
+          "track": "GP",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 123,
+          "race": "Fountain of Youth (G2)"
+        },
+        {
+          "date": "2026-03-28",
+          "track": "GP",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 122,
+          "race": "Florida Derby (G1)"
+        }
+      ],
+      "post_position": 6,
+      "morning_line": "6-1",
+      "ml_decimal": 6.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "So Happy", "sire": "Runhappy", "dam": "So Cunning",
-      "trainer": "Mark Glatt", "jockey": "Mike Smith", "beyer": 100, "style": "presser", "pts": 115,
-      "record": "4: 3-0-1-0", "earnings": 480000,
+      "name": "Danon Bourbon",
+      "sire": "Maxfield",
+      "dam": "Wild Ridge",
+      "trainer": "Manabu Ikezoe",
+      "jockey": "Atsuya Nishimura",
+      "beyer": null,
+      "style": "stalker",
+      "pts": 0,
+      "record": "3: 3-0-0-0",
+      "earnings": 222762,
+      "pps": [],
+      "post_position": 7,
+      "morning_line": "20-1",
+      "ml_decimal": 20.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "So Happy",
+      "sire": "Runhappy",
+      "dam": "So Cunning",
+      "trainer": "Mark Glatt",
+      "jockey": "Mike Smith",
+      "beyer": 100,
+      "style": "pacesetter",
+      "tfus_early": 107,
+      "tfus_late": 80,
+      "pts": 115,
+      "record": "4: 3-0-1-0",
+      "earnings": 480000,
       "pps": [
-        {"date": "2025-11-22", "track": "DMR", "dist": "6.5F", "surf": "dirt", "finish": 1, "sf": 112, "race": "MSW"},
-        {"date": "2026-01-10", "track": "SA",  "dist": "7F", "surf": "dirt", "finish": 1, "sf": 126, "race": "San Vicente (G2)"},
-        {"date": "2026-03-07", "track": "SA",  "dist": "1 1/16M", "surf": "dirt", "finish": 3, "sf": 108, "race": "San Felipe (G2)"},
-        {"date": "2026-04-04", "track": "SA",  "dist": "1 1/8M", "surf": "dirt", "finish": 1, "sf": 119, "race": "Santa Anita Derby (G1)"}
-      ]
+        {
+          "date": "2025-11-22",
+          "track": "DMR",
+          "dist": "6.5F",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 112,
+          "race": "MSW"
+        },
+        {
+          "date": "2026-01-10",
+          "track": "SA",
+          "dist": "7F",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 126,
+          "race": "San Vicente (G2)"
+        },
+        {
+          "date": "2026-03-07",
+          "track": "SA",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 3,
+          "sf": 108,
+          "race": "San Felipe (G2)"
+        },
+        {
+          "date": "2026-04-04",
+          "track": "SA",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 119,
+          "race": "Santa Anita Derby (G1)"
+        }
+      ],
+      "post_position": 8,
+      "morning_line": "15-1",
+      "ml_decimal": 15.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Fulleffort", "sire": "Liam's Map", "dam": "Callmethesqueeze",
-      "trainer": "Brad Cox", "jockey": "Tyler Gaffalione", "beyer": 99, "style": "closer", "pts": 110,
-      "record": "7: 3-2-1-1", "earnings": 694115,
+      "name": "The Puma",
+      "sire": "Essential Quality",
+      "dam": "Eve of War",
+      "trainer": "Gustavo Delgado",
+      "jockey": "Javier Castellano",
+      "beyer": 100,
+      "style": "stalker",
+      "tfus_early": 91,
+      "tfus_late": 104,
+      "pts": 106,
+      "record": "4: 1-2-1-0",
+      "earnings": 442280,
       "pps": [
-        {"date": "2025-07-21", "track": "ELP", "dist": "1M", "surf": "turf", "finish": 4, "sf": 69, "race": "MSW"},
-        {"date": "2025-08-17", "track": "ELP", "dist": "1M", "surf": "turf", "finish": 3, "sf": 76, "race": "MSW"},
-        {"date": "2025-09-10", "track": "KD",  "dist": "1M", "surf": "turf", "finish": 1, "sf": 103, "race": "MSW"},
-        {"date": "2025-10-23", "track": "KEE", "dist": "1 1/16M", "surf": "turf", "finish": 1, "sf": 97, "race": "ALW"},
-        {"date": "2026-01-17", "track": "TP",  "dist": "1M", "surf": "synth", "finish": 2, "sf": 99, "race": "Leonatus (LS)"},
-        {"date": "2026-02-21", "track": "TP",  "dist": "1 1/16M", "surf": "synth", "finish": 2, "sf": 109, "race": "John Battaglia (LS)"},
-        {"date": "2026-03-21", "track": "TP",  "dist": "1 1/8M", "surf": "synth", "finish": 1, "sf": 122, "race": "Jeff Ruby Steaks (G3)"}
-      ]
+        {
+          "date": "2025-11-29",
+          "track": "CD",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": null,
+          "race": "KY Jockey Club (G2)"
+        },
+        {
+          "date": "2026-02-28",
+          "track": "GP",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 3,
+          "sf": null,
+          "race": "Fountain of Youth (G2)"
+        },
+        {
+          "date": "2026-03-07",
+          "track": "TAM",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": null,
+          "race": "Tampa Bay Derby (G3)"
+        },
+        {
+          "date": "2026-03-28",
+          "track": "GP",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": null,
+          "race": "Florida Derby (G1)"
+        }
+      ],
+      "post_position": 9,
+      "morning_line": "10-1",
+      "ml_decimal": 10.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "The Puma", "sire": "Essential Quality", "dam": "Eve of War",
-      "trainer": "Gustavo Delgado", "jockey": "Javier Castellano", "beyer": 97, "style": "stalker", "pts": 106,
-      "record": "4: 1-2-1-0", "earnings": 442280,
+      "name": "Wonder Dean",
+      "sire": "Dee Majesty",
+      "dam": "Wonder Siang Praw",
+      "trainer": "Daisuke Takayanagi",
+      "jockey": "Ryusei Sakai",
+      "beyer": null,
+      "style": "closer",
+      "pts": 0,
+      "record": "6: 2-2-0-0",
+      "earnings": 770541,
+      "pps": [],
+      "post_position": 10,
+      "morning_line": "30-1",
+      "ml_decimal": 30.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Incredibolt",
+      "sire": "Bolt d'Oro",
+      "dam": "Sapphire Spitfire",
+      "trainer": "Riley Mott",
+      "jockey": "Jaime Torres",
+      "beyer": 95,
+      "style": "stalker",
+      "pts": 0,
+      "record": "5: 3-0-0-2",
+      "earnings": 498681,
       "pps": [
-        {"date": "2025-11-29", "track": "CD", "dist": "1 1/16M", "surf": "dirt", "finish": 2, "sf": null, "race": "KY Jockey Club (G2)"},
-        {"date": "2026-02-28", "track": "GP", "dist": "1 1/16M", "surf": "dirt", "finish": 3, "sf": null, "race": "Fountain of Youth (G2)"},
-        {"date": "2026-03-07", "track": "TAM", "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": null, "race": "Tampa Bay Derby (G3)"},
-        {"date": "2026-03-28", "track": "GP", "dist": "1 1/8M", "surf": "dirt", "finish": 2, "sf": null, "race": "Florida Derby (G1)"}
-      ]
+        {
+          "date": "2025-08-22",
+          "track": "ELP",
+          "dist": "6F",
+          "surf": "dirt",
+          "finish": 4,
+          "sf": 85,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-09-28",
+          "track": "CD",
+          "dist": "1M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 113,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-10-26",
+          "track": "CD",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 101,
+          "race": "Street Sense (G3)"
+        },
+        {
+          "date": "2026-01-31",
+          "track": "GP",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 6,
+          "sf": 74,
+          "race": "Holy Bull (G3)"
+        },
+        {
+          "date": "2026-03-14",
+          "track": "CNL",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 111,
+          "race": "Virginia Derby (LS)"
+        }
+      ],
+      "post_position": 11,
+      "morning_line": "20-1",
+      "ml_decimal": 20.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Silent Tactic", "sire": "Tacitus", "dam": "Magical Sign",
-      "trainer": "Mark Casse", "jockey": "Cristian Torres", "beyer": 103, "style": "closer", "pts": 100,
-      "record": "6: 2-4-0-0", "earnings": 1051922,
+      "name": "Chief Wallabee",
+      "sire": "Constitution",
+      "dam": "A La Lucie",
+      "trainer": "Bill Mott",
+      "jockey": "Junior Alvarado",
+      "beyer": 100,
+      "style": "presser",
+      "tfus_early": 98,
+      "tfus_late": 104,
+      "blinkers": "ON",
+      "pts": 0,
+      "record": "3: 1-1-1-0",
+      "earnings": 216600,
+      "pps": [],
+      "post_position": 12,
+      "morning_line": "8-1",
+      "ml_decimal": 8.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Silent Tactic",
+      "sire": "Tacitus",
+      "dam": "Magical Sign",
+      "trainer": "Mark Casse",
+      "jockey": "Cristian Torres",
+      "beyer": 103,
+      "style": "closer",
+      "pts": 100,
+      "record": "6: 2-4-0-0",
+      "earnings": 1051922,
       "pps": [
-        {"date": "2025-10-10", "track": "WO",  "dist": "1 1/16M", "surf": "synth", "finish": 1, "sf": 77, "race": "MSW"},
-        {"date": "2025-11-02", "track": "WO",  "dist": "1 1/16M", "surf": "synth", "finish": 2, "sf": 101, "race": "Grey Stakes (G3)"},
-        {"date": "2026-01-03", "track": "OP",  "dist": "1 1/16M", "surf": "dirt", "finish": 2, "sf": 102, "race": "Smarty Jones (LS)"},
-        {"date": "2026-02-06", "track": "OP",  "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 114, "race": "Southwest Stakes (G3)"},
-        {"date": "2026-03-01", "track": "OP",  "dist": "1 1/16M", "surf": "dirt", "finish": 2, "sf": 109, "race": "Rebel Stakes (G2)"},
-        {"date": "2026-03-28", "track": "OP",  "dist": "1 1/8M", "surf": "dirt", "finish": 2, "sf": 115, "race": "Arkansas Derby (G1)"}
-      ]
+        {
+          "date": "2025-10-10",
+          "track": "WO",
+          "dist": "1 1/16M",
+          "surf": "synth",
+          "finish": 1,
+          "sf": 77,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-11-02",
+          "track": "WO",
+          "dist": "1 1/16M",
+          "surf": "synth",
+          "finish": 2,
+          "sf": 101,
+          "race": "Grey Stakes (G3)"
+        },
+        {
+          "date": "2026-01-03",
+          "track": "OP",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 102,
+          "race": "Smarty Jones (LS)"
+        },
+        {
+          "date": "2026-02-06",
+          "track": "OP",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 114,
+          "race": "Southwest Stakes (G3)"
+        },
+        {
+          "date": "2026-03-01",
+          "track": "OP",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 109,
+          "race": "Rebel Stakes (G2)"
+        },
+        {
+          "date": "2026-03-28",
+          "track": "OP",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 115,
+          "race": "Arkansas Derby (G1)"
+        }
+      ],
+      "post_position": 13,
+      "morning_line": "20-1",
+      "ml_decimal": 20.0,
+      "drew_in": false,
+      "ae": false,
+      "scratched": true,
+      "scratched_date": "2026-04-29",
+      "scratched_reason": "bruised foot (Casse) — targeting Preakness"
     },
     {
-      "name": "Emerging Market", "sire": "Candy Ride", "dam": "Wild Empress",
-      "trainer": "Chad Brown", "jockey": "Flavien Prat", "beyer": 96, "style": "stalker", "pts": 100,
-      "record": "2: 2-0-0-0", "earnings": 618880,
+      "name": "Potente",
+      "sire": "Into Mischief",
+      "dam": "Sweet Sting",
+      "trainer": "Bob Baffert",
+      "jockey": "Juan Hernandez",
+      "beyer": 95,
+      "style": "pacesetter",
+      "tfus_early": 111,
+      "tfus_late": 94,
+      "pts": 100,
+      "record": "3: 2-1-0-0",
+      "earnings": 262000,
       "pps": [
-        {"date": "2026-02-07", "track": "TAM", "dist": "1M 40y", "surf": "dirt", "finish": 1, "sf": 121, "race": "Suncoast Stakes (MSW)"},
-        {"date": "2026-03-21", "track": "FG",  "dist": "1 3/16M", "surf": "dirt", "finish": 1, "sf": 117, "race": "Louisiana Derby (G2)"}
-      ]
+        {
+          "date": "2026-01-31",
+          "track": "SA",
+          "dist": "6F",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 109,
+          "race": "MSW"
+        },
+        {
+          "date": "2026-03-07",
+          "track": "SA",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 112,
+          "race": "San Felipe (G2)"
+        },
+        {
+          "date": "2026-04-04",
+          "track": "SA",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 116,
+          "race": "Santa Anita Derby (G1)"
+        }
+      ],
+      "post_position": 14,
+      "morning_line": "20-1",
+      "ml_decimal": 20.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Albus", "sire": "Yaupon", "dam": "Adream",
-      "trainer": "Riley Mott", "jockey": "Manny Franco", "beyer": 89, "style": "stalker", "pts": 100,
-      "record": "4: 2-0-1-1", "earnings": 436288,
+      "name": "Emerging Market",
+      "sire": "Candy Ride",
+      "dam": "Wild Empress",
+      "trainer": "Chad Brown",
+      "jockey": "Flavien Prat",
+      "beyer": 96,
+      "style": "stalker",
+      "pts": 100,
+      "record": "2: 2-0-0-0",
+      "earnings": 618880,
       "pps": [
-        {"date": "2025-10-16", "track": "KEE", "dist": "7F", "surf": "dirt", "finish": 4, "sf": 106, "race": "MSW"},
-        {"date": "2025-11-29", "track": "CD",  "dist": "1 1/16M", "surf": "dirt", "finish": 3, "sf": 96, "race": "MSW"},
-        {"date": "2026-02-27", "track": "TAM", "dist": "1M 40y", "surf": "dirt", "finish": 1, "sf": 103, "race": "MSW"},
-        {"date": "2026-04-04", "track": "AQU", "dist": "1 1/8M", "surf": "dirt", "finish": 1, "sf": 100, "race": "Wood Memorial (G2)"}
-      ]
+        {
+          "date": "2026-02-07",
+          "track": "TAM",
+          "dist": "1M 40y",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 121,
+          "race": "Suncoast Stakes (MSW)"
+        },
+        {
+          "date": "2026-03-21",
+          "track": "FG",
+          "dist": "1 3/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 117,
+          "race": "Louisiana Derby (G2)"
+        }
+      ],
+      "post_position": 15,
+      "morning_line": "15-1",
+      "ml_decimal": 15.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Potente", "sire": "Into Mischief", "dam": "Sweet Sting",
-      "trainer": "Bob Baffert", "jockey": "Juan Hernandez", "beyer": 96, "style": "presser", "pts": 100,
-      "record": "3: 2-1-0-0", "earnings": 262000,
+      "name": "Pavlovian",
+      "sire": "Pavel",
+      "dam": "Mandy's Grace",
+      "trainer": "Doug O'Neill",
+      "jockey": "Edwin Maldonado",
+      "beyer": 96,
+      "style": "pacesetter",
+      "pts": 70,
+      "record": "10: 2-4-1-0",
+      "earnings": 613450,
+      "pps": [],
+      "post_position": 16,
+      "morning_line": "30-1",
+      "ml_decimal": 30.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Six Speed",
+      "sire": "Not This Time",
+      "dam": "Browse",
+      "trainer": "Bhupat Seemar",
+      "jockey": "Brian Hernandez Jr.",
+      "beyer": null,
+      "style": "pacesetter",
+      "pts": 0,
+      "record": "5: 3-1-1-0",
+      "earnings": 402183,
+      "pps": [],
+      "post_position": 17,
+      "morning_line": "50-1",
+      "ml_decimal": 50.0,
+      "drew_in": true,
+      "ae": false
+    },
+    {
+      "name": "Further Ado",
+      "sire": "Gun Runner",
+      "dam": "Sky Dreamer",
+      "trainer": "Brad Cox",
+      "jockey": "John Velazquez",
+      "beyer": 106,
+      "style": "presser",
+      "tfus_early": 109,
+      "tfus_late": 88,
+      "pts": 135,
+      "record": "6: 3-1-1-1",
+      "earnings": 1146328,
       "pps": [
-        {"date": "2026-01-31", "track": "SA",  "dist": "6F", "surf": "dirt", "finish": 1, "sf": 109, "race": "MSW"},
-        {"date": "2026-03-07", "track": "SA",  "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 112, "race": "San Felipe (G2)"},
-        {"date": "2026-04-04", "track": "SA",  "dist": "1 1/8M", "surf": "dirt", "finish": 2, "sf": 116, "race": "Santa Anita Derby (G1)"}
-      ]
+        {
+          "date": "2025-07-26",
+          "track": "SAR",
+          "dist": "6F",
+          "surf": "dirt",
+          "finish": 5,
+          "sf": 93,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-08-30",
+          "track": "SAR",
+          "dist": "7F",
+          "surf": "dirt",
+          "finish": 3,
+          "sf": 104,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-10-10",
+          "track": "KEE",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 119,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-11-29",
+          "track": "CD",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 104,
+          "race": "KY Jockey Club (G2)"
+        },
+        {
+          "date": "2026-03-07",
+          "track": "TAM",
+          "dist": "1 1/16M",
+          "surf": "dirt",
+          "finish": 2,
+          "sf": 109,
+          "race": "Tampa Bay Derby (G3)"
+        },
+        {
+          "date": "2026-04-04",
+          "track": "KEE",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 1,
+          "sf": 127,
+          "race": "Blue Grass (G1)"
+        }
+      ],
+      "post_position": 18,
+      "morning_line": "6-1",
+      "ml_decimal": 6.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Pavlovian", "sire": "Pavel", "dam": "Mandy's Grace",
-      "trainer": "Doug O'Neill", "jockey": "Edwin Maldonado", "beyer": 96, "style": "pacesetter", "pts": 70,
-      "record": "10: 2-4-1-0", "earnings": 613450,
-      "pps": []
+      "name": "Golden Tempo",
+      "sire": "Curlin",
+      "dam": "Carrumba",
+      "trainer": "Cherie DeVaux",
+      "jockey": "Jose Ortiz",
+      "beyer": 88,
+      "style": "closer",
+      "tfus_early": 57,
+      "tfus_late": 113,
+      "pts": 0,
+      "record": "4: 2-0-2-0",
+      "earnings": 333000,
+      "pps": [],
+      "post_position": 19,
+      "morning_line": "30-1",
+      "ml_decimal": 30.0,
+      "drew_in": true,
+      "ae": false
     },
     {
-      "name": "Right to Party", "sire": "Constitution", "dam": "Havin' a Party",
-      "trainer": "Ken McPeek", "jockey": "Christopher Elliott", "beyer": 87, "style": "closer", "pts": 65,
-      "record": "4: 1-1-2-0", "earnings": 230200,
-      "pps": []
-    },
-    {
-      "name": "Incredibolt", "sire": "Bolt d'Oro", "dam": "Sapphire Spitfire",
-      "trainer": "Riley Mott", "jockey": "Jaime Torres", "beyer": 95, "style": "stalker", "pts": 0,
-      "record": "5: 3-0-0-2", "earnings": 498681,
+      "name": "Fulleffort",
+      "sire": "Liam's Map",
+      "dam": "Callmethesqueeze",
+      "trainer": "Brad Cox",
+      "jockey": "Tyler Gaffalione",
+      "beyer": 99,
+      "style": "closer",
+      "pts": 110,
+      "record": "7: 3-2-1-1",
+      "earnings": 694115,
       "pps": [
-        {"date": "2025-08-22", "track": "ELP", "dist": "6F", "surf": "dirt", "finish": 4, "sf": 85, "race": "MSW"},
-        {"date": "2025-09-28", "track": "CD",  "dist": "1M", "surf": "dirt", "finish": 1, "sf": 113, "race": "MSW"},
-        {"date": "2025-10-26", "track": "CD",  "dist": "1 1/16M", "surf": "dirt", "finish": 1, "sf": 101, "race": "Street Sense (G3)"},
-        {"date": "2026-01-31", "track": "GP",  "dist": "1 1/16M", "surf": "dirt", "finish": 6, "sf": 74, "race": "Holy Bull (G3)"},
-        {"date": "2026-03-14", "track": "CNL", "dist": "1 1/8M", "surf": "dirt", "finish": 1, "sf": 111, "race": "Virginia Derby (LS)"}
-      ]
+        {
+          "date": "2025-07-21",
+          "track": "ELP",
+          "dist": "1M",
+          "surf": "turf",
+          "finish": 4,
+          "sf": 69,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-08-17",
+          "track": "ELP",
+          "dist": "1M",
+          "surf": "turf",
+          "finish": 3,
+          "sf": 76,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-09-10",
+          "track": "KD",
+          "dist": "1M",
+          "surf": "turf",
+          "finish": 1,
+          "sf": 103,
+          "race": "MSW"
+        },
+        {
+          "date": "2025-10-23",
+          "track": "KEE",
+          "dist": "1 1/16M",
+          "surf": "turf",
+          "finish": 1,
+          "sf": 97,
+          "race": "ALW"
+        },
+        {
+          "date": "2026-01-17",
+          "track": "TP",
+          "dist": "1M",
+          "surf": "synth",
+          "finish": 2,
+          "sf": 99,
+          "race": "Leonatus (LS)"
+        },
+        {
+          "date": "2026-02-21",
+          "track": "TP",
+          "dist": "1 1/16M",
+          "surf": "synth",
+          "finish": 2,
+          "sf": 109,
+          "race": "John Battaglia (LS)"
+        },
+        {
+          "date": "2026-03-21",
+          "track": "TP",
+          "dist": "1 1/8M",
+          "surf": "synth",
+          "finish": 1,
+          "sf": 122,
+          "race": "Jeff Ruby Steaks (G3)"
+        }
+      ],
+      "post_position": 20,
+      "morning_line": "20-1",
+      "ml_decimal": 20.0,
+      "drew_in": false,
+      "ae": false,
+      "scratched": true,
+      "scratched_date": "2026-04-30",
+      "scratched_reason": "bone chip in left hind ankle (Cox)"
     },
     {
-      "name": "Golden Tempo", "sire": "Curlin", "dam": "Carrumba",
-      "trainer": "Cherie DeVaux", "jockey": "Jose Ortiz", "beyer": 95, "style": "closer", "pts": 0,
-      "record": "4: 2-0-2-0", "earnings": 333000,
-      "pps": []
+      "name": "Chip Honcho",
+      "sire": "Connect",
+      "dam": "Miss My Rose",
+      "trainer": "Steve Asmussen",
+      "jockey": "TBA",
+      "beyer": 98,
+      "style": "pacesetter",
+      "pts": 0,
+      "record": "6: 2-2-0-0",
+      "earnings": 280475,
+      "pps": [],
+      "post_position": null,
+      "drew_in": false,
+      "ae": false
     },
     {
-      "name": "Iron Honor", "sire": "Nyquist", "dam": "Orencia",
-      "trainer": "Chad Brown", "jockey": "TBA", "beyer": 91, "style": "presser", "pts": 0,
-      "record": "3: 2-0-0-0", "earnings": 229250,
-      "pps": []
+      "name": "Iron Honor",
+      "sire": "Nyquist",
+      "dam": "Orencia",
+      "trainer": "Chad Brown",
+      "jockey": "TBA",
+      "beyer": 91,
+      "style": "presser",
+      "pts": 0,
+      "record": "3: 2-0-0-0",
+      "earnings": 229250,
+      "pps": [],
+      "post_position": null,
+      "drew_in": false,
+      "ae": false,
+      "passed_over": true,
+      "passed_over_note": "Great White and Ocelli drew in instead from AE list"
     },
     {
-      "name": "Chief Wallabee", "sire": "Constitution", "dam": "A La Lucie",
-      "trainer": "Bill Mott", "jockey": "Junior Alvarado", "beyer": 99, "style": "stalker", "pts": 0,
-      "record": "3: 1-1-1-0", "earnings": 216600,
-      "pps": []
+      "name": "Great White",
+      "sire": "Volatile",
+      "dam": "Kelly Bag",
+      "trainer": "John Ennis",
+      "jockey": "Alex Achard",
+      "beyer": 84,
+      "style": "pacesetter",
+      "tfus_early": 107,
+      "tfus_late": 78,
+      "pts": 0,
+      "record": "5: 2-1-0-1",
+      "earnings": null,
+      "pps": [
+        {
+          "date": "2026-02-21",
+          "track": "TP",
+          "dist": "1 1/16M",
+          "surf": "synth",
+          "finish": 1,
+          "sf": null,
+          "race": "John Battaglia Memorial S."
+        },
+        {
+          "date": "2026-04-04",
+          "track": "KEE",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 5,
+          "sf": null,
+          "race": "Blue Grass (G1) — set pace, tired"
+        }
+      ],
+      "post_position": 21,
+      "morning_line": "50-1",
+      "ml_decimal": 50.0,
+      "drew_in": true,
+      "ae": true,
+      "ae_filled": true,
+      "ae_fill_date": "2026-04-29",
+      "auxiliary_gate": true,
+      "concerns": "never won past 1 1/16M; turfway/synth specialist tried dirt and tired in Blue Grass; trainer Ennis 0-for-1 in Derby (Epic Ride 13th 2024)"
     },
     {
-      "name": "Danon Bourbon", "sire": "Maxfield", "dam": "Wild Ridge",
-      "trainer": "Manabu Ikezoe", "jockey": "Ryusei Sakai", "beyer": null, "style": "stalker", "pts": 0,
-      "record": "3: 3-0-0-0", "earnings": 222762,
-      "pps": []
-    },
-    {
-      "name": "Wonder Dean", "sire": "Dee Majesty", "dam": "Wonder Siang Praw",
-      "trainer": "Daisuke Takayanagi", "jockey": "TBA", "beyer": null, "style": "closer", "pts": 0,
-      "record": "6: 2-2-0-0", "earnings": 770541,
-      "pps": []
-    },
-    {
-      "name": "Six Speed", "sire": "Not This Time", "dam": "Browse",
-      "trainer": "Bhupat Seemar", "jockey": "TBA", "beyer": null, "style": "pacesetter", "pts": 0,
-      "record": "5: 3-1-1-0", "earnings": 402183,
-      "pps": []
-    },
-    {
-      "name": "Chip Honcho", "sire": "Connect", "dam": "Miss My Rose",
-      "trainer": "Steve Asmussen", "jockey": "TBA", "beyer": 98, "style": "pacesetter", "pts": 0,
-      "record": "6: 2-2-0-0", "earnings": 280475,
-      "pps": []
-    },
-    {
-      "name": "Intrepido", "sire": "Maximus Mischief", "dam": "Overly Indulgent",
-      "trainer": "Jeff Mullins", "jockey": "TBA", "beyer": 99, "style": "stalker", "pts": 0,
-      "record": "6: 2-1-0-0", "earnings": 342800,
-      "pps": []
+      "name": "Ocelli",
+      "sire": "Connect",
+      "dam": "Unknown",
+      "trainer": "D. Whitworth Beckman",
+      "jockey": "Joseph Ramos",
+      "beyer": 87,
+      "style": "closer",
+      "pts": 25,
+      "record": "6: 0-1-1-2",
+      "earnings": null,
+      "pps": [
+        {
+          "date": "2026-04-04",
+          "track": "AQU",
+          "dist": "1 1/8M",
+          "surf": "dirt",
+          "finish": 3,
+          "sf": 87,
+          "race": "Wood Memorial (G2) — 12-horse field"
+        }
+      ],
+      "post_position": 22,
+      "morning_line": "50-1",
+      "ml_decimal": 50.0,
+      "drew_in": true,
+      "ae": true,
+      "ae_filled": true,
+      "ae_fill_date": "2026-04-30",
+      "auxiliary_gate": true,
+      "concerns": "MAIDEN (0-for-6) — no maiden has won the Derby since Brokers Tip 1933 (93-year drought); needs pace meltdown to be live"
     }
-  ]
+  ],
+  "draw_date": "2026-04-25",
+  "draw_source": "NBC Sports + Covers cross-check",
+  "field_updates": [
+    {"date": "2026-04-29", "event": "Silent Tactic (PP13) scratched — Casse, bruised foot. Great White drew in at PP21 (auxiliary)."},
+    {"date": "2026-04-30", "event": "Fulleffort (PP20) scratched — Cox, bone chip left hind ankle. Ocelli drew in at PP22 (auxiliary)."}
+  ],
+  "final_field_size": 20,
+  "post_layout": "PP1-12 + PP14-19 in main gate (gaps at 13 and 20); PP21-22 in auxiliary gate"
 }

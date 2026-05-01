@@ -1,0 +1,2021 @@
+{
+  "1": {
+    "name": "Race 1",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "11:00 ET",
+    "purse": "$120,000",
+    "field_size": 11,
+    "top4": [
+      11,
+      3,
+      9,
+      6
+    ],
+    "top5": [
+      11,
+      3,
+      9,
+      6,
+      8
+    ],
+    "scored": [
+      {
+        "post": 11,
+        "name": "Powershift",
+        "score": 0.962,
+        "beyer": 96,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 3,
+        "name": "Silent Way",
+        "score": 0.895,
+        "beyer": 92,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "PRAT F",
+        "trainer": "Eurton Peter"
+      },
+      {
+        "post": 9,
+        "name": "Winston Ave",
+        "score": 0.764,
+        "beyer": 83,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 6,
+        "name": "Cromwell",
+        "score": 0.725,
+        "beyer": 81,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "DeVaux Cherie"
+      },
+      {
+        "post": 8,
+        "name": "Bourbon Dream",
+        "score": 0.619,
+        "beyer": 78,
+        "ml_odds": "5-1",
+        "ml_decimal": 6.0,
+        "jockey": "GUTIERREZ MARIO",
+        "trainer": "Gutierrez Fausto"
+      },
+      {
+        "post": 1,
+        "name": "Bhatia",
+        "score": 0.473,
+        "beyer": 75,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "SAEZ L",
+        "trainer": "Davis Christopher"
+      },
+      {
+        "post": 5,
+        "name": "Get Them Roses",
+        "score": 0.44,
+        "beyer": 70,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Walsh Brendan P"
+      },
+      {
+        "post": 2,
+        "name": "Stakeholder",
+        "score": 0.423,
+        "beyer": 74,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": "Wilkes Ian R"
+      },
+      {
+        "post": 7,
+        "name": "Time to Strike",
+        "score": 0.391,
+        "beyer": 59,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 4,
+        "name": "Ingleborough",
+        "score": 0.291,
+        "beyer": 62,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "GARCIA M",
+        "trainer": "Romans Dale"
+      },
+      {
+        "post": 10,
+        "name": "Midnight Playboy",
+        "score": 0.111,
+        "beyer": null,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott Riley"
+      }
+    ]
+  },
+  "2": {
+    "name": "Race 2",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "11:32 ET",
+    "purse": "$127,000",
+    "field_size": 12,
+    "top4": [
+      4,
+      8,
+      1,
+      6
+    ],
+    "top5": [
+      4,
+      8,
+      1,
+      6,
+      9
+    ],
+    "scored": [
+      {
+        "post": 4,
+        "name": "Memory",
+        "score": 0.89,
+        "beyer": 93,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "PRAT F",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 8,
+        "name": "Taptastic",
+        "score": 0.861,
+        "beyer": 89,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Asmussen Steven M"
+      },
+      {
+        "post": 1,
+        "name": "Out of the Woods",
+        "score": 0.704,
+        "beyer": 92,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": ""
+      },
+      {
+        "post": 6,
+        "name": "Make My Day",
+        "score": 0.56,
+        "beyer": 89,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "SAEZ L",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 9,
+        "name": "Our Moneyman",
+        "score": 0.472,
+        "beyer": 85,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "CONCEPCION A",
+        "trainer": "Calhoun William Bret"
+      },
+      {
+        "post": 2,
+        "name": "Sovereign Law",
+        "score": 0.413,
+        "beyer": 80,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "FRANCO M",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 10,
+        "name": "J J Grey",
+        "score": 0.412,
+        "beyer": 87,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": "McPeek Kenneth G"
+      },
+      {
+        "post": 11,
+        "name": "Lincoln's Law",
+        "score": 0.374,
+        "beyer": 83,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Bauer Philip A"
+      },
+      {
+        "post": 7,
+        "name": "Very Connected",
+        "score": 0.143,
+        "beyer": 77,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "ELLIOTT C",
+        "trainer": "McPeek Kenneth G"
+      },
+      {
+        "post": 12,
+        "name": "Spirit of Royal",
+        "score": 0.138,
+        "beyer": 77,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "TORRES C A",
+        "trainer": "Stewart Dallas"
+      },
+      {
+        "post": 3,
+        "name": "Steel",
+        "score": 0.115,
+        "beyer": 75,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott William I"
+      },
+      {
+        "post": 5,
+        "name": "Seal Bay",
+        "score": 0.022,
+        "beyer": 74,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "PAULY S",
+        "trainer": "Moger Ed Jr"
+      }
+    ]
+  },
+  "3": {
+    "name": "Race 3",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "12:05 ET",
+    "purse": "$134,000",
+    "field_size": 14,
+    "top4": [
+      12,
+      6,
+      5,
+      10
+    ],
+    "top5": [
+      12,
+      6,
+      5,
+      10,
+      13
+    ],
+    "scored": [
+      {
+        "post": 12,
+        "name": "Praetor",
+        "score": 1.0,
+        "beyer": 103,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "PRAT F",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 6,
+        "name": "Who Dey",
+        "score": 0.668,
+        "beyer": 96,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": "Drury Thomas Jr"
+      },
+      {
+        "post": 5,
+        "name": "John Hancock",
+        "score": 0.591,
+        "beyer": 87,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 10,
+        "name": "Vibe",
+        "score": 0.566,
+        "beyer": 91,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "SAEZ L",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 13,
+        "name": "Attache",
+        "score": 0.478,
+        "beyer": 92,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Maker Michael J"
+      },
+      {
+        "post": 2,
+        "name": "Vamos Carlitos",
+        "score": 0.463,
+        "beyer": 94,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Foley Gregory D"
+      },
+      {
+        "post": 14,
+        "name": "Bullard",
+        "score": 0.457,
+        "beyer": 89,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "McCarthy Michael W"
+      },
+      {
+        "post": 9,
+        "name": "Keewaydin",
+        "score": 0.431,
+        "beyer": 91,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "TORRES J A",
+        "trainer": "Walden William"
+      },
+      {
+        "post": 4,
+        "name": "Comport",
+        "score": 0.398,
+        "beyer": 80,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "Kenneally Eddie"
+      },
+      {
+        "post": 8,
+        "name": "Racing Driver",
+        "score": 0.39,
+        "beyer": 90,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "MACHADO L",
+        "trainer": "Delgado Gustavo"
+      },
+      {
+        "post": 1,
+        "name": "Arro Smash",
+        "score": 0.365,
+        "beyer": 92,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "CORRALES G",
+        "trainer": "Bauer Philip A"
+      },
+      {
+        "post": 3,
+        "name": "Special Caliber",
+        "score": 0.205,
+        "beyer": 82,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "MORALES E",
+        "trainer": "Douaihy Michel"
+      },
+      {
+        "post": 11,
+        "name": "Aleman",
+        "score": 0.205,
+        "beyer": 82,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "SHEEHY D",
+        "trainer": "Jarvis Kathy"
+      },
+      {
+        "post": 7,
+        "name": "Mitochondria",
+        "score": 0.032,
+        "beyer": 66,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "GUTIERREZ MARIO",
+        "trainer": "Stephen Anthony"
+      }
+    ]
+  },
+  "4": {
+    "name": "Race 4",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "12:38 ET",
+    "purse": "$1,000,000",
+    "field_size": 6,
+    "top4": [
+      4,
+      5,
+      2,
+      1
+    ],
+    "top5": [
+      4,
+      5,
+      2,
+      1,
+      6
+    ],
+    "scored": [
+      {
+        "post": 4,
+        "name": "Ways and Means",
+        "score": 0.967,
+        "beyer": 111,
+        "ml_odds": "8-5",
+        "ml_decimal": 2.6,
+        "jockey": "ORTIZ J L",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 5,
+        "name": "Splendora",
+        "score": 0.763,
+        "beyer": 100,
+        "ml_odds": "2-1",
+        "ml_decimal": 3.0,
+        "jockey": "PRAT F",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 2,
+        "name": "Haulin Ice",
+        "score": 0.492,
+        "beyer": 101,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "ARRIETA F",
+        "trainer": "Joseph S A Jr"
+      },
+      {
+        "post": 1,
+        "name": "Usha",
+        "score": 0.489,
+        "beyer": 99,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 6,
+        "name": "R Disaster",
+        "score": 0.299,
+        "beyer": 96,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Joseph S A Jr"
+      },
+      {
+        "post": 3,
+        "name": "Autumn Evening",
+        "score": 0.133,
+        "beyer": 84,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": ""
+      }
+    ]
+  },
+  "5": {
+    "name": "Race 5",
+    "surface": "turf",
+    "distance": "",
+    "post_time": "1:12 ET",
+    "purse": "$600,000",
+    "field_size": 10,
+    "top4": [
+      3,
+      9,
+      10,
+      7
+    ],
+    "top5": [
+      3,
+      9,
+      10,
+      7,
+      5
+    ],
+    "scored": [
+      {
+        "post": 3,
+        "name": "My Boy Prince",
+        "score": 0.857,
+        "beyer": 101,
+        "ml_odds": "5-2",
+        "ml_decimal": 3.5,
+        "jockey": "ORTIZ J L",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 9,
+        "name": "Litigation",
+        "score": 0.829,
+        "beyer": 102,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Lynch Brian A"
+      },
+      {
+        "post": 10,
+        "name": "Joe Shiesty",
+        "score": 0.693,
+        "beyer": 104,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "DE LA CRUZ F",
+        "trainer": "Foster Eric"
+      },
+      {
+        "post": 7,
+        "name": "Yellow Card",
+        "score": 0.652,
+        "beyer": 99,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "PRAT F",
+        "trainer": "McCarthy Michael W"
+      },
+      {
+        "post": 5,
+        "name": "Possiblemente",
+        "score": 0.476,
+        "beyer": 99,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "FRANCO M",
+        "trainer": "Sharp Joe"
+      },
+      {
+        "post": 2,
+        "name": "Bear River",
+        "score": 0.429,
+        "beyer": 103,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "GRAHAM J",
+        "trainer": "Desormeaux J Keith"
+      },
+      {
+        "post": 1,
+        "name": "Wendelssohn",
+        "score": 0.398,
+        "beyer": 100,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": "Hartman Chris A"
+      },
+      {
+        "post": 8,
+        "name": "Mondogetsbuckets",
+        "score": 0.353,
+        "beyer": 97,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Block Chris M"
+      },
+      {
+        "post": 6,
+        "name": "Its Bourbon Thirty",
+        "score": 0.204,
+        "beyer": 95,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "MACHADO L",
+        "trainer": ""
+      },
+      {
+        "post": 4,
+        "name": "Full Disclosure",
+        "score": 0.0,
+        "beyer": 93,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "BESCHIZZA A",
+        "trainer": "Jehaludi Amzadali"
+      }
+    ]
+  },
+  "6": {
+    "name": "Race 6",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "1:53 ET",
+    "purse": "$200,000",
+    "field_size": 11,
+    "top4": [
+      11,
+      4,
+      10,
+      2
+    ],
+    "top5": [
+      11,
+      4,
+      10,
+      2,
+      6
+    ],
+    "scored": [
+      {
+        "post": 11,
+        "name": "Moonlight",
+        "score": 0.755,
+        "beyer": 100,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "Block Chris M"
+      },
+      {
+        "post": 4,
+        "name": "Be You",
+        "score": 0.705,
+        "beyer": 97,
+        "ml_odds": "7-2",
+        "ml_decimal": 4.5,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 10,
+        "name": "Capital Idea",
+        "score": 0.683,
+        "beyer": 99,
+        "ml_odds": "5-1",
+        "ml_decimal": 6.0,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott William I"
+      },
+      {
+        "post": 2,
+        "name": "Dragoon Guard",
+        "score": 0.656,
+        "beyer": 94,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 6,
+        "name": "Tour Player",
+        "score": 0.62,
+        "beyer": 94,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "PRAT F",
+        "trainer": "Beckman D Whitworth"
+      },
+      {
+        "post": 7,
+        "name": "Will Take It",
+        "score": 0.532,
+        "beyer": 98,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": "Stewart Dallas"
+      },
+      {
+        "post": 9,
+        "name": "Scotland",
+        "score": 0.502,
+        "beyer": 99,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "SAEZ L",
+        "trainer": "Mott William I"
+      },
+      {
+        "post": 3,
+        "name": "Banjo Chris",
+        "score": 0.325,
+        "beyer": 97,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "MORALES E",
+        "trainer": "Wismer Troy S"
+      },
+      {
+        "post": 5,
+        "name": "Prince of Power",
+        "score": 0.322,
+        "beyer": 97,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "GUTIERREZ MARIO",
+        "trainer": "Cambray Andres"
+      },
+      {
+        "post": 1,
+        "name": "Brotha Keny",
+        "score": 0.293,
+        "beyer": 93,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "FRANCO M",
+        "trainer": ""
+      },
+      {
+        "post": 8,
+        "name": "Bernin Hot",
+        "score": 0.078,
+        "beyer": 91,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "CURTIS B",
+        "trainer": "Crichton Rohan G"
+      }
+    ]
+  },
+  "7": {
+    "name": "Race 7",
+    "surface": "turf",
+    "distance": "",
+    "post_time": "2:38 ET",
+    "purse": "$1,000,000",
+    "field_size": 9,
+    "top4": [
+      2,
+      8,
+      3,
+      5
+    ],
+    "top5": [
+      2,
+      8,
+      3,
+      5,
+      9
+    ],
+    "scored": [
+      {
+        "post": 2,
+        "name": "Sweet Rebecca",
+        "score": 0.861,
+        "beyer": 90,
+        "ml_odds": "5-2",
+        "ml_decimal": 3.5,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Walsh Brendan P"
+      },
+      {
+        "post": 8,
+        "name": "Pin Up Betty",
+        "score": 0.842,
+        "beyer": 93,
+        "ml_odds": "7-2",
+        "ml_decimal": 4.5,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Maker Michael J"
+      },
+      {
+        "post": 3,
+        "name": "Portfolio Duration (GB)",
+        "score": 0.84,
+        "beyer": 87,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "PRAT F",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 5,
+        "name": "Classic Q",
+        "score": 0.7,
+        "beyer": 94,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 9,
+        "name": "Maggie Go (Arg)",
+        "score": 0.675,
+        "beyer": 88,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 7,
+        "name": "Movin' On Up",
+        "score": 0.668,
+        "beyer": 93,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "Joseph S A Jr"
+      },
+      {
+        "post": 1,
+        "name": "Italian Soiree",
+        "score": 0.659,
+        "beyer": 93,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "FRANCO M",
+        "trainer": "Motion H Graham"
+      },
+      {
+        "post": 6,
+        "name": "Vina Arana (Ire)",
+        "score": 0.416,
+        "beyer": 87,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "BESCHIZZA A",
+        "trainer": "Sisterson Jack"
+      },
+      {
+        "post": 4,
+        "name": "Temptable (GB)",
+        "score": 0.173,
+        "beyer": null,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott William I"
+      }
+    ]
+  },
+  "8": {
+    "name": "Race 8",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "3:23 ET",
+    "purse": "$750,000",
+    "field_size": 12,
+    "top4": [
+      1,
+      6,
+      7,
+      2
+    ],
+    "top5": [
+      1,
+      6,
+      7,
+      2,
+      8
+    ],
+    "scored": [
+      {
+        "post": 1,
+        "name": "Englishman",
+        "score": 0.89,
+        "beyer": 97,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "DeVaux Cherie"
+      },
+      {
+        "post": 6,
+        "name": "Crude Velocity",
+        "score": 0.833,
+        "beyer": 100,
+        "ml_odds": "5-2",
+        "ml_decimal": 3.5,
+        "jockey": "GEROUX F",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 7,
+        "name": "Crown the Buckeye",
+        "score": 0.648,
+        "beyer": 88,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "PRAT F",
+        "trainer": "Maker Michael J"
+      },
+      {
+        "post": 2,
+        "name": "Trouble Calling",
+        "score": 0.598,
+        "beyer": 91,
+        "ml_odds": "5-1",
+        "ml_decimal": 6.0,
+        "jockey": "SAEZ L",
+        "trainer": "Foley Gregory D"
+      },
+      {
+        "post": 8,
+        "name": "Creole Chrome",
+        "score": 0.549,
+        "beyer": 87,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Sharp Joe"
+      },
+      {
+        "post": 4,
+        "name": "Secured Freedom",
+        "score": 0.423,
+        "beyer": 88,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Yakteen Tim"
+      },
+      {
+        "post": 10,
+        "name": "Great White",
+        "score": 0.374,
+        "beyer": 84,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "ACHARD A",
+        "trainer": "Ennis John"
+      },
+      {
+        "post": 11,
+        "name": "One More Freud",
+        "score": 0.367,
+        "beyer": 80,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Hess R B Jr"
+      },
+      {
+        "post": 5,
+        "name": "Stop the Car",
+        "score": 0.281,
+        "beyer": 80,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Walsh Brendan P"
+      },
+      {
+        "post": 9,
+        "name": "Lockstocknpharoah",
+        "score": 0.241,
+        "beyer": 82,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "MORALES E",
+        "trainer": "Drury Thomas Jr"
+      },
+      {
+        "post": 12,
+        "name": "Baytown Dreamer",
+        "score": 0.177,
+        "beyer": 80,
+        "ml_odds": "50-1",
+        "ml_decimal": 51.0,
+        "jockey": "SHEEHY D",
+        "trainer": "McEntee Paul"
+      },
+      {
+        "post": 3,
+        "name": "Work",
+        "score": 0.067,
+        "beyer": 67,
+        "ml_odds": "50-1",
+        "ml_decimal": 51.0,
+        "jockey": "MALDONADO E",
+        "trainer": ""
+      }
+    ]
+  },
+  "9": {
+    "name": "Race 9",
+    "surface": "turf",
+    "distance": "",
+    "post_time": "4:06 ET",
+    "purse": "$1,000,000",
+    "field_size": 14,
+    "top4": [
+      4,
+      12,
+      5,
+      8
+    ],
+    "top5": [
+      4,
+      12,
+      5,
+      8,
+      7
+    ],
+    "scored": [
+      {
+        "post": 4,
+        "name": "Stark Contrast",
+        "score": 0.858,
+        "beyer": 87,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "PRAT F",
+        "trainer": "McCarthy Michael W"
+      },
+      {
+        "post": 12,
+        "name": "Remember Mamba",
+        "score": 0.756,
+        "beyer": 85,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "ORTIZ J L",
+        "trainer": "DeVaux Cherie"
+      },
+      {
+        "post": 5,
+        "name": "Blackout Time",
+        "score": 0.681,
+        "beyer": 93,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "SAEZ L",
+        "trainer": "McPeek Kenneth G"
+      },
+      {
+        "post": 8,
+        "name": "Greenwich Village",
+        "score": 0.57,
+        "beyer": 82,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 7,
+        "name": "Alpyland",
+        "score": 0.533,
+        "beyer": 85,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "CASTELLANO J J",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 14,
+        "name": "Final Score",
+        "score": 0.497,
+        "beyer": 81,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 10,
+        "name": "Vasy (Ire)",
+        "score": 0.461,
+        "beyer": 83,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Walsh Brendan P"
+      },
+      {
+        "post": 13,
+        "name": "Thousandsticks",
+        "score": 0.414,
+        "beyer": 86,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "ROSARIO J",
+        "trainer": "Lynch Brian A"
+      },
+      {
+        "post": 9,
+        "name": "Honey Dutch",
+        "score": 0.383,
+        "beyer": 82,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Beckman D Whitworth"
+      },
+      {
+        "post": 2,
+        "name": "Let's Be Frank",
+        "score": 0.371,
+        "beyer": 83,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "FRANCO M",
+        "trainer": "McCarthy Michael W"
+      },
+      {
+        "post": 1,
+        "name": "Street Beast",
+        "score": 0.353,
+        "beyer": 82,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "MACHADO L",
+        "trainer": "Colebrook Ben"
+      },
+      {
+        "post": 3,
+        "name": "Blinging It Back",
+        "score": 0.336,
+        "beyer": 85,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "CONCEPCION A",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 6,
+        "name": "Black Hornet",
+        "score": 0.316,
+        "beyer": 86,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "CANNON D",
+        "trainer": "Walsh Brendan P"
+      },
+      {
+        "post": 11,
+        "name": "Steel Imperium",
+        "score": 0.042,
+        "beyer": 74,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "TORRES J A",
+        "trainer": "Caramori Caio"
+      }
+    ]
+  },
+  "10": {
+    "name": "Race 10",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "4:50 ET",
+    "purse": "$1,000,000",
+    "field_size": 11,
+    "top4": [
+      6,
+      2,
+      7,
+      5
+    ],
+    "top5": [
+      6,
+      2,
+      7,
+      5,
+      1
+    ],
+    "scored": [
+      {
+        "post": 6,
+        "name": "Knightsbridge",
+        "score": 0.867,
+        "beyer": 112,
+        "ml_odds": "9-5",
+        "ml_decimal": 2.8,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott William I"
+      },
+      {
+        "post": 2,
+        "name": "Cornucopian",
+        "score": 0.744,
+        "beyer": 101,
+        "ml_odds": "7-2",
+        "ml_decimal": 4.5,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 7,
+        "name": "Imagination",
+        "score": 0.741,
+        "beyer": 105,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "PRAT F",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 5,
+        "name": "Disruptor",
+        "score": 0.65,
+        "beyer": 102,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 1,
+        "name": "Disco Time",
+        "score": 0.649,
+        "beyer": 107,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 4,
+        "name": "Hall of Fame",
+        "score": 0.62,
+        "beyer": 106,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "Asmussen Steven M"
+      },
+      {
+        "post": 9,
+        "name": "Crazy Mason",
+        "score": 0.575,
+        "beyer": 99,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "FRANCO M",
+        "trainer": "Sacco Gregory D"
+      },
+      {
+        "post": 11,
+        "name": "Point Dume",
+        "score": 0.55,
+        "beyer": 104,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "GONZALEZ E",
+        "trainer": "Kreiser Timothy C"
+      },
+      {
+        "post": 10,
+        "name": "Banishing",
+        "score": 0.541,
+        "beyer": 106,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Jacobson David"
+      },
+      {
+        "post": 3,
+        "name": "Macho Music",
+        "score": 0.468,
+        "beyer": 97,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "CASTELLANO J J",
+        "trainer": "Crichton Rohan G"
+      },
+      {
+        "post": 8,
+        "name": "T O Elvis",
+        "score": 0.0,
+        "beyer": null,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "",
+        "trainer": ""
+      }
+    ]
+  },
+  "11": {
+    "name": "Race 11",
+    "surface": "turf",
+    "distance": "",
+    "post_time": "5:39 ET",
+    "purse": "$1,500,000",
+    "field_size": 10,
+    "top4": [
+      6,
+      9,
+      4,
+      3
+    ],
+    "top5": [
+      6,
+      9,
+      4,
+      3,
+      7
+    ],
+    "scored": [
+      {
+        "post": 6,
+        "name": "Rhetorical",
+        "score": 0.951,
+        "beyer": 101,
+        "ml_odds": "5-2",
+        "ml_decimal": 3.5,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Walden William"
+      },
+      {
+        "post": 9,
+        "name": "Test Score",
+        "score": 0.835,
+        "beyer": 97,
+        "ml_odds": "7-2",
+        "ml_decimal": 4.5,
+        "jockey": "FRANCO M",
+        "trainer": "Motion H Graham"
+      },
+      {
+        "post": 4,
+        "name": "Program Trading (GB)",
+        "score": 0.748,
+        "beyer": 102,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 3,
+        "name": "Asbury Park (GB)",
+        "score": 0.693,
+        "beyer": 87,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "PRAT F",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 7,
+        "name": "Gold Phoenix (Ire)",
+        "score": 0.609,
+        "beyer": 102,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "BERRIOS HECTOR I",
+        "trainer": ""
+      },
+      {
+        "post": 1,
+        "name": "Corruption",
+        "score": 0.57,
+        "beyer": 97,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 8,
+        "name": "Astronomer",
+        "score": 0.515,
+        "beyer": 99,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "CASTELLANO J J",
+        "trainer": "Callaghan Simon"
+      },
+      {
+        "post": 5,
+        "name": "Mercante",
+        "score": 0.507,
+        "beyer": 101,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "RAMOS J D",
+        "trainer": "Knippenberg Brian"
+      },
+      {
+        "post": 2,
+        "name": "Dashman",
+        "score": 0.44,
+        "beyer": 90,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "ROSARIO J",
+        "trainer": "Lynch Brian A"
+      },
+      {
+        "post": 10,
+        "name": "Make Me King (Fr)",
+        "score": 0.331,
+        "beyer": null,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "ORTIZ J L",
+        "trainer": ""
+      }
+    ]
+  },
+  "12": {
+    "name": "Race 12",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "6:57 ET",
+    "purse": "$5,000,000",
+    "field_size": 20,
+    "top4": [
+      13,
+      1,
+      18,
+      20
+    ],
+    "top5": [
+      13,
+      1,
+      18,
+      20,
+      8
+    ],
+    "scored": [
+      {
+        "post": 1,
+        "name": "Renegade",
+        "score": 0.928,
+        "beyer": 98,
+        "ml_odds": "4-1",
+        "ml_decimal": 5.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Pletcher Todd A"
+      },
+      {
+        "post": 18,
+        "name": "Further Ado",
+        "score": 0.803,
+        "beyer": 106,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 6,
+        "name": "Commandment",
+        "score": 0.763,
+        "beyer": 101,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "SAEZ L",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 15,
+        "name": "Emerging Market",
+        "score": 0.695,
+        "beyer": 97,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "PRAT F",
+        "trainer": "Brown Chad C"
+      },
+      {
+        "post": 12,
+        "name": "Chief Wallabee",
+        "score": 0.688,
+        "beyer": 100,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott William I"
+      },
+      {
+        "post": 9,
+        "name": "The Puma",
+        "score": 0.658,
+        "beyer": 100,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "CASTELLANO J J",
+        "trainer": "Delgado Gustavo"
+      },
+      {
+        "post": 8,
+        "name": "So Happy",
+        "score": 0.603,
+        "beyer": 100,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "SMITH M E",
+        "trainer": "Glatt Mark"
+      },
+      {
+        "post": 14,
+        "name": "Potente",
+        "score": 0.601,
+        "beyer": 95,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 19,
+        "name": "Golden Tempo",
+        "score": 0.579,
+        "beyer": 88,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "DeVaux Cherie"
+      },
+      {
+        "post": 20,
+        "name": "Fulleffort",
+        "score": 0.539,
+        "beyer": 94,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 2,
+        "name": "Albus",
+        "score": 0.534,
+        "beyer": 84,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "FRANCO M",
+        "trainer": "Mott Riley"
+      },
+      {
+        "post": 13,
+        "name": "Silent Tactic",
+        "score": 0.526,
+        "beyer": 91,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "TORRES C A",
+        "trainer": "Casse Mark"
+      },
+      {
+        "post": 16,
+        "name": "Pavlovian",
+        "score": 0.492,
+        "beyer": 90,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "MALDONADO E",
+        "trainer": ""
+      },
+      {
+        "post": 3,
+        "name": "Intrepido",
+        "score": 0.473,
+        "beyer": 89,
+        "ml_odds": "50-1",
+        "ml_decimal": 51.0,
+        "jockey": "BERRIOS HECTOR I",
+        "trainer": "Mullins Jeff"
+      },
+      {
+        "post": 11,
+        "name": "Incredibolt",
+        "score": 0.447,
+        "beyer": 88,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "TORRES J A",
+        "trainer": "Mott Riley"
+      },
+      {
+        "post": 4,
+        "name": "Litmus Test",
+        "score": 0.408,
+        "beyer": 96,
+        "ml_odds": "50-1",
+        "ml_decimal": 51.0,
+        "jockey": "GARCIA M",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 5,
+        "name": "Right to Party",
+        "score": 0.397,
+        "beyer": 81,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "ELLIOTT C",
+        "trainer": "McPeek Kenneth G"
+      },
+      {
+        "post": 7,
+        "name": "Danon Bourbon",
+        "score": 0.083,
+        "beyer": null,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "",
+        "trainer": ""
+      },
+      {
+        "post": 17,
+        "name": "Six Speed",
+        "score": 0.076,
+        "beyer": null,
+        "ml_odds": "50-1",
+        "ml_decimal": 51.0,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": ""
+      },
+      {
+        "post": 10,
+        "name": "Wonder Dean (Jpn)",
+        "score": 0.053,
+        "beyer": null,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "",
+        "trainer": ""
+      }
+    ],
+    "pattern_top5": [
+      {
+        "rank": 1,
+        "name": "Silent Tactic",
+        "post": 13,
+        "ml": "20-1",
+        "joe_prob": 0.2152,
+        "score": 91.5,
+        "edge": 0.1676
+      },
+      {
+        "rank": 2,
+        "name": "Renegade",
+        "post": 1,
+        "ml": "4-1",
+        "joe_prob": 0.1629,
+        "score": 87.6,
+        "edge": -0.0371
+      },
+      {
+        "rank": 3,
+        "name": "Further Ado",
+        "post": 18,
+        "ml": "6-1",
+        "joe_prob": 0.126,
+        "score": 84.0,
+        "edge": -0.0169
+      },
+      {
+        "rank": 4,
+        "name": "Fulleffort",
+        "post": 20,
+        "ml": "20-1",
+        "joe_prob": 0.1061,
+        "score": 81.6,
+        "edge": 0.0585
+      },
+      {
+        "rank": 5,
+        "name": "So Happy",
+        "post": 8,
+        "ml": "15-1",
+        "joe_prob": 0.0881,
+        "score": 79.0,
+        "edge": 0.0256
+      }
+    ]
+  },
+  "13": {
+    "name": "Race 13",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "8:00 ET",
+    "purse": "$127,000",
+    "field_size": 11,
+    "top4": [
+      10,
+      11,
+      8,
+      1
+    ],
+    "top5": [
+      10,
+      11,
+      8,
+      1,
+      9
+    ],
+    "scored": [
+      {
+        "post": 10,
+        "name": "Buetane",
+        "score": 0.943,
+        "beyer": 92,
+        "ml_odds": "5-2",
+        "ml_decimal": 3.5,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 11,
+        "name": "Noble Affair",
+        "score": 0.834,
+        "beyer": 93,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "ORTIZ J L",
+        "trainer": "Asmussen Steven M"
+      },
+      {
+        "post": 8,
+        "name": "Gilded Bandit",
+        "score": 0.817,
+        "beyer": 93,
+        "ml_odds": "3-1",
+        "ml_decimal": 4.0,
+        "jockey": "ALVARADO J",
+        "trainer": "Mott William I"
+      },
+      {
+        "post": 1,
+        "name": "Small Town",
+        "score": 0.613,
+        "beyer": 81,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "PRAT F",
+        "trainer": "McCarthy Michael W"
+      },
+      {
+        "post": 9,
+        "name": "Thunder Buck",
+        "score": 0.424,
+        "beyer": 81,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "SAEZ L",
+        "trainer": "Walsh Brendan P"
+      },
+      {
+        "post": 2,
+        "name": "Heartily",
+        "score": 0.417,
+        "beyer": 77,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Ward Wesley A"
+      },
+      {
+        "post": 5,
+        "name": "Hulkamania",
+        "score": 0.37,
+        "beyer": 72,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Beckman D Whitworth"
+      },
+      {
+        "post": 7,
+        "name": "Sav'n Money",
+        "score": 0.356,
+        "beyer": 79,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "HERNANDEZ B J JR",
+        "trainer": "Catalano Wayne M"
+      },
+      {
+        "post": 4,
+        "name": "Ring Curl",
+        "score": 0.353,
+        "beyer": 77,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "ANTONGRGI III W",
+        "trainer": "Wismer Troy S"
+      },
+      {
+        "post": 6,
+        "name": "Cruisin Chuck",
+        "score": 0.297,
+        "beyer": 77,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "MORALES E",
+        "trainer": "Foley Gregory D"
+      },
+      {
+        "post": 3,
+        "name": "Red Lad",
+        "score": 0.0,
+        "beyer": 56,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "SHEEHY D",
+        "trainer": "McEntee Paul"
+      }
+    ]
+  },
+  "14": {
+    "name": "Race 14",
+    "surface": "dirt",
+    "distance": "",
+    "post_time": "8:33 ET",
+    "purse": "$120,000",
+    "field_size": 14,
+    "top4": [
+      8,
+      11,
+      6,
+      10
+    ],
+    "top5": [
+      8,
+      11,
+      6,
+      10,
+      13
+    ],
+    "scored": [
+      {
+        "post": 8,
+        "name": "Find No Fault",
+        "score": 0.8,
+        "beyer": 71,
+        "ml_odds": "9-2",
+        "ml_decimal": 5.5,
+        "jockey": "GAFFALIONE T",
+        "trainer": "Romans Dale"
+      },
+      {
+        "post": 11,
+        "name": "Great Moment",
+        "score": 0.565,
+        "beyer": 85,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "MORALES E",
+        "trainer": "Foley Gregory D"
+      },
+      {
+        "post": 6,
+        "name": "Prize Pick",
+        "score": 0.523,
+        "beyer": 73,
+        "ml_odds": "12-1",
+        "ml_decimal": 13.0,
+        "jockey": "ROSARIO J",
+        "trainer": "Lynch Brian A"
+      },
+      {
+        "post": 10,
+        "name": "Chianti Town",
+        "score": 0.48,
+        "beyer": 76,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "CONCEPCION A",
+        "trainer": "Stewart Dallas"
+      },
+      {
+        "post": 13,
+        "name": "Noble Anthem",
+        "score": 0.459,
+        "beyer": 64,
+        "ml_odds": "20-1",
+        "ml_decimal": 21.0,
+        "jockey": "CASTELLANO J J",
+        "trainer": "Moquett Ronald E"
+      },
+      {
+        "post": 3,
+        "name": "Interrogator",
+        "score": 0.417,
+        "beyer": null,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "ORTIZ I JR",
+        "trainer": "Asmussen Steven M"
+      },
+      {
+        "post": 9,
+        "name": "Big Jake",
+        "score": 0.385,
+        "beyer": null,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "PRAT F",
+        "trainer": "Baffert Bob"
+      },
+      {
+        "post": 2,
+        "name": "Bestball",
+        "score": 0.371,
+        "beyer": 68,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "GRAHAM J",
+        "trainer": "Heath Destin G"
+      },
+      {
+        "post": 5,
+        "name": "Don's Winner",
+        "score": 0.363,
+        "beyer": null,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "ORTIZ J L",
+        "trainer": "Sharp Joe"
+      },
+      {
+        "post": 7,
+        "name": "Act of Parliament",
+        "score": 0.343,
+        "beyer": null,
+        "ml_odds": "6-1",
+        "ml_decimal": 7.0,
+        "jockey": "SAEZ L",
+        "trainer": "Cox Brad H"
+      },
+      {
+        "post": 14,
+        "name": "Brave Pilot",
+        "score": 0.321,
+        "beyer": null,
+        "ml_odds": "8-1",
+        "ml_decimal": 9.0,
+        "jockey": "HERNANDEZ J J",
+        "trainer": "McCarthy Michael W"
+      },
+      {
+        "post": 12,
+        "name": "Big Braciole",
+        "score": 0.302,
+        "beyer": 57,
+        "ml_odds": "30-1",
+        "ml_decimal": 31.0,
+        "jockey": "SAEZ G",
+        "trainer": "Knudsen Kent"
+      },
+      {
+        "post": 1,
+        "name": "Boylston",
+        "score": 0.243,
+        "beyer": null,
+        "ml_odds": "10-1",
+        "ml_decimal": 11.0,
+        "jockey": "VELAZQUEZ J R",
+        "trainer": "Walden William"
+      },
+      {
+        "post": 4,
+        "name": "Sleeping Warrior",
+        "score": 0.071,
+        "beyer": null,
+        "ml_odds": "15-1",
+        "ml_decimal": 16.0,
+        "jockey": "CORRALES G",
+        "trainer": "Bauer Philip A"
+      }
+    ]
+  }
+}
