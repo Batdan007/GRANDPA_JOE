@@ -1,7 +1,8 @@
-"""Manual fix for R13 (Kentucky Oaks) — the parser missed Zany due to a
-page-boundary issue. Move her from R12 to R13 and re-rank. Also remove
-horses from R13 that are confirmed scratched (Bottle of Rouge, My Miss Mo,
-Bella Ballerina, Nycon).
+"""Fix Oaks Day picks: filter ALL Friday May 1 scratches across every race.
+
+Source: Churchill Downs scratches-and-changes page, May 1 2026.
+Updated comprehensive filter — was 4 horses, now 17 across 8 races.
+Also moves Zany from R12 to R13 (parser page-boundary fix).
 """
 import json
 from pathlib import Path
@@ -9,12 +10,61 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 PICKS = REPO / "data" / "oaks_day_picks.json"
 
-SCRATCHED_OAKS = {
-    "bottle of rouge",
-    "my miss mo",
-    "bella ballerina",
-    "nycon",
+# Friday May 1, 2026 scratches (from Churchill Downs official page)
+# Format: (race_num, horse_name_lowercase) — race-specific so AE horses
+# moved between races aren't accidentally filtered from the right race.
+SCRATCHED = {
+    (1,  "making daisys"),
+    (5,  "hill country"),
+    (5,  "drop shot"),
+    (5,  "apollo's glory"),
+    (5,  "wembley avenue"),
+    (6,  "nimah"),
+    (6,  "kayla's komet"),
+    (6,  "heaven's bolt"),
+    (6,  "don't do it lucy"),
+    (7,  "buttercream babe"),
+    (9,  "disruptor"),
+    (10, "pin up betty"),
+    (12, "lovely grey"),  # the R12 entry; the Oaks-AE Lovely Grey in R13 is OK
+    (13, "my miss mo"),
+    (13, "bottle of rouge"),
+    (13, "bella ballerina"),
+    (13, "nycon"),
 }
+
+
+def is_scratched(race_num: int, name: str) -> bool:
+    n = name.lower().strip()
+    # Strip trailing asterisks (*) and country tags often present in DRF data
+    n = n.rstrip("*").strip()
+    n = n.replace("(ire)", "").replace("(gb)", "").replace("(jpn)", "")
+    n = n.replace("(arg)", "").replace("(chi)", "").strip()
+    return (race_num, n) in SCRATCHED
+
+
+def rank_with_pace_overlay(horses: list) -> list:
+    """Re-rank a race's horses with the same scoring used elsewhere."""
+    n_pace = sum(1 for h in horses if h.get("style") == "pacesetter"
+                 or (h.get("tfus_early") and h["tfus_early"] >= 100))
+    for h in horses:
+        late = h.get("tfus_late") or 90
+        early = h.get("tfus_early") or 90
+        base = late * 1.0 + max(0, 95 - early) * 0.3
+        if early >= 105 and n_pace >= 3:
+            pf = 0.55
+        elif early >= 95 and n_pace >= 3:
+            pf = 0.85
+        elif early <= 80 and late >= 108:
+            pf = 1.50
+        elif late >= 104 and early <= 94:
+            pf = 1.30
+        else:
+            pf = 1.00
+        h["pace_factor"] = pf
+        h["score"] = base * pf
+    horses.sort(key=lambda h: -h["score"])
+    return horses, n_pace
 
 
 def main():
@@ -22,71 +72,70 @@ def main():
         d = json.load(f)
     races = {r["race"]: r for r in d["races"]}
 
-    # Find Zany in R12 and move to R13
+    # ── Step 1: Move Zany from R12 to R13 (parser page-boundary bug) ──
     r12 = races.get(12)
     r13 = races.get(13)
-    if not r12 or not r13:
-        print("[ERR] R12 or R13 missing")
-        return
+    if r12 and r13:
+        zany = next((h for h in r12["horses"] if h["name"].lower() == "zany"), None)
+        if zany:
+            r12["horses"] = [h for h in r12["horses"]
+                             if h["name"].lower() != "zany"]
+            r13["horses"].append(zany)
+            print("  [fix] Moved Zany from R12 -> R13")
 
-    zany = next((h for h in r12["horses"] if h["name"].lower() == "zany"), None)
-    if zany:
-        r12["horses"] = [h for h in r12["horses"] if h["name"].lower() != "zany"]
-        r13["horses"].append(zany)
-        print(f"  Moved Zany from R12 -> R13")
+    # ── Step 2: Filter scratches across EVERY race ────────────────────
+    total_filtered = 0
+    for r in d["races"]:
+        before = len(r["horses"])
+        r["horses"] = [h for h in r["horses"]
+                       if not is_scratched(r["race"], h["name"])]
+        removed = before - len(r["horses"])
+        if removed:
+            print(f"  [fix] R{r['race']}: filtered {removed} scratched horse(s)")
+            total_filtered += removed
 
-    # Filter scratched horses out of R13
-    before = len(r13["horses"])
-    r13["horses"] = [h for h in r13["horses"]
-                     if h["name"].lower().strip() not in SCRATCHED_OAKS]
-    print(f"  Filtered {before - len(r13['horses'])} scratched horse(s) from R13")
+    print(f"  [fix] Total scratched horses removed: {total_filtered}")
 
-    # Re-rank both R12 and R13 with same scoring
-    for r in (r12, r13):
-        n_pace = sum(1 for h in r["horses"] if h.get("style") == "pacesetter"
-                     or (h.get("tfus_early") and h["tfus_early"] >= 100))
-        for h in r["horses"]:
-            late = h.get("tfus_late", 90) or 90
-            early = h.get("tfus_early", 90) or 90
-            base = late * 1.0 + max(0, 95 - early) * 0.3
-            # pace factor
-            if early >= 105 and n_pace >= 3:
-                pf = 0.55
-            elif early >= 95 and n_pace >= 3:
-                pf = 0.85
-            elif early <= 80 and late >= 108:
-                pf = 1.50
-            elif late >= 104 and early <= 94:
-                pf = 1.30
-            else:
-                pf = 1.00
-            h["pace_factor"] = pf
-            h["score"] = base * pf
-        r["horses"].sort(key=lambda h: -h["score"])
+    # ── Step 3: Re-rank every race after filtering ────────────────────
+    for r in d["races"]:
+        if not r["horses"]:
+            continue
+        r["horses"], n_pace = rank_with_pace_overlay(r["horses"])
         if len(r["horses"]) >= 2:
             r["gap_1_2"] = r["horses"][0]["score"] - r["horses"][1]["score"]
             r["single_confidence"] = ("STRONG" if r["gap_1_2"] >= 15
                                        else "MEDIUM" if r["gap_1_2"] >= 8
                                        else "WIDE")
+        else:
+            r["single_confidence"] = "UNKNOWN"
         r["n_pacesetters"] = n_pace
         r["pace_shape"] = ("FAST" if n_pace >= 3
                            else "MOD" if n_pace == 2
                            else "SLOW/TAC")
 
     # Tag R13 as the Oaks
-    r13["name"] = "KENTUCKY OAKS (G1)"
-    r13["post_time"] = "5:51 PM ET"
+    if 13 in races:
+        races[13]["name"] = "KENTUCKY OAKS (G1)"
+        races[13]["post_time"] = "5:51 PM ET"
 
     with open(PICKS, "w") as f:
         json.dump(d, f, indent=2, default=str)
 
-    print("\n  R13 - KENTUCKY OAKS top picks (post-fix):")
-    for i, h in enumerate(r13["horses"][:6], 1):
-        print(f"    {i}. PP{h['post']:>2} {h['name']:25s} ML={h['ml']:5s} "
-              f"E{h.get('tfus_early', '—')}/L{h.get('tfus_late', '—')} "
-              f"score={h['score']:.1f}")
-    print(f"\n  Confidence: {r13['single_confidence']}  "
-          f"(gap {r13.get('gap_1_2', 0):.1f})")
+    # ── Print revised top 5 of every race ──────────────────────────────
+    print()
+    print("=" * 90)
+    print("  POST-SCRATCH ORDER OF FINISH")
+    print("=" * 90)
+    for r in sorted(d["races"], key=lambda x: x["race"]):
+        if not r["horses"]:
+            continue
+        h = r["horses"]
+        gap = r.get("gap_1_2", 0)
+        print(f"\n  R{r['race']:<2}  ({len(h)} starters, pace={r.get('pace_shape','?')}, "
+              f"conf={r.get('single_confidence','?')}, gap={gap:.1f})")
+        for i, hh in enumerate(h[:4], 1):
+            print(f"    {i}. PP{hh['post']:>2} {hh['name']:25s}  ML={hh.get('ml','—'):5}  "
+                  f"score={hh['score']:.1f}")
 
 
 if __name__ == "__main__":

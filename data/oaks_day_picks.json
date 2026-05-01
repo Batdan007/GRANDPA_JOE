@@ -455,26 +455,6 @@
           "score": 105.4
         },
         {
-          "post": 16,
-          "name": "Wembley Avenue",
-          "ml": "15-1",
-          "tfus_early": 51,
-          "tfus_late": 83,
-          "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 96.2
-        },
-        {
-          "post": 14,
-          "name": "Drop Shot",
-          "ml": "20-1",
-          "tfus_early": 68,
-          "tfus_late": 86,
-          "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 94.1
-        },
-        {
           "post": 2,
           "name": "Camila Catalina",
           "ml": "20-1",
@@ -503,26 +483,6 @@
           "style": "presser",
           "pace_factor": 1.0,
           "score": 84.8
-        },
-        {
-          "post": 15,
-          "name": "Apollo's Glory",
-          "ml": "30-1",
-          "tfus_early": 79,
-          "tfus_late": 71,
-          "style": "pacesetter",
-          "pace_factor": 1.0,
-          "score": 75.8
-        },
-        {
-          "post": 12,
-          "name": "Hill Country",
-          "ml": "50-1",
-          "tfus_early": 67,
-          "tfus_late": 65,
-          "style": "stalker",
-          "pace_factor": 1.0,
-          "score": 73.4
         },
         {
           "post": 8,
@@ -597,7 +557,7 @@
       ],
       "gap_1_2": 12.099999999999994,
       "single_confidence": "MEDIUM",
-      "n_pacesetters": 8,
+      "n_pacesetters": 7,
       "pace_shape": "FAST"
     },
     {
@@ -639,16 +599,6 @@
           "score": 77.5
         },
         {
-          "post": 14,
-          "name": "Heaven's Bolt",
-          "ml": "30-1",
-          "tfus_early": 86,
-          "tfus_late": 72,
-          "style": "pacesetter",
-          "pace_factor": 1.0,
-          "score": 74.7
-        },
-        {
           "post": 13,
           "name": "Blue Flame Six",
           "ml": "20-1",
@@ -657,16 +607,6 @@
           "style": "pacesetter",
           "pace_factor": 1.0,
           "score": 68.3
-        },
-        {
-          "post": 15,
-          "name": "Don't Do It Lucy",
-          "ml": "30-1",
-          "tfus_early": 86,
-          "tfus_late": 60,
-          "style": "pacesetter",
-          "pace_factor": 1.0,
-          "score": 62.7
         },
         {
           "post": 10,
@@ -699,16 +639,6 @@
           "score": 56.1
         },
         {
-          "post": 7,
-          "name": "Kayla's Komet",
-          "ml": "50-1",
-          "tfus_early": 104,
-          "tfus_late": 51,
-          "style": "pacesetter",
-          "pace_factor": 0.85,
-          "score": 43.35
-        },
-        {
           "post": 9,
           "name": "Steer Clear",
           "ml": "10-1",
@@ -731,7 +661,7 @@
       ],
       "gap_1_2": 1.6999999999999886,
       "single_confidence": "WIDE",
-      "n_pacesetters": 10,
+      "n_pacesetters": 7,
       "pace_shape": "FAST"
     },
     {
@@ -1011,16 +941,6 @@
           "score": 54.45
         },
         {
-          "post": 9,
-          "name": "Disruptor",
-          "ml": "6-1",
-          "tfus_early": 108,
-          "tfus_late": 93,
-          "style": "pacesetter",
-          "pace_factor": 0.55,
-          "score": 51.150000000000006
-        },
-        {
           "post": 5,
           "name": "East Avenue",
           "ml": "12-1",
@@ -1043,7 +963,7 @@
       ],
       "gap_1_2": 3.75,
       "single_confidence": "WIDE",
-      "n_pacesetters": 4,
+      "n_pacesetters": 3,
       "pace_shape": "FAST"
     },
     {
@@ -1061,8 +981,8 @@
           "tfus_early": 57,
           "tfus_late": 110,
           "style": "deep_closer",
-          "pace_factor": 1.1,
-          "score": 133.54000000000002
+          "pace_factor": 1.5,
+          "score": 182.10000000000002
         },
         {
           "post": 6,
@@ -1071,8 +991,8 @@
           "tfus_early": 58,
           "tfus_late": 107,
           "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 118.1
+          "pace_factor": 1.3,
+          "score": 153.53
         },
         {
           "post": 2,
@@ -1081,8 +1001,18 @@
           "tfus_early": 74,
           "tfus_late": 107,
           "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 113.3
+          "pace_factor": 1.3,
+          "score": 147.29
+        },
+        {
+          "post": 5,
+          "name": "Kathynmarissa",
+          "ml": "8-1",
+          "tfus_early": 73,
+          "tfus_late": 104,
+          "style": "deep_closer",
+          "pace_factor": 1.3,
+          "score": 143.78
         },
         {
           "post": 7,
@@ -1093,26 +1023,6 @@
           "style": "deep_closer",
           "pace_factor": 1.0,
           "score": 111.2
-        },
-        {
-          "post": 5,
-          "name": "Kathynmarissa",
-          "ml": "8-1",
-          "tfus_early": 73,
-          "tfus_late": 104,
-          "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 110.6
-        },
-        {
-          "post": 8,
-          "name": "Pin Up Betty",
-          "ml": "10-1",
-          "tfus_early": 83,
-          "tfus_late": 102,
-          "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 105.6
         },
         {
           "post": 1,
@@ -1151,11 +1061,11 @@
           "tfus_early": 113,
           "tfus_late": 71,
           "style": "pacesetter",
-          "pace_factor": 0.95,
-          "score": 67.45
+          "pace_factor": 1.0,
+          "score": 71.0
         }
       ],
-      "gap_1_2": 15.440000000000026,
+      "gap_1_2": 28.57000000000002,
       "single_confidence": "STRONG",
       "n_pacesetters": 2,
       "pace_shape": "MOD"
@@ -1351,16 +1261,6 @@
           "style": "deep_closer",
           "pace_factor": 1.0,
           "score": 109.0
-        },
-        {
-          "post": 7,
-          "name": "Lovely Grey",
-          "ml": "15-1",
-          "tfus_early": 61,
-          "tfus_late": 91,
-          "style": "deep_closer",
-          "pace_factor": 1.0,
-          "score": 101.2
         },
         {
           "post": 8,
