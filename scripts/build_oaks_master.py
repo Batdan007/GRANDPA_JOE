@@ -182,7 +182,21 @@ def main():
     r13 = top_n(13, 4)  # Always a Runner / Lovely Grey / Zany / Resist
 
     # Bet definitions
+    # Oaks-Derby Double: blend model picks (Oaks) with model + chalk for Derby leg
+    # Oaks 4: 9 Always a Runner, 2 Zany, 10 Prom Queen, 11 Percy's Bar
+    # Derby 4: 6 Commandment, 1 Renegade, 9 Puma, 19 Golden Tempo
+    oaks_dbl_legs = "9, 2, 10, 11"
+    derby_dbl_legs = "1, 6, 9, 19"
+
     bets = [
+        ("OAKS-DERBY DOUBLE", "R13 today + R12 tomorrow",
+         f"$2 OAKS-DERBY DOUBLE  {oaks_dbl_legs}  /  {derby_dbl_legs}",
+         f'"$2 Oaks-Derby double, Oaks 2-9-10-11 with Derby 1-6-9-19"',
+         "Oaks: 9 Always a Runner / 2 Zany / 10 Prom Queen / 11 Percy's Bar  -  "
+         "Derby: 1 Renegade / 6 Cmdmt / 9 Puma / 19 Golden Tempo",
+         "16 combos. Special 2-day wager pays premium over separate Wins. "
+         "PUNCH BEFORE THE OAKS GOES OFF (5:51 ET).",
+         32.00),
         ("OAKS EXACTA", "R13 (5:51 ET)",
          f"$5 EXACTA BOX  {r13[0][0]}, {r13[1][0] if len(r13)>1 else '?'}   (race 13)",
          f'"$5 exacta box, {r13[0][0]} and {r13[1][0] if len(r13)>1 else "?"}, race thirteen"',
