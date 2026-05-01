@@ -152,8 +152,13 @@ def _score_graded_win(entry: Dict) -> float:
         parts = record.split(":")
         if len(parts) == 2:
             wins = parts[1].strip().split("-")
-            if len(wins) >= 1 and int(wins[0].strip()) >= 1:
-                return 0.6  # has wins but can't confirm graded
+            if len(wins) >= 1:
+                try:
+                    if int(wins[0].strip()) >= 1:
+                        return 0.6  # has wins but can't confirm graded
+                except ValueError:
+                    # Record contains '?' or other non-numeric — skip
+                    pass
     return 0.1
 
 

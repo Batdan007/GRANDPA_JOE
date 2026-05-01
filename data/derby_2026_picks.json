@@ -74,9 +74,9 @@
       "grade": "B",
       "derby_pp_adj": 4.8,
       "derby_score": 81.0,
-      "joe_prob": 0.1691,
+      "joe_prob": 0.1785,
       "ml_implied": 0.0625,
-      "edge": 0.1066
+      "edge": 0.116
     },
     {
       "name": "Commandment",
@@ -157,9 +157,9 @@
       "grade": "B",
       "derby_pp_adj": 4.0,
       "derby_score": 79.8,
-      "joe_prob": 0.1552,
+      "joe_prob": 0.1639,
       "ml_implied": 0.1429,
-      "edge": 0.0123
+      "edge": 0.021
     },
     {
       "name": "Further Ado",
@@ -249,9 +249,9 @@
       "grade": "B",
       "derby_pp_adj": -4.0,
       "derby_score": 74.5,
-      "joe_prob": 0.1063,
+      "joe_prob": 0.1122,
       "ml_implied": 0.1429,
-      "edge": -0.0366
+      "edge": -0.0307
     },
     {
       "name": "The Puma",
@@ -323,9 +323,9 @@
       "grade": "B",
       "derby_pp_adj": 4.0,
       "derby_score": 72.8,
-      "joe_prob": 0.0941,
+      "joe_prob": 0.0994,
       "ml_implied": 0.0909,
-      "edge": 0.0032
+      "edge": 0.0085
     },
     {
       "name": "Renegade",
@@ -406,46 +406,9 @@
       "grade": "B",
       "derby_pp_adj": -6.4,
       "derby_score": 72.6,
-      "joe_prob": 0.0928,
+      "joe_prob": 0.098,
       "ml_implied": 0.2,
-      "edge": -0.1072
-    },
-    {
-      "name": "Right to Party",
-      "sire": "Constitution",
-      "dam": "Havin' a Party",
-      "trainer": "Ken McPeek",
-      "jockey": "Chris Elliott",
-      "beyer": 81,
-      "style": "closer",
-      "tfus_early": 70,
-      "tfus_late": 108,
-      "pts": 65,
-      "record": "4: 1-1-2-0",
-      "earnings": 230200,
-      "pps": [],
-      "post_position": 5,
-      "morning_line": "30-1",
-      "ml_decimal": 30.0,
-      "drew_in": true,
-      "ae": false,
-      "pattern_scores": {
-        "beyer_100_rule": 0.05,
-        "running_style": 1.0,
-        "post_position": 1.0,
-        "speed_figure_trend": 0.3,
-        "graded_stakes_win": 0.6,
-        "experience": 1.0,
-        "trainer_class": 1.0,
-        "odds_value": 1.0
-      },
-      "total_score": 61.8,
-      "grade": "C",
-      "derby_pp_adj": 4.0,
-      "derby_score": 65.8,
-      "joe_prob": 0.0571,
-      "ml_implied": 0.0323,
-      "edge": 0.0248
+      "edge": -0.102
     },
     {
       "name": "Incredibolt",
@@ -524,9 +487,9 @@
       "grade": "C",
       "derby_pp_adj": 2.4,
       "derby_score": 63.4,
-      "joe_prob": 0.0481,
+      "joe_prob": 0.0508,
       "ml_implied": 0.0476,
-      "edge": 0.0005
+      "edge": 0.0032
     },
     {
       "name": "Emerging Market",
@@ -578,9 +541,9 @@
       "grade": "C",
       "derby_pp_adj": 1.6,
       "derby_score": 62.6,
-      "joe_prob": 0.0454,
+      "joe_prob": 0.048,
       "ml_implied": 0.0625,
-      "edge": -0.0171
+      "edge": -0.0145
     },
     {
       "name": "Wonder Dean",
@@ -613,9 +576,9 @@
       "grade": "C",
       "derby_pp_adj": 5.6,
       "derby_score": 61.4,
-      "joe_prob": 0.0417,
+      "joe_prob": 0.044,
       "ml_implied": 0.0323,
-      "edge": 0.0094
+      "edge": 0.0117
     },
     {
       "name": "Potente",
@@ -678,9 +641,9 @@
       "grade": "C",
       "derby_pp_adj": -0.8,
       "derby_score": 59.2,
-      "joe_prob": 0.0356,
+      "joe_prob": 0.0376,
       "ml_implied": 0.0476,
-      "edge": -0.012
+      "edge": -0.01
     },
     {
       "name": "Chief Wallabee",
@@ -716,9 +679,9 @@
       "grade": "C",
       "derby_pp_adj": 2.4,
       "derby_score": 58.2,
-      "joe_prob": 0.0332,
+      "joe_prob": 0.035,
       "ml_implied": 0.1111,
-      "edge": -0.0779
+      "edge": -0.0761
     },
     {
       "name": "Intrepido",
@@ -751,9 +714,9 @@
       "grade": "C",
       "derby_pp_adj": -0.8,
       "derby_score": 53.7,
-      "joe_prob": 0.0241,
+      "joe_prob": 0.0254,
       "ml_implied": 0.0196,
-      "edge": 0.0045
+      "edge": 0.0058
     },
     {
       "name": "Pavlovian",
@@ -786,9 +749,9 @@
       "grade": "C",
       "derby_pp_adj": -1.6,
       "derby_score": 51.9,
-      "joe_prob": 0.0212,
+      "joe_prob": 0.0223,
       "ml_implied": 0.0323,
-      "edge": -0.0111
+      "edge": -0.01
     },
     {
       "name": "Golden Tempo",
@@ -823,9 +786,9 @@
       "grade": "C",
       "derby_pp_adj": -3.2,
       "derby_score": 51.0,
-      "joe_prob": 0.0198,
+      "joe_prob": 0.0209,
       "ml_implied": 0.0323,
-      "edge": -0.0125
+      "edge": -0.0114
     },
     {
       "name": "Danon Bourbon",
@@ -858,9 +821,9 @@
       "grade": "D",
       "derby_pp_adj": 3.2,
       "derby_score": 50.0,
-      "joe_prob": 0.0185,
+      "joe_prob": 0.0195,
       "ml_implied": 0.0476,
-      "edge": -0.0291
+      "edge": -0.0281
     },
     {
       "name": "Albus",
@@ -930,9 +893,9 @@
       "grade": "C",
       "derby_pp_adj": -2.4,
       "derby_score": 48.8,
-      "joe_prob": 0.017,
+      "joe_prob": 0.0179,
       "ml_implied": 0.0323,
-      "edge": -0.0153
+      "edge": -0.0144
     },
     {
       "name": "Litmus Test",
@@ -968,9 +931,9 @@
       "grade": "D",
       "derby_pp_adj": 0.0,
       "derby_score": 37.5,
-      "joe_prob": 0.0076,
+      "joe_prob": 0.008,
       "ml_implied": 0.0323,
-      "edge": -0.0247
+      "edge": -0.0243
     },
     {
       "name": "Ocelli",
@@ -1017,9 +980,9 @@
       "grade": "D",
       "derby_pp_adj": -6.4,
       "derby_score": 31.4,
-      "joe_prob": 0.0049,
+      "joe_prob": 0.0052,
       "ml_implied": 0.0196,
-      "edge": -0.0147
+      "edge": -0.0144
     },
     {
       "name": "Six Speed",
@@ -1052,9 +1015,50 @@
       "grade": "D",
       "derby_pp_adj": -5.6,
       "derby_score": 30.6,
-      "joe_prob": 0.0046,
+      "joe_prob": 0.0049,
       "ml_implied": 0.0196,
-      "edge": -0.015
+      "edge": -0.0147
+    },
+    {
+      "name": "Robusta",
+      "sire": "Accelerate",
+      "dam": "Urbane Legend",
+      "trainer": "Bob Baffert",
+      "jockey": "Emisael Jaramillo",
+      "beyer": null,
+      "style": "presser",
+      "tfus_early": 103,
+      "tfus_late": 79,
+      "pts": 30,
+      "record": "?: ?-?-?-?",
+      "earnings": null,
+      "pps": [],
+      "post_position": 23,
+      "morning_line": "50-1",
+      "ml_decimal": 50.0,
+      "drew_in": true,
+      "ae": true,
+      "ae_filled": true,
+      "ae_fill_date": "2026-05-01",
+      "auxiliary_gate": true,
+      "concerns": "third AE drew in after Right to Party scratch; high TFUS-Early 103 adds to pace meltdown",
+      "pattern_scores": {
+        "beyer_100_rule": 0.05,
+        "running_style": 0.4,
+        "post_position": 0.5,
+        "speed_figure_trend": 0.3,
+        "graded_stakes_win": 0.1,
+        "experience": 0.2,
+        "trainer_class": 1.0,
+        "odds_value": 0.5
+      },
+      "total_score": 29.2,
+      "grade": "F",
+      "derby_pp_adj": 0.0,
+      "derby_score": 29.2,
+      "joe_prob": 0.0044,
+      "ml_implied": 0.0196,
+      "edge": -0.0152
     },
     {
       "name": "Great White",
@@ -1112,9 +1116,9 @@
       "grade": "F",
       "derby_pp_adj": -5.6,
       "derby_score": 28.2,
-      "joe_prob": 0.0039,
+      "joe_prob": 0.0041,
       "ml_implied": 0.0196,
-      "edge": -0.0157
+      "edge": -0.0155
     }
   ],
   "top5": [
@@ -1123,45 +1127,45 @@
       "name": "So Happy",
       "post": 8,
       "ml": "15-1",
-      "joe_prob": 0.1691,
+      "joe_prob": 0.1785,
       "score": 81.0,
-      "edge": 0.1066
+      "edge": 0.116
     },
     {
       "rank": 2,
       "name": "Commandment",
       "post": 6,
       "ml": "6-1",
-      "joe_prob": 0.1552,
+      "joe_prob": 0.1639,
       "score": 79.8,
-      "edge": 0.0123
+      "edge": 0.021
     },
     {
       "rank": 3,
       "name": "Further Ado",
       "post": 18,
       "ml": "6-1",
-      "joe_prob": 0.1063,
+      "joe_prob": 0.1122,
       "score": 74.5,
-      "edge": -0.0366
+      "edge": -0.0307
     },
     {
       "rank": 4,
       "name": "The Puma",
       "post": 9,
       "ml": "10-1",
-      "joe_prob": 0.0941,
+      "joe_prob": 0.0994,
       "score": 72.8,
-      "edge": 0.0032
+      "edge": 0.0085
     },
     {
       "rank": 5,
       "name": "Renegade",
       "post": 1,
       "ml": "4-1",
-      "joe_prob": 0.0928,
+      "joe_prob": 0.098,
       "score": 72.6,
-      "edge": -0.1072
+      "edge": -0.102
     }
   ],
   "overlays": [
@@ -1169,13 +1173,13 @@
       "name": "So Happy",
       "post": 8,
       "ml": "15-1",
-      "edge": 0.1066
+      "edge": 0.116
     },
     {
-      "name": "Right to Party",
-      "post": 5,
-      "ml": "30-1",
-      "edge": 0.0248
+      "name": "Commandment",
+      "post": 6,
+      "ml": "6-1",
+      "edge": 0.021
     }
   ]
 }
