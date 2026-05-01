@@ -43,7 +43,8 @@ def main():
     col_left_x = margin
     col_right_x = margin * 2 + col_w
     top_y = page_h - 0.75 * inch
-    block_h = (top_y - margin) / 7  # 7 races per column
+    footer_top_y = 0.95 * inch  # reserve bottom for legend + rebuild commands
+    block_h = (top_y - footer_top_y) / 7  # 7 races per column
 
     races_sorted = [r for r in races if r["horses"]]
     races_sorted.sort(key=lambda r: r["race"])
@@ -115,13 +116,85 @@ def main():
         c.line(x, y_bottom + 0.04 * inch,
                x + col_w, y_bottom + 0.04 * inch)
 
-    # Footer with legend
-    c.setFillColor(colors.HexColor("#666"))
-    c.setFont("Helvetica", 7.5)
-    legend = ("CONFIDENCE: green=SINGLE this leg | yellow=use 2 horses | "
-              "gray=3-4 horses    *=DRF Power Pick    "
-              "Singles: R10 Crazy Mason, R12 Renegade, R13 Buetane")
-    c.drawCentredString(page_w / 2, 0.18 * inch, legend)
+    # ── Footer: divider line ───────────────────────────────────────────
+    c.setStrokeColor(colors.HexColor("#1a1a2e"))
+    c.setLineWidth(1.2)
+    c.line(margin, 0.92 * inch, page_w - margin, 0.92 * inch)
+
+    # ── Row 1: Visual color legend ─────────────────────────────────────
+    legend_y = 0.66 * inch
+    legend_h = 0.18 * inch
+    swatch_w = 0.22 * inch
+    gap = 0.05 * inch
+
+    # "LEGEND:" label
+    c.setFillColor(colors.HexColor("#1a1a2e"))
+    c.setFont("Helvetica-Bold", 9)
+    cur_x = margin + 0.05 * inch
+    c.drawString(cur_x, legend_y + 0.05 * inch, "LEGEND:")
+    cur_x += 0.55 * inch
+
+    # Three confidence swatches with labels
+    swatches = [
+        ("#28a745", "SINGLE", "SINGLE this leg",   colors.white),
+        ("#ffc107", "MED",    "use 2 horses",      colors.black),
+        ("#6c757d", "WIDE",   "use 3-4 horses",    colors.white),
+    ]
+    for hex_color, swatch_label, full_label, text_color in swatches:
+        c.setFillColor(colors.HexColor(hex_color))
+        c.rect(cur_x, legend_y, swatch_w, legend_h, fill=1, stroke=0)
+        c.setFillColor(text_color)
+        c.setFont("Helvetica-Bold", 7.5)
+        c.drawCentredString(cur_x + swatch_w / 2,
+                             legend_y + 0.06 * inch, swatch_label)
+        cur_x += swatch_w + gap
+        c.setFillColor(colors.HexColor("#333"))
+        c.setFont("Helvetica", 8.5)
+        c.drawString(cur_x, legend_y + 0.05 * inch, f"= {full_label}")
+        cur_x += c.stringWidth(f"= {full_label}", "Helvetica", 8.5) + 0.22 * inch
+
+    # Star marker explanation
+    c.setFillColor(colors.HexColor("#1a1a2e"))
+    c.setFont("Helvetica-Bold", 9)
+    c.drawString(cur_x, legend_y + 0.05 * inch, "*")
+    c.setFillColor(colors.HexColor("#333"))
+    c.setFont("Helvetica", 8.5)
+    c.drawString(cur_x + 0.08 * inch, legend_y + 0.05 * inch,
+                 "= DRF Power Pick")
+
+    # ── Row 2: Singling-candidate callout ──────────────────────────────
+    c.setFillColor(colors.HexColor("#28a745"))
+    c.setFont("Helvetica-Bold", 8.5)
+    c.drawString(margin + 0.05 * inch, 0.48 * inch, "SINGLES TODAY:")
+    c.setFillColor(colors.HexColor("#333"))
+    c.setFont("Helvetica", 8.5)
+    c.drawString(margin + 1.0 * inch, 0.48 * inch,
+                 "R10 Crazy Mason   -   R12 Renegade   -   R13 Buetane   "
+                 "(single these legs in Pick 4/5/6 to slash combos)")
+
+    # ── Row 3: Rebuild commands (PowerShell, monospace box) ────────────
+    cmd_y = 0.18 * inch
+    cmd_h = 0.22 * inch
+    c.setFillColor(colors.HexColor("#0f0f23"))
+    c.rect(margin, cmd_y, page_w - 2 * margin, cmd_h, fill=1, stroke=0)
+    c.setFillColor(colors.HexColor("#ffd700"))
+    c.setFont("Helvetica-Bold", 7.5)
+    c.drawString(margin + 0.06 * inch, cmd_y + 0.13 * inch, "REBUILD (PS):")
+    c.setFillColor(colors.HexColor("#a0e0ff"))
+    c.setFont("Courier-Bold", 7.5)
+    cmd_text = (
+        "git pull origin main; "
+        "python scripts\\process_full_card.py; "
+        "python scripts\\animate_full_card.py; "
+        "python scripts\\build_derby_betting_pdf.py; "
+        "python scripts\\build_quick_finish_card.py"
+    )
+    c.drawString(margin + 1.0 * inch, cmd_y + 0.13 * inch, cmd_text)
+    c.setFillColor(colors.HexColor("#888"))
+    c.setFont("Helvetica", 6.5)
+    c.drawString(margin + 0.06 * inch, cmd_y + 0.03 * inch,
+                 "From C:\\Users\\danie\\GRANDPA_JOE  -  refreshes picks, "
+                 "animations, betting sheet, and this card")
 
     c.save()
     print(f"[OK] {OUT}")
