@@ -212,76 +212,88 @@ def main():
                         "1 EXA + 1 TRI + 1 SUP for the Derby + Pick 4/5/6 - "
                         "structured for high cash probability")
 
-    # Bet definitions ($300 bankroll, sized for cash probability + value)
+    # Bet definitions ($300 bankroll). TICKET line = exactly what you punch
+    # or say to the teller (post numbers, race numbers, base amount).
     bets = [
         {
             "n": "1",
             "name": "DERBY EXACTA",
             "race": "R12 Kentucky Derby (6:57 ET)",
-            "structure": "BOX 1, 6  ($5 base x 2 combos)",
-            "horses": "PP1 Renegade  /  PP6 Commandment",
-            "rationale": "Model's two top picks; either order cashes. "
-                          "Renegade L116 + Commandment L105 are the two best late kicks.",
+            "ticket": "$5 EXACTA BOX 1, 6   (race 12)",
+            "say":    '"$5 exacta box, 1 and 6, race twelve"',
+            "horses": "1 = Renegade (4-1)   |   6 = Commandment (6-1)",
+            "rationale": "Model's top 2 — either order cashes. Renegade L116 + "
+                          "Commandment L105 are the two best late kicks in the field.",
             "cost": 10.00,
         },
         {
             "n": "2",
             "name": "DERBY TRIFECTA",
             "race": "R12 Kentucky Derby",
-            "structure": "KEY 6  /  1, 9  /  1, 9, 5  ($2 base x 6 combos)",
-            "horses": "Commandment KEY over Renegade, Puma  with Right to Party 3rd",
-            "rationale": "Commandment is the pace-adjusted #1 (+5.7pp edge); "
-                          "Renegade/Puma are the model's #2-3 with Right to Party as the bomb cover.",
+            "ticket": "$2 TRIFECTA   6  /  1, 9  /  1, 9, 5   (race 12)",
+            "say":    '"$2 trifecta, KEY 6, second 1 and 9, third 1, 9 and 5, race twelve"',
+            "horses": "6 Commandment (KEY)  -  1 Renegade  -  9 The Puma  -  5 Right to Party",
+            "rationale": "Commandment KEY (pace-adj #1, +5.7pp edge) over the top 3 "
+                          "with Right to Party 30-1 in 3rd as the price cover.",
             "cost": 12.00,
         },
         {
             "n": "3",
             "name": "DERBY SUPERFECTA",
             "race": "R12 Kentucky Derby",
-            "structure": "6  /  1, 9, 5  /  1, 9, 5, 8  /  1, 9, 5, 8, 18  ($1 base x 60 combos)",
-            "horses": "Cascading wheel under Commandment (covers all top-5 + Further Ado 4th)",
-            "rationale": "Tight enough to cash with the model's top picks, "
-                          "wide enough to catch Right to Party at 30-1 in 4th for the boom.",
+            "ticket": "$1 SUPERFECTA   6  /  1, 9, 5  /  1, 9, 5, 8  /  1, 9, 5, 8, 18   (race 12)",
+            "say":    '"$1 superfecta, 6 with 1 9 5 with 1 9 5 8 with 1 9 5 8 18, race twelve"',
+            "horses": "6 Commandment - 1 Renegade - 9 The Puma - 5 Right to Party - 8 So Happy - 18 Further Ado",
+            "rationale": "60 combos cascading under Commandment — covers the model's "
+                          "top 5 plus Further Ado in 4th. Big payoff if Right to Party hits the slip.",
             "cost": 60.00,
         },
         {
             "n": "4",
             "name": "PICK 4  (R9-R12)",
-            "race": "R9 - R10 - R11 - R12  (4:06-6:57 ET)",
-            "structure": "2 / SINGLE / 3 / 4 horses  ($2 base x 24 combos)",
-            "horses": "R9: Let's Be Frank, Remember Mamba  |  R10: CRAZY MASON SINGLE  |  "
-                      "R11: Mercante, Program Trading, Test Score  |  R12: 6, 1, 9, 5",
-            "rationale": "Singling Crazy Mason in R10 (gap 20.8) cuts combo count by 65% "
-                          "vs. a typical 3-3-3-4 spread.",
+            "race": "Races 9 - 10 - 11 - 12   (4:06 - 6:57 ET)",
+            "ticket": "$2 PICK 4   R9: 2, 12   R10: 9 (SINGLE)   R11: 4, 5, 9   R12: 1, 6, 9, 5",
+            "say":    '"$2 pick 4: race 9 numbers 2 and 12; race 10 number 9 single; '
+                      'race 11 numbers 4, 5, 9; race 12 numbers 1, 6, 9, 5"',
+            "horses": "R9: Let's Be Frank / Remember Mamba | R10: CRAZY MASON SINGLE | "
+                      "R11: Program Trading / Mercante / Test Score | R12: Renegade / Commandment / Puma / RTP",
+            "rationale": "Singling 9 in R10 (gap 20.8) collapses combos. Pace-shape supports "
+                          "Crazy Mason; everywhere else use the model's top.",
             "cost": 48.00,
         },
         {
             "n": "5",
             "name": "PICK 5  (R8-R12)",
-            "race": "R8 - R12  (3:23-6:57 ET)",
-            "structure": "3 / 2 / SINGLE / 3 / 4 horses  ($1 base x 72 combos)",
-            "horses": "R8: Englishman, Crude Velocity, Crown the Buckeye  |  "
-                      "R9-R12 same as Pick 4",
-            "rationale": "Adds the Pat Day Mile (R8) leg. Englishman is the chalk; "
-                          "Crude Velocity + Buckeye are the live overlays.",
+            "race": "Races 8 - 12   (3:23 - 6:57 ET)",
+            "ticket": "$1 PICK 5   R8: 1, 6, 7   R9: 2, 12   R10: 9 (SINGLE)   R11: 4, 5, 9   R12: 1, 6, 9, 5",
+            "say":    '"$1 pick 5: race 8 numbers 1, 6, 7; race 9 numbers 2 and 12; '
+                      'race 10 single 9; race 11 numbers 4, 5, 9; race 12 numbers 1, 6, 9, 5"',
+            "horses": "R8: Englishman / Crude Velocity / Crown the Buckeye | "
+                      "R9-R12 same as Pick 4 above",
+            "rationale": "Adds the Pat Day Mile. Englishman is the chalk; Crude Velocity + Buckeye "
+                          "are the overlays. R10 single still holds the leverage.",
             "cost": 72.00,
         },
         {
             "n": "6",
             "name": "PICK 6  (R7-R12)",
-            "race": "R7 - R12  (2:38-6:57 ET)",
-            "structure": "3 / 3 / 2 / SINGLE / 3 / 3 horses  ($0.50 base x 162 combos)",
-            "horses": "R7: Pin Up Betty, Temptable GB, Vina Arana  |  R8-R12 same as Pick 5  |  "
-                      "R12 trimmed to 6, 1, 9 (drop Right to Party from this leg)",
-            "rationale": "Highest payout potential; Crazy Mason single in R10 is the value "
-                          "engine. Trimming Derby to 3 keeps cost manageable at 50c base.",
+            "race": "Races 7 - 12   (2:38 - 6:57 ET)",
+            "ticket": "$0.50 PICK 6   R7: 4, 6, 8   R8: 1, 6, 7   R9: 2, 12   R10: 9 (SINGLE)   "
+                      "R11: 4, 5, 9   R12: 1, 6, 9",
+            "say":    '"50-cent pick 6: race 7 numbers 4, 6, 8; race 8 numbers 1, 6, 7; '
+                      'race 9 numbers 2 and 12; race 10 single 9; race 11 numbers 4, 5, 9; '
+                      'race 12 numbers 1, 6, 9"',
+            "horses": "R7: Temptable / Vina Arana / Pin Up Betty | R8-R11 same as Pick 5 | "
+                      "R12 trimmed: Renegade / Commandment / Puma (no RTP)",
+            "rationale": "Highest payout. Crazy Mason single is the value engine. R12 trimmed "
+                          "to 3 to keep cost manageable; if RTP wins anyway, we still cash the SUPER.",
             "cost": 81.00,
         },
     ]
 
     # Render each bet as a card
     top_y = page_h - 0.75 * inch
-    bet_h = 1.08 * inch  # ~6 bets at 1.08" = 6.5", leaves room for total
+    bet_h = 1.30 * inch  # taller cards to fit ticket line + say line
     bet_x = margin
     bet_w = page_w - 2 * margin
 
@@ -297,57 +309,89 @@ def main():
         c.rect(bet_x, y_bot + 0.03 * inch, bet_w,
                bet_h - 0.06 * inch, fill=1, stroke=0)
 
-        # Number circle
+        # Number circle (top-left)
         c.setFillColor(colors.HexColor("#1a1a2e"))
         c.circle(bet_x + 0.32 * inch, y_top - 0.22 * inch, 0.18 * inch, fill=1, stroke=0)
         c.setFillColor(colors.HexColor("#ffd700"))
         c.setFont("Helvetica-Bold", 14)
         c.drawCentredString(bet_x + 0.32 * inch, y_top - 0.27 * inch, bet["n"])
 
-        # Bet name + race
+        # Bet name + race (top-center)
         c.setFillColor(colors.HexColor("#1a1a2e"))
         c.setFont("Helvetica-Bold", 12)
-        c.drawString(bet_x + 0.6 * inch, y_top - 0.22 * inch, bet["name"])
+        c.drawString(bet_x + 0.6 * inch, y_top - 0.20 * inch, bet["name"])
         c.setFillColor(colors.HexColor("#666"))
         c.setFont("Helvetica", 8)
-        c.drawString(bet_x + 0.6 * inch, y_top - 0.36 * inch, bet["race"])
+        c.drawString(bet_x + 0.6 * inch, y_top - 0.34 * inch, bet["race"])
 
-        # Cost (right-aligned, big)
+        # Cost (top-right, big)
         c.setFillColor(colors.HexColor("#28a745"))
-        c.setFont("Helvetica-Bold", 16)
+        c.setFont("Helvetica-Bold", 18)
         c.drawRightString(bet_x + bet_w - 0.15 * inch,
                           y_top - 0.27 * inch, f"${bet['cost']:.2f}")
 
-        # Structure line
+        # ── TICKET line (the actual punched ticket — yellow highlight bg) ──
+        ticket_y = y_top - 0.55 * inch
+        c.setFillColor(colors.HexColor("#fff8dc"))
+        c.rect(bet_x + 0.15 * inch, ticket_y - 0.04 * inch,
+               bet_w - 0.3 * inch, 0.22 * inch,
+               fill=1, stroke=0)
+        c.setStrokeColor(colors.HexColor("#ffc107"))
+        c.setLineWidth(1)
+        c.rect(bet_x + 0.15 * inch, ticket_y - 0.04 * inch,
+               bet_w - 0.3 * inch, 0.22 * inch,
+               fill=0, stroke=1)
         c.setFillColor(colors.HexColor("#0f0f23"))
-        c.setFont("Courier-Bold", 8.5)
-        c.drawString(bet_x + 0.18 * inch, y_top - 0.55 * inch,
-                     "STRUCTURE: " + bet["structure"])
+        c.setFont("Helvetica-Bold", 8.5)
+        c.drawString(bet_x + 0.22 * inch, ticket_y + 0.07 * inch, "TICKET:")
+        c.setFillColor(colors.HexColor("#0f0f23"))
+        c.setFont("Courier-Bold", 9)
+        c.drawString(bet_x + 0.78 * inch, ticket_y + 0.07 * inch, bet["ticket"])
 
-        # Horses
+        # ── SAY line (what to tell the teller) ─────────────────────────
+        say_y = y_top - 0.81 * inch
+        c.setFillColor(colors.HexColor("#1a1a2e"))
+        c.setFont("Helvetica-Bold", 7.5)
+        c.drawString(bet_x + 0.22 * inch, say_y + 0.05 * inch, "SAY TO TELLER:")
+        c.setFillColor(colors.HexColor("#333"))
+        c.setFont("Helvetica-Oblique", 7.5)
+        say_text = bet["say"]
+        # Wrap if too long
+        if len(say_text) > 130:
+            c.drawString(bet_x + 1.18 * inch, say_y + 0.05 * inch, say_text[:130])
+            c.drawString(bet_x + 0.22 * inch, say_y - 0.08 * inch, say_text[130:260])
+        else:
+            c.drawString(bet_x + 1.18 * inch, say_y + 0.05 * inch, say_text)
+
+        # ── HORSES reference line ──────────────────────────────────────
+        horse_y = y_top - 1.00 * inch
+        c.setFillColor(colors.HexColor("#1a1a2e"))
+        c.setFont("Helvetica-Bold", 7.5)
+        c.drawString(bet_x + 0.22 * inch, horse_y + 0.05 * inch, "HORSES:")
         c.setFillColor(colors.black)
-        c.setFont("Helvetica-Bold", 8)
-        c.drawString(bet_x + 0.18 * inch, y_top - 0.71 * inch,
-                     "HORSES: " + bet["horses"][:130])
-        if len(bet["horses"]) > 130:
-            c.drawString(bet_x + 0.78 * inch, y_top - 0.83 * inch,
-                         bet["horses"][130:260])
+        c.setFont("Helvetica", 7.5)
+        horse_text = bet["horses"]
+        if len(horse_text) > 130:
+            c.drawString(bet_x + 0.78 * inch, horse_y + 0.05 * inch, horse_text[:130])
+            c.drawString(bet_x + 0.22 * inch, horse_y - 0.08 * inch, horse_text[130:260])
+        else:
+            c.drawString(bet_x + 0.78 * inch, horse_y + 0.05 * inch, horse_text)
 
-        # Rationale
+        # ── WHY line ───────────────────────────────────────────────────
         c.setFillColor(colors.HexColor("#444"))
         c.setFont("Helvetica-Oblique", 7.5)
-        c.drawString(bet_x + 0.18 * inch, y_top - 0.97 * inch,
-                     "WHY: " + bet["rationale"][:155])
+        c.drawString(bet_x + 0.22 * inch, y_top - 1.20 * inch,
+                     "WHY: " + bet["rationale"][:170])
 
-        # Punched checkbox
+        # Punched checkbox (top-right under cost)
         c.setStrokeColor(colors.HexColor("#1a1a2e"))
         c.setLineWidth(1.2)
-        c.rect(bet_x + bet_w - 0.45 * inch, y_top - 0.55 * inch,
+        c.rect(bet_x + bet_w - 0.5 * inch, y_top - 0.50 * inch,
                0.18 * inch, 0.18 * inch, fill=0, stroke=1)
         c.setFillColor(colors.HexColor("#666"))
         c.setFont("Helvetica", 6.5)
-        c.drawCentredString(bet_x + bet_w - 0.36 * inch,
-                             y_top - 0.65 * inch, "punched")
+        c.drawCentredString(bet_x + bet_w - 0.41 * inch,
+                             y_top - 0.60 * inch, "punched")
 
     # Total bar at the bottom
     total = sum(b["cost"] for b in bets)
