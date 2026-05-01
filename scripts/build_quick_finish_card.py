@@ -196,9 +196,183 @@ def main():
                  "From C:\\Users\\danie\\GRANDPA_JOE  -  refreshes picks, "
                  "animations, betting sheet, and this card")
 
+    # ── PAGE 2: $300 BEST-CHANCE BET SHEET ─────────────────────────────
+    c.showPage()
+
+    # Title bar
+    c.setFillColor(colors.HexColor("#1a1a2e"))
+    c.rect(0, page_h - 0.55 * inch, page_w, 0.55 * inch, fill=1, stroke=0)
+    c.setFillColor(colors.HexColor("#ffd700"))
+    c.setFont("Helvetica-Bold", 16)
+    c.drawCentredString(page_w / 2, page_h - 0.32 * inch,
+                        "$300 BANKROLL - BEST-CHANCE BET SHEET")
+    c.setFillColor(colors.white)
+    c.setFont("Helvetica", 9)
+    c.drawCentredString(page_w / 2, page_h - 0.49 * inch,
+                        "1 EXA + 1 TRI + 1 SUP for the Derby + Pick 4/5/6 - "
+                        "structured for high cash probability")
+
+    # Bet definitions ($300 bankroll, sized for cash probability + value)
+    bets = [
+        {
+            "n": "1",
+            "name": "DERBY EXACTA",
+            "race": "R12 Kentucky Derby (6:57 ET)",
+            "structure": "BOX 1, 6  ($5 base x 2 combos)",
+            "horses": "PP1 Renegade  /  PP6 Commandment",
+            "rationale": "Model's two top picks; either order cashes. "
+                          "Renegade L116 + Commandment L105 are the two best late kicks.",
+            "cost": 10.00,
+        },
+        {
+            "n": "2",
+            "name": "DERBY TRIFECTA",
+            "race": "R12 Kentucky Derby",
+            "structure": "KEY 6  /  1, 9  /  1, 9, 5  ($2 base x 6 combos)",
+            "horses": "Commandment KEY over Renegade, Puma  with Right to Party 3rd",
+            "rationale": "Commandment is the pace-adjusted #1 (+5.7pp edge); "
+                          "Renegade/Puma are the model's #2-3 with Right to Party as the bomb cover.",
+            "cost": 12.00,
+        },
+        {
+            "n": "3",
+            "name": "DERBY SUPERFECTA",
+            "race": "R12 Kentucky Derby",
+            "structure": "6  /  1, 9, 5  /  1, 9, 5, 8  /  1, 9, 5, 8, 18  ($1 base x 60 combos)",
+            "horses": "Cascading wheel under Commandment (covers all top-5 + Further Ado 4th)",
+            "rationale": "Tight enough to cash with the model's top picks, "
+                          "wide enough to catch Right to Party at 30-1 in 4th for the boom.",
+            "cost": 60.00,
+        },
+        {
+            "n": "4",
+            "name": "PICK 4  (R9-R12)",
+            "race": "R9 - R10 - R11 - R12  (4:06-6:57 ET)",
+            "structure": "2 / SINGLE / 3 / 4 horses  ($2 base x 24 combos)",
+            "horses": "R9: Let's Be Frank, Remember Mamba  |  R10: CRAZY MASON SINGLE  |  "
+                      "R11: Mercante, Program Trading, Test Score  |  R12: 6, 1, 9, 5",
+            "rationale": "Singling Crazy Mason in R10 (gap 20.8) cuts combo count by 65% "
+                          "vs. a typical 3-3-3-4 spread.",
+            "cost": 48.00,
+        },
+        {
+            "n": "5",
+            "name": "PICK 5  (R8-R12)",
+            "race": "R8 - R12  (3:23-6:57 ET)",
+            "structure": "3 / 2 / SINGLE / 3 / 4 horses  ($1 base x 72 combos)",
+            "horses": "R8: Englishman, Crude Velocity, Crown the Buckeye  |  "
+                      "R9-R12 same as Pick 4",
+            "rationale": "Adds the Pat Day Mile (R8) leg. Englishman is the chalk; "
+                          "Crude Velocity + Buckeye are the live overlays.",
+            "cost": 72.00,
+        },
+        {
+            "n": "6",
+            "name": "PICK 6  (R7-R12)",
+            "race": "R7 - R12  (2:38-6:57 ET)",
+            "structure": "3 / 3 / 2 / SINGLE / 3 / 3 horses  ($0.50 base x 162 combos)",
+            "horses": "R7: Pin Up Betty, Temptable GB, Vina Arana  |  R8-R12 same as Pick 5  |  "
+                      "R12 trimmed to 6, 1, 9 (drop Right to Party from this leg)",
+            "rationale": "Highest payout potential; Crazy Mason single in R10 is the value "
+                          "engine. Trimming Derby to 3 keeps cost manageable at 50c base.",
+            "cost": 81.00,
+        },
+    ]
+
+    # Render each bet as a card
+    top_y = page_h - 0.75 * inch
+    bet_h = 1.08 * inch  # ~6 bets at 1.08" = 6.5", leaves room for total
+    bet_x = margin
+    bet_w = page_w - 2 * margin
+
+    for i, bet in enumerate(bets):
+        y_top = top_y - i * bet_h
+        y_bot = y_top - bet_h
+
+        # Row stripe (alternating)
+        if i % 2 == 0:
+            c.setFillColor(colors.HexColor("#f8f9fa"))
+        else:
+            c.setFillColor(colors.HexColor("#ffffff"))
+        c.rect(bet_x, y_bot + 0.03 * inch, bet_w,
+               bet_h - 0.06 * inch, fill=1, stroke=0)
+
+        # Number circle
+        c.setFillColor(colors.HexColor("#1a1a2e"))
+        c.circle(bet_x + 0.32 * inch, y_top - 0.22 * inch, 0.18 * inch, fill=1, stroke=0)
+        c.setFillColor(colors.HexColor("#ffd700"))
+        c.setFont("Helvetica-Bold", 14)
+        c.drawCentredString(bet_x + 0.32 * inch, y_top - 0.27 * inch, bet["n"])
+
+        # Bet name + race
+        c.setFillColor(colors.HexColor("#1a1a2e"))
+        c.setFont("Helvetica-Bold", 12)
+        c.drawString(bet_x + 0.6 * inch, y_top - 0.22 * inch, bet["name"])
+        c.setFillColor(colors.HexColor("#666"))
+        c.setFont("Helvetica", 8)
+        c.drawString(bet_x + 0.6 * inch, y_top - 0.36 * inch, bet["race"])
+
+        # Cost (right-aligned, big)
+        c.setFillColor(colors.HexColor("#28a745"))
+        c.setFont("Helvetica-Bold", 16)
+        c.drawRightString(bet_x + bet_w - 0.15 * inch,
+                          y_top - 0.27 * inch, f"${bet['cost']:.2f}")
+
+        # Structure line
+        c.setFillColor(colors.HexColor("#0f0f23"))
+        c.setFont("Courier-Bold", 8.5)
+        c.drawString(bet_x + 0.18 * inch, y_top - 0.55 * inch,
+                     "STRUCTURE: " + bet["structure"])
+
+        # Horses
+        c.setFillColor(colors.black)
+        c.setFont("Helvetica-Bold", 8)
+        c.drawString(bet_x + 0.18 * inch, y_top - 0.71 * inch,
+                     "HORSES: " + bet["horses"][:130])
+        if len(bet["horses"]) > 130:
+            c.drawString(bet_x + 0.78 * inch, y_top - 0.83 * inch,
+                         bet["horses"][130:260])
+
+        # Rationale
+        c.setFillColor(colors.HexColor("#444"))
+        c.setFont("Helvetica-Oblique", 7.5)
+        c.drawString(bet_x + 0.18 * inch, y_top - 0.97 * inch,
+                     "WHY: " + bet["rationale"][:155])
+
+        # Punched checkbox
+        c.setStrokeColor(colors.HexColor("#1a1a2e"))
+        c.setLineWidth(1.2)
+        c.rect(bet_x + bet_w - 0.45 * inch, y_top - 0.55 * inch,
+               0.18 * inch, 0.18 * inch, fill=0, stroke=1)
+        c.setFillColor(colors.HexColor("#666"))
+        c.setFont("Helvetica", 6.5)
+        c.drawCentredString(bet_x + bet_w - 0.36 * inch,
+                             y_top - 0.65 * inch, "punched")
+
+    # Total bar at the bottom
+    total = sum(b["cost"] for b in bets)
+    reserve = 300.00 - total
+    total_y = top_y - len(bets) * bet_h - 0.05 * inch
+    c.setFillColor(colors.HexColor("#1a1a2e"))
+    c.rect(margin, total_y - 0.4 * inch, page_w - 2 * margin,
+           0.4 * inch, fill=1, stroke=0)
+    c.setFillColor(colors.HexColor("#ffd700"))
+    c.setFont("Helvetica-Bold", 11)
+    c.drawString(margin + 0.18 * inch, total_y - 0.18 * inch,
+                 f"TOTAL DEPLOYED:  ${total:.2f}")
+    c.setFillColor(colors.white)
+    c.setFont("Helvetica", 9)
+    c.drawString(margin + 2.6 * inch, total_y - 0.18 * inch,
+                 f"+ ${reserve:.2f} reserve  =  $300.00 bankroll")
+    c.setFillColor(colors.HexColor("#aaa"))
+    c.setFont("Helvetica-Oblique", 7.5)
+    c.drawString(margin + 0.18 * inch, total_y - 0.32 * inch,
+                 "Reserve absorbs late line moves: if Right to Party drifts past 30-1 "
+                 "or Crazy Mason's odds shift, hit them again with reserve cash.")
+
     c.save()
     print(f"[OK] {OUT}")
-    print(f"     Single-page letter-size PDF, 14 races, top 4 per race")
+    print(f"     2 pages: order of finish (p1) + $300 bet sheet (p2)")
 
 
 if __name__ == "__main__":
